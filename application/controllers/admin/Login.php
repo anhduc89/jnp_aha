@@ -53,7 +53,7 @@ class Login extends CI_Controller
                         'status'    => $pw['status']
                     );
                     $this->session->set_userdata($array);
-                    redirect(base_url().'admin/dashboard');
+                    redirect(base_url().'admin/page');
                 }
             }
         } else {

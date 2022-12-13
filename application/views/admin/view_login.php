@@ -32,7 +32,7 @@
 
 <div class="login-box">
 	<div class="login-logo">
-		<b>Admin Panel</b>
+		<b>Đăng nhập</b>
 	</div>
   	<div class="login-box-body">
     	<p class="login-box-msg">Đăng nhập quản trị hệ thống</p>
@@ -48,13 +48,13 @@
 
 		<?php echo form_open(base_url().'admin'); ?>
 			<div class="form-group has-feedback">
-				<input class="form-control" placeholder="Email address" name="email" type="email" autocomplete="off" autofocus>
+				<input class="form-control" placeholder="Account" name="email" type="text" autocomplete="off" autofocus>
 			</div>
 			<div class="form-group has-feedback">
 				<input class="form-control" placeholder="Password" name="password" type="password" autocomplete="off" value="">
 			</div>
 			<div class="row">
-				<div class="col-xs-8" style="padding-top:7px;"><a href="<?php echo base_url(); ?>admin/forget-password" style="color:red;">Quyên mật khẩu?</a></div>
+				<!-- <div class="col-xs-8" style="padding-top:7px;"><a href="<?php echo base_url(); ?>admin/forget-password" style="color:red;">Quyên mật khẩu?</a></div> -->
 				<div class="col-xs-4">
 					<input type="submit" class="btn btn-primary btn-block btn-flat login-button" name="form1" value="Login">
 				</div>

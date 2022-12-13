@@ -1,12 +1,14 @@
 <?php
 if(!$this->session->userdata('id')) {
     redirect(base_url().'admin');
+
+     echo base_url().'public/uploads/'.$page_about['home_about_photo'];
 }
 ?>
 
 <section class="content-header">
     <div class="content-header-left">
-        <h1>Cài đặt trang</h1>
+        <h1>Cài đặt trang / Setup page</h1>
     </div>
 </section>
 
@@ -41,24 +43,24 @@ if(!$this->session->userdata('id')) {
                             
                 <div class="nav-tabs-custom">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="#tab_1" data-toggle="tab">Trang chủ</a></li>
-                        <li><a href="#tab_2" data-toggle="tab">Giới thiệu</a></li>
-                        <li><a href="#tab_4" data-toggle="tab">FAQ</a></li>
-                        <li><a href="#tab_5" data-toggle="tab">Dịch vụ</a></li>
-                        <li><a href="#tab_7" data-toggle="tab">Nhận xét</a></li>
-                        <li><a href="#tab_8" data-toggle="tab">Tin tức</a></li>
-                        <li><a href="#tab_16" data-toggle="tab">Sự kiện</a></li>
+                        <!-- <li class="active"><a href="#tab_1" data-toggle="tab">Trang chủ</a></li> -->
+                        <li class="active"><a href="#tab_2" data-toggle="tab">Giới thiệu</a></li>
+                        <!-- <li><a href="#tab_4" data-toggle="tab">FAQ</a></li> -->
+                        <!-- <li><a href="#tab_5" data-toggle="tab">Sản phẩm</a></li> -->
+                        <!-- <li><a href="#tab_7" data-toggle="tab">Nhận xét</a></li> -->
+                        <!-- <li><a href="#tab_8" data-toggle="tab">Tin tức</a></li> -->
+                        <!-- <li><a href="#tab_16" data-toggle="tab">Sự kiện</a></li> -->
                         <li><a href="#tab_9" data-toggle="tab">Liên hệ</a></li>
-                        <li><a href="#tab_10" data-toggle="tab">Tìm kiếm</a></li>
-                        <li><a href="#tab_11" data-toggle="tab">Điều khoản</a></li>
-                        <li><a href="#tab_12" data-toggle="tab">Chính sách</a></li>
-                        <li><a href="#tab_14" data-toggle="tab">Nhóm</a></li>
-                        <li><a href="#tab_15" data-toggle="tab">Dự án</a></li>
+                        <!-- <li><a href="#tab_10" data-toggle="tab">Tìm kiếm</a></li> -->
+                        <!-- <li><a href="#tab_11" data-toggle="tab">Điều khoản</a></li> -->
+                        <!-- <li><a href="#tab_12" data-toggle="tab">Chính sách</a></li> -->
+                        <!-- <li><a href="#tab_14" data-toggle="tab">Nhóm</a></li>  -->
+                        <!-- <li><a href="#tab_15" data-toggle="tab">Dự án</a></li> -->
 
                     </ul>
                     <div class="tab-content">
                         
-                        <div class="tab-pane active" id="tab_1">
+                        <!-- <div class="tab-pane active" id="tab_1">
 
                             <h3 class="sec_title"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Cài đặt thẻ Meta</h3>
                             <?php echo form_open(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
@@ -588,7 +590,7 @@ if(!$this->session->userdata('id')) {
                                     </select>
                                     </div>
                                 </div>
-                            <?php echo form_close(); ?>
+                            <?php echo form_close(); ?> 
 
                             <h3 class="sec_title">Hình nền vị trí Người dùng nhận xét</h3>
                             <?php echo form_open_multipart(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
@@ -652,9 +654,9 @@ if(!$this->session->userdata('id')) {
                             <?php echo form_close(); ?>
 
 
-                        </div>
+                        </div> -->
 
-                        <div class="tab-pane" id="tab_2">
+                        <div class="tab-pane active" id="tab_2">
                             <?php echo form_open(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
                                 <div class="form-group">
                                     <label for="" class="col-sm-2 control-label">Tiêu đề </label>
@@ -668,24 +670,24 @@ if(!$this->session->userdata('id')) {
                                         <textarea name="about_content" class="form-control" cols="30" rows="10" id="editor1"><?php echo $page_about['about_content']; ?></textarea>
                                     </div>
                                 </div>
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label for="" class="col-sm-2 control-label">Mô tả tiêu đề</label>
                                     <div class="col-sm-9">
                                         <input type="text" name="mt_about" class="form-control" value="<?php echo $page_about['mt_about']; ?>">
                                     </div>
-                                </div>      
-                                <div class="form-group">
+                                </div> -->
+                                <!-- <div class="form-group">
                                     <label for="" class="col-sm-2 control-label">Từ khóa </label>
                                     <div class="col-sm-9">
                                         <textarea class="form-control" name="mk_about" style="height:60px;"><?php echo $page_about['mk_about']; ?></textarea>
                                     </div>
-                                </div>  
-                                <div class="form-group">
+                                </div>   -->
+                                <!-- <div class="form-group">
                                     <label for="" class="col-sm-2 control-label">Mô tả </label>
                                     <div class="col-sm-9">
                                         <textarea class="form-control" name="md_about" style="height:60px;"><?php echo $page_about['md_about']; ?></textarea>
                                     </div>
-                                </div>  
+                                </div>   -->
                                 <div class="form-group">
                                     <label for="" class="col-sm-2 control-label"></label>
                                     <div class="col-sm-6">
@@ -694,10 +696,30 @@ if(!$this->session->userdata('id')) {
                                 </div>                              
                             <?php echo form_close(); ?>
                         </div>
+
+                        <?php echo form_open_multipart(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
+                                <div class="form-group">
+                                    <label for="" class="col-sm-2 control-label">Hình ảnh giới thiệu</label>
+                                    <div class="col-sm-6" style="padding-top:6px;">
+                                        <img src="<?php echo base_url().'public/uploads/'.$page_about['home_about_photo'];?>" class="existing-photo" style="height:180px;">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-sm-2 control-label">Thay đổi hình giới thiệu</label>
+                                    <div class="col-sm-6" style="padding-top:6px;">
+                                        <input type="file" name="home_about_photo">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-sm-2 control-label"></label>
+                                    <div class="col-sm-6">
+                                        <button type="submit" class="btn btn-success pull-left" name="form_home_aboutus_photo">Cập nhật</button>
+                                    </div>
+                                </div>
+                            <?php echo form_close(); ?>
                         
 
-
-                        <div class="tab-pane" id="tab_4">
+                        <!-- <div class="tab-pane" id="tab_4">
                             <?php echo form_open(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
                                 <div class="form-group">
                                     <label for="" class="col-sm-2 control-label">Tiêu đề </label>
@@ -731,8 +753,6 @@ if(!$this->session->userdata('id')) {
                                 </div>                              
                             <?php echo form_close(); ?>
                         </div>
-
-
 
                         <div class="tab-pane" id="tab_5">
                             <?php echo form_open(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
@@ -769,8 +789,6 @@ if(!$this->session->userdata('id')) {
                             <?php echo form_close(); ?>
                         </div>
 
-
-
                         <div class="tab-pane" id="tab_7">
                             <?php echo form_open(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
                                 <div class="form-group">
@@ -805,8 +823,6 @@ if(!$this->session->userdata('id')) {
                                 </div>                              
                             <?php echo form_close(); ?>
                         </div>
-
-
 
                         <div class="tab-pane" id="tab_8">
                             <?php echo form_open(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
@@ -843,8 +859,6 @@ if(!$this->session->userdata('id')) {
                             <?php echo form_close(); ?>
                         </div>
 
-
-
                         <div class="tab-pane" id="tab_16">
                             <?php echo form_open(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
                                 <div class="form-group">
@@ -878,7 +892,7 @@ if(!$this->session->userdata('id')) {
                                     </div>
                                 </div>                              
                             <?php echo form_close(); ?>
-                        </div>
+                        </div> -->
 
 
                         <div class="tab-pane" id="tab_9">
@@ -941,7 +955,7 @@ if(!$this->session->userdata('id')) {
                         </div>
 
 
-                        <div class="tab-pane" id="tab_10">
+                        <!-- <div class="tab-pane" id="tab_10">
                             <?php echo form_open(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
                                 <div class="form-group">
                                     <label for="" class="col-sm-2 control-label">Tiêu đề </label>
@@ -975,10 +989,7 @@ if(!$this->session->userdata('id')) {
                                 </div>                              
                             <?php echo form_close(); ?>
                         </div>
-                        
-
-
-
+                    
                         <div class="tab-pane" id="tab_11">
                             <?php echo form_open(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
                                 <div class="form-group">
@@ -1019,7 +1030,6 @@ if(!$this->session->userdata('id')) {
                                 </div>                              
                             <?php echo form_close(); ?>
                         </div>
-
 
                         <div class="tab-pane" id="tab_12">
                             <?php echo form_open(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
@@ -1062,10 +1072,6 @@ if(!$this->session->userdata('id')) {
                             <?php echo form_close(); ?>
                         </div>
 
-
-
-
-
                         <div class="tab-pane" id="tab_14">
                             <?php echo form_open(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
                                 <div class="form-group">
@@ -1101,9 +1107,6 @@ if(!$this->session->userdata('id')) {
                             <?php echo form_close(); ?>
                         </div>
 
-
-
-
                         <div class="tab-pane" id="tab_15">
                             <?php echo form_open(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
                                 <div class="form-group">
@@ -1137,16 +1140,10 @@ if(!$this->session->userdata('id')) {
                                     </div>
                                 </div>                              
                             <?php echo form_close(); ?>
-                        </div>
-
-
-
-
+                        </div> -->
 
                     </div>
                 </div>
-
-                
         </div>
     </div>
 

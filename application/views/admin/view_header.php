@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Admin Panel</title>
+	<title>Trang quản trị</title>
 
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
@@ -80,7 +80,7 @@
 		<header class="main-header">
 
 			<a href="<?php echo base_url(); ?>admin/dashboard" class="logo">
-				<span class="logo-lg">CMSNEWS</span>
+				<span class="logo-lg">VINA J&P</span>
 			</a>
 
 			<nav class="navbar navbar-static-top">
@@ -89,7 +89,7 @@
 					<span class="sr-only">Toggle navigation</span>
 				</a>
 
-				<span style="float:left;line-height:50px;color:#fff;padding-left:15px;font-size:18px;">Admin Panel</span>
+				<span style="float:left;line-height:50px;color:#fff;padding-left:15px;font-size:18px;">Administrator</span>
 
 				<div class="navbar-custom-menu">
 					<ul class="nav navbar-nav">
@@ -140,11 +140,11 @@
      
       			<ul class="sidebar-menu">
 
-			        <li class="treeview <?php if($class_name == 'dashboard') {echo 'active';} ?>">
+			        <!-- <li class="treeview <?php if($class_name == 'dashboard') {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/dashboard">
 			            <i class="fa fa-laptop"></i> <span>Bảng tin</span>
 			          </a>
-			        </li>
+			        </li> -->
 
 
 					<?php if( $this->session->userdata('role') == 'Admin' ): ?>
@@ -152,9 +152,10 @@
 
 			        <li class="treeview <?php if( ($class_name == 'page') ) {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/page">
-			            <i class="fa fa-file-text"></i> <span>Trang</span>
+			            <i class="fa fa-file-text"></i> <span>Về chúng tôi</span>
 			          </a>
 			        </li>
+					
 			        <li class="treeview <?php if( ($class_name == 'category') || ($class_name == 'news')) {echo 'active';} ?>">
 						<a href="#">
 							<i class="fa fa-newspaper-o"></i>
@@ -214,6 +215,7 @@
 			            <i class="fa fa-user-plus"></i> <span>Người dùng nhận xét</span>
 			          </a>
 			        </li>
+
 			        <li class="treeview <?php if( ($class_name == 'pricing_table') ) {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/pricing_table">
 			            <i class="fa fa-usd"></i> <span>Bảng giá</span>

@@ -14,20 +14,24 @@ class Page extends CI_Controller
 		$error = '';
 		$success = '';
 
-		$data['setting'] = $this->Model_common->get_setting_data();
-		$data['page_home'] = $this->Model_page->show_home();
-		$data['page_about'] = $this->Model_page->show_about();
-		$data['page_faq'] = $this->Model_page->show_faq();
-		$data['page_service'] = $this->Model_page->show_service();
-		$data['page_testimonial'] = $this->Model_page->show_testimonial();
-		$data['page_news'] = $this->Model_page->show_news();
-		$data['page_contact'] = $this->Model_page->show_contact();
-		$data['page_search'] = $this->Model_page->show_search();
-		$data['page_term'] = $this->Model_page->show_term();
-		$data['page_privacy'] = $this->Model_page->show_privacy();
-		$data['page_team'] = $this->Model_page->show_team();
-		$data['page_portfolio'] = $this->Model_page->show_portfolio();
-		$data['page_event'] = $this->Model_page->show_event();
+		$data['setting'] 			= $this->Model_common->get_setting_data();
+		$data['page_home'] 			= $this->Model_page->show_home();
+		$data['page_about'] 		= $this->Model_page->show_about();
+
+		// echo base_url().'public/uploads/'.$data['page_about']['home_about_photo'];
+		// echo "<pre>"; print_r($data['page_about']); exit;
+
+		// $data['page_faq'] 			= $this->Model_page->show_faq();
+		// $data['page_service'] 		= $this->Model_page->show_service();
+		$data['page_testimonial'] 	= $this->Model_page->show_testimonial();
+		// $data['page_news'] 			= $this->Model_page->show_news();
+		$data['page_contact'] 		= $this->Model_page->show_contact();
+		// $data['page_search']			= $this->Model_page->show_search();
+		// $data['page_term'] 			= $this->Model_page->show_term();
+		// $data['page_privacy'] 		= $this->Model_page->show_privacy();
+		// $data['page_team'] 			= $this->Model_page->show_team();
+		// $data['page_portfolio'] 		= $this->Model_page->show_portfolio();
+		// $data['page_event'] 			= $this->Model_page->show_event();
 
 		$this->load->view('admin/view_header',$data);
 		$this->load->view('admin/view_page',$data);
@@ -39,6 +43,7 @@ class Page extends CI_Controller
 		$error = '';
 		$success = '';
 
+		// phần trang chủ . Tạm ẩn
 		if(isset($_POST['form_home'])) {
         	$form_data = array(
 				'title'                 => $_POST['title'],
@@ -149,8 +154,6 @@ class Page extends CI_Controller
 		    redirect(base_url().'admin/page');
 		}
 
-		
-
 		if(isset($_POST['form_home_counter_text'])) {
         	$form_data = array(
 				'counter_1_title' => $_POST['counter_1_title'],
@@ -210,7 +213,6 @@ class Page extends CI_Controller
 		    	redirect(base_url().'admin/page');
 		    }
 		}
-
 
 
 		if(isset($_POST['form_home_booking_photo'])) {
@@ -362,19 +364,63 @@ class Page extends CI_Controller
 		    redirect(base_url().'admin/page');
 		}
 
-		
+		// phần giới thiệu About us
 		if(isset($_POST['form_about'])) {
         	$form_data = array(
 				'about_heading' => $_POST['about_heading'],
 				'about_content' => $_POST['about_content'],
-				'mt_about'      => $_POST['mt_about'],
-				'mk_about'      => $_POST['mk_about'],
-				'md_about'      => $_POST['md_about']
+				'mt_about'      => '' , // $_POST['mt_about'],
+				'mk_about'      => '' , // $_POST['mk_about'],
+				'md_about'      => '' , // $_POST['md_about']
             );
         	$this->Model_page->update_about($form_data);
         	$success = 'About Page Setting is updated successfully!';
         	$this->session->set_flashdata('success',$success);
 		    redirect(base_url().'admin/page');
+		}
+
+		// cập nhật hình ảnh trong phần về chúng tôi / about us
+		if(isset($_POST['form_home_aboutus_photo'])) {
+			//$data['page_about'] 		= $this->Model_page->show_about();
+			
+			/// ảnh giới thiệu về công ty
+			$valid = 1;
+			$path = $_FILES['home_about_photo']['name'];
+		    $path_tmp = $_FILES['home_about_photo']['tmp_name'];
+			
+		    if($path!='') {
+		        $ext = pathinfo( $path, PATHINFO_EXTENSION );
+		        $file_name = basename( $path, '.' . $ext );
+		        $ext_check = $this->Model_common->extension_check_photo($ext);
+				
+		        if($ext_check == FALSE) {
+		            $valid = 0;
+		            $error = 'You must have to upload jpg, jpeg, gif or png file<br>';
+		        }
+		    } else {
+		    	$valid = 0;
+		        $error = 'You must have to select a photo<br>';
+		    }
+		    if($valid == 1) {
+		    	// removing the existing photo
+		    	// unlink(base_url().'public/uploads/'.$data['page']['home_about_photo']);
+
+		    	// updating the data
+		    	$final_name = 'home_about_photo'.rand(1,999).date('dmY').'.'.$ext; //
+		        move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
+				
+				$form_data = array(
+					'home_about_photo' => $final_name 
+	            );
+	        	$this->Model_page->update_about($form_data); // update tên ảnh vào trường home_about_photo
+
+	        	$success = 'Home page about us photo is updated successfully!';
+		    	$this->session->set_flashdata('success',$success);
+		    	redirect(base_url().'admin/page');
+		    } else {
+		    	$this->session->set_flashdata('error',$error);
+		    	redirect(base_url().'admin/page');
+		    }
 		}
 
 		if(isset($_POST['form_faq'])) {
@@ -429,6 +475,7 @@ class Page extends CI_Controller
 		    redirect(base_url().'admin/page');
 		}
 
+		// phân sự kiện, hoạt động của công ty
 		if(isset($_POST['form_event'])) {
         	$form_data = array(
 				'event_heading' => $_POST['event_heading'],
@@ -442,6 +489,7 @@ class Page extends CI_Controller
 		    redirect(base_url().'admin/page');
 		}
 
+		// phần liên hệ 
 		if(isset($_POST['form_contact'])) {
         	$form_data = array(
 				'contact_heading' => $_POST['contact_heading'],
@@ -458,6 +506,7 @@ class Page extends CI_Controller
         	$this->session->set_flashdata('success',$success);
 		    redirect(base_url().'admin/page');
 		}
+
 
 		if(isset($_POST['form_search'])) {
         	$form_data = array(
@@ -513,6 +562,7 @@ class Page extends CI_Controller
 		    redirect(base_url().'admin/page');
 		}
 
+		// phần sản phẩm của công ty
 		if(isset($_POST['form_portfolio'])) {
         	$form_data = array(
 				'portfolio_heading' => $_POST['portfolio_heading'],
