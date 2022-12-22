@@ -133,7 +133,7 @@ class Portfolio extends CI_Controller
 		        }
 
 
-		        $success = 'Portfolio is added successfully!';
+		        $success = 'Product is added successfully!';
 		        $this->session->set_flashdata('success',$success);
 				redirect(base_url().'admin/portfolio');
 		    } 
@@ -288,7 +288,7 @@ class Portfolio extends CI_Controller
 		            $this->Model_portfolio->add_photos($form_data);
 		        }
 
-				$success = 'Portfolio is updated successfully';
+				$success = 'Product is updated successfully';
 				$this->session->set_flashdata('success',$success);
 				redirect(base_url().'admin/portfolio');
 		    }
@@ -331,7 +331,7 @@ class Portfolio extends CI_Controller
         $this->Model_portfolio->delete($id);
         $this->Model_portfolio->delete_photos($id);
 
-        $success = 'Portfolio is deleted successfully';
+        $success = 'Product is deleted successfully';
         $this->session->set_flashdata('success',$success);
         redirect(base_url().'admin/portfolio');
     }

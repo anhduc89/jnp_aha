@@ -6,7 +6,7 @@ if(!$this->session->userdata('id')) {
 
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>Cài đặt cho các vị trí trang chủ</h1>
+		<h1>Cài đặt trang chủ</h1>
 	</div>
 </section>
 
@@ -43,12 +43,12 @@ if(!$this->session->userdata('id')) {
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#tab_logo" data-toggle="tab">Logo</a></li>
 						<li><a href="#tab_favicon" data-toggle="tab">Favicon</a></li>
-						<li><a href="#tab_top_bar" data-toggle="tab">Top Bar</a></li>
+						<!-- <li><a href="#tab_top_bar" data-toggle="tab">Top Bar</a></li>
 						<li><a href="#tab_footer" data-toggle="tab">Footer</a></li>
 						<li><a href="#tab_email" data-toggle="tab">Email</a></li>
 						<li><a href="#tab_banner" data-toggle="tab">Banner</a></li>
 						<li><a href="#tab_sidebar" data-toggle="tab">Sidebar</a></li>
-                        <li><a href="#tab_color" data-toggle="tab">Color</a></li>
+                        <li><a href="#tab_color" data-toggle="tab">Color</a></li> -->
 					</ul>
 
 					<div class="tab-content">

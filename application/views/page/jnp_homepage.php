@@ -102,33 +102,60 @@
         <h6 class="section-subtitle mb-5 text-center"><a href="#">Xem thêm các sản phẩm khác</a></h6>
         <div class="filters">
             <a href="#" data-filter=".new" class="active">
-                New
+                Tất cả
             </a>
-            <a href="#" data-filter=".advertising">
-                Advertising
-            </a>
-            <a href="#" data-filter=".branding">
-                Branding
-            </a>
-            <a href="#" data-filter=".web">
-                Web
-            </a>
+            <?php
+                foreach($home_categories_portfolio as $item )
+                {
+                    echo '<a href="#" data-filter=".'.$item['category_id'].'">';
+                    echo        $item['category_name'];
+                    echo    '</a>';
+                }
+            ?>
         </div>
-        <div class="portfolio-container"> 
-            <div class="col-md-6 col-lg-4 web new">
-                <div class="portfolio-item">
-                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/web-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                    <div class="content-holder">
-                        <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
-                        <div class="text-holder">
 
-                            <h6 class="title"><a href="#">WEB</a></h6>
-                            <p class="subtitle"><a href="#">Expedita corporis doloremque velit in totam!</a></p>
-                        </div>
-                    </div>   
-                </div>             
-            </div>
-            <div class="col-md-6 col-lg-4 web new">
+        <div class="portfolio-container"> 
+                  
+            <?php
+                foreach($home__products_portfolio as $item ) // chỗ này sẽ show ra sản phẩm mới nhất, hoặc sản phẩm bán chạy.
+                {
+                    echo ' <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="'.base_url().'public/uploads/'.$item['photo'].'" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
+                                <div class="text-holder">
+
+                                    <h6 class="title"><a href="#">'. $item['name'].'</a></h6>
+                                    <p class="subtitle"><a href="#">'. $item['short_content'].'</a></p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>';
+                }
+            ?>
+
+            <?php
+                foreach($home__products_portfolio as $item ) // chỗ này sẽ show ra sản phẩm mới nhất, hoặc sản phẩm bán chạy.
+                {
+                    echo ' <div class="col-md-6 col-lg-4 '.$item['category_id'].'">
+                        <div class="portfolio-item">
+                            <img src="'.base_url().'public/uploads/'.$item['photo'].'" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
+                                <div class="text-holder">
+
+                                    <h6 class="title"><a href="#">'. $item['name'].'</a></h6>
+                                    <p class="subtitle"><a href="#">'. $item['short_content'].'</a></p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>';
+                }
+                
+            
+            ?>
+            <!-- <div class="col-md-6 col-lg-4 web new">
                 <div class="portfolio-item">
                     <img src="<?php echo base_url()?>public/jnp_assets/imgs/web-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                     <div class="content-holder">
@@ -139,141 +166,7 @@
                         </div>
                     </div> 
                 </div>                         
-            </div>
-            <div class="col-md-6 col-lg-4 advertising new">
-                <div class="portfolio-item">
-                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/advertising-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
-                    <div class="content-holder">
-                        <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
-                        <div class="text-holder">
-                            <h6 class="title"><a href="#">BRANDING</a></h6>
-                            <p class="subtitle"><a href="#">Expedita corporis doloremque velit in totam!</a></p>
-                        </div>
-                    </div>    
-                </div>              
-            </div> 
-            <div class="col-md-6 col-lg-4 web">
-                <div class="portfolio-item">
-                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/web-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                    <div class="content-holder">
-                        <a class="img-popup" href="<?php echo base_url()?>public/jnp_assets/imgs/web-4.jpg"></a>
-                        <div class="text-holder">
-                            <h6 class="title"><a href="#">BRANDING</a></h6>
-                            <p class="subtitle"><a href="#">Expedita corporis doloremque velit in totam!</a></p>
-                        </div>
-                    </div>
-                </div>                                                     
-            </div>
-
-            <div class="col-md-6 col-lg-4 advertising"> 
-                <div class="portfolio-item">
-                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/advertising-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
-                    <div class="content-holder">
-                        <a class="img-popup" href="<?php echo base_url()?>public/jnp_assets/imgs/advertising-1.jpg"></a>
-                        <div class="text-holder">
-                            <h6 class="title"><a href="#">BRANDING</a></h6>
-                            <p class="subtitle"><a href="#">Expedita corporis doloremque velit in totam!</a></p>
-                        </div>
-                    </div>
-                </div>                                                       
-            </div> 
-            <div class="col-md-6 col-lg-4 web new">
-                <div class="portfolio-item">
-                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/web-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
-                    <div class="content-holder">
-                        <a class="img-popup" href="<?php echo base_url()?>public/jnp_assets/imgs/web-3.jpg"></a>
-                        <div class="text-holder">
-                            <h6 class="title"><a href="#">BRANDING</a></h6>
-                            <p class="subtitle"><a href="#">Expedita corporis doloremque velit in totam!</a></p>
-                        </div>
-                    </div>
-                </div>                                                     
-            </div>
-            <div class="col-md-6 col-lg-4 advertising new">
-                <div class="portfolio-item">
-                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/advertising-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
-                    <div class="content-holder">
-                        <a class="img-popup" href="<?php echo base_url()?>public/jnp_assets/imgs/advertising-3.jpg"></a>
-                        <div class="text-holder">
-                            <h6 class="title"><a href="#">BRANDING</a></h6>
-                            <p class="subtitle"><a href="#">Expedita corporis doloremque velit in totam!</a></p>
-                        </div>
-                    </div>
-                </div>                                                       
-            </div> 
-            <div class="col-md-6 col-lg-4 advertising new"> 
-                <div class="portfolio-item">
-                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/advertising-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
-                    <div class="content-holder">
-                        <a class="img-popup" href="<?php echo base_url()?>public/jnp_assets/imgs/advertising-4.jpg"></a>
-                        <div class="text-holder">
-                            <h6 class="title"><a href="#">BRANDING</a></h6>
-                            <p class="subtitle"><a href="#">Expedita corporis doloremque velit in totam!</a></p>
-                        </div>
-                    </div>
-                </div>
-                        
-            </div> 
-            <div class="col-md-6 col-lg-4 branding new">
-                <div class="portfolio-item">
-                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/branding-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
-                    <div class="content-holder">
-                        <a class="img-popup" href="<?php echo base_url()?>public/jnp_assets/imgs/branding-1.jpg"></a>
-                        <div class="text-holder">
-                            <h6 class="title"><a href="#">BRANDING</a></h6>
-                            <p class="subtitle"><a href="#">Expedita corporis doloremque velit in totam!</a></p>
-                        </div>
-                    </div> 
-                </div>
-            </div> 
-            <div class="col-md-6 col-lg-4 branding">
-                <div class="portfolio-item">
-                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/branding-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
-                    <div class="content-holder">
-                        <a class="img-popup" href="assets/imgs/branding-2.jpg"></a>
-                        <div class="text-holder">
-                            <h6 class="title"><a href="#">BRANDING</a></h6>
-                            <p class="subtitle"><a href="#">Expedita corporis doloremque velit in totam!</a></p>
-                        </div>
-                    </div>
-                </div>                                                     
-            </div> 
-            <div class="col-md-6 col-lg-4 branding new">
-                <div class="portfolio-item">
-                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/branding-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
-                    <div class="content-holder">
-                        <a class="img-popup" href="<?php echo base_url()?>public/jnp_assets/imgs/branding-3.jpg"></a>
-                        <div class="text-holder">
-                            <h6 class="title"><a href="#">BRANDING</a></h6>
-                            <p class="subtitle"><a href="#">Expedita corporis doloremque velit in totam!</a></p>
-                        </div>
-                    </div>
-                </div>                                                    
-            </div> 
-            <div class="col-md-6 col-lg-4 branding">
-                <div class="portfolio-item">
-                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/branding-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                      
-                    <div class="content-holder">
-                        <a class="img-popup" href="<?php echo base_url()?>public/jnp_assets/imgs/branding-4.jpg"></a>
-                        <div class="text-holder">
-                            <h6 class="title"><a href="#">BRANDING</a></h6>
-                            <p class="subtitle"><a href="#">Expedita corporis doloremque velit in totam!</a></p>
-                        </div>
-                    </div>
-                </div>                                                      
-            </div> 
-            <div class="col-md-6 col-lg-4 branding">
-                <div class="portfolio-item">
-                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/branding-5.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">          
-                    <div class="content-holder">
-                        <a class="img-popup" href="<?php echo base_url()?>public/jnp_assets/imgs/branding-5.jpg"></a>
-                        <div class="text-holder">
-                            <h6 class="title"><a href="#">BRANDING</a></h6>
-                            <p class="subtitle"><a href="#">Expedita corporis doloremque velit in totam!</a></p>
-                        </div>
-                    </div>
-                </div>                                                   
-            </div>
+            </div>  -->
         </div>   
     </div>            
 </section>
@@ -286,7 +179,21 @@
         <h6 class="section-subtitle mb-5 text-center">Cảm ơn sự đồng hành của Quý khách hàng với Vina J&P</h6>
 
         <div class="row">
-            <div class="col-md-4">
+            <?php
+                foreach($clients as $item)
+                {
+                    echo '<div class="col-md-4">
+                            <div class="card border-0 mb-4">
+                                <img src="'.base_url().'public/uploads/'.$item['photo'].'" alt="" class="card-img-top w-100">
+                                <div class="card-body">                         
+                                    <h6 class="card-title">'.$item['name'].'</h6>
+                                    
+                                </div>
+                            </div>
+                        </div>';
+                }
+            ?>
+            <!-- <div class="col-md-4">
                 <div class="card border-0 mb-4">
                     <img src="<?php echo base_url()?>public/jnp_assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100">
                     <div class="card-body">                         
@@ -295,27 +202,7 @@
                         <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card border-0 mb-4">
-                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/blog-2.jpg" alt="" class="card-img-top w-100">
-                    <div class="card-body">                         
-                        <h6 class="card-title"> Công ty TNHH LG Electronics Việt Nam </h5>
-                        <p>Công ty TNHH LG Electronics Việt Nam</p>
-                        <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card border-0 mb-4">
-                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/blog-3.jpg" alt="" class="card-img-top w-100">
-                    <div class="card-body">                         
-                        <h6 class="card-title">Công ty cổ phần liên doanh ô tô Hyundai Thành Công Việt Nam</h6>
-                        <p>Công ty cổ phần liên doanh ô tô Hyundai Thành Công Việt Nam</p>
-                        <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
-                    </div>
-                </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
@@ -327,21 +214,27 @@
         <h6 class="section-title text-center mb-0">Sự tin tưởng của khách hàng</h6>
         <h6 class="section-subtitle mb-5 text-center">Chất lượng sản phẩm là uy tín của Vina J&P</h6>
         <div class="row">
-            <div class="col-md-4 my-3 my-md-0">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="media align-items-center mb-3">
-                            <img class="mr-3" src="<?php echo base_url()?>public/jnp_assets/imgs/avatar.jpg" alt="">
-                            <div class="media-body">
-                                <h6 class="mt-1 mb-0">John Doe</h6>
-                                <small class="text-muted mb-0">Business Analyst</small>     
+            <?php
+                foreach($testimonials as $item)
+                {
+                    echo '<div class="col-md-4 my-3 my-md-0">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="media align-items-center mb-3">
+                                        <img class="mr-3" src="'.base_url().'public/uploads/'.$item['photo'].'" alt="">
+                                        <div class="media-body">
+                                            <h6 class="mt-1 mb-0">'.$item['name'].'</h6> 
+                                            <small class="text-muted mb-0">'.$item['designation'].'</small>     
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">'.$item['comment'].'</p>
+                                </div>
                             </div>
-                        </div>
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 my-3 my-md-0">
+                        </div>';
+                }
+            ?>
+            
+            <!-- <div class="col-md-4 my-3 my-md-0">
                 <div class="card">
                     <div class="card-body">
                         <div class="media align-items-center mb-3">
@@ -368,7 +261,7 @@
                         <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id dicta reiciendis itaque.</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>

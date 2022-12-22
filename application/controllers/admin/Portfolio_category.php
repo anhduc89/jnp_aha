@@ -48,7 +48,7 @@ class Portfolio_category extends CI_Controller
 	            );
 	            $this->Model_portfolio_category->add($form_data);
 
-		        $success = 'Portfolio category is added successfully!';
+		        $success = 'Product category is added successfully!';
 		        $this->session->set_flashdata('success',$success);
 				redirect(base_url().'admin/portfolio_category');
 		    }
@@ -110,7 +110,7 @@ class Portfolio_category extends CI_Controller
 	            );
 	            $this->Model_portfolio_category->update($id,$form_data);
 				
-				$success = 'Portfolio Category is updated successfully';
+				$success = 'Product Category is updated successfully';
 				$this->session->set_flashdata('success',$success);
 				redirect(base_url().'admin/portfolio_category');
 		    }

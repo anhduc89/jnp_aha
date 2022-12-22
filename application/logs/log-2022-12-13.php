@@ -1386,3 +1386,87 @@ ERROR - 2022-12-13 10:59:04 --> Severity: Warning --> Undefined variable $page_p
 ERROR - 2022-12-13 10:59:04 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1127
 ERROR - 2022-12-13 10:59:04 --> Severity: Warning --> Undefined variable $page_portfolio D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1133
 ERROR - 2022-12-13 10:59:04 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1133
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Undefined variable $page_faq D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 727
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 727
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Undefined variable $page_faq D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 733
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 733
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Undefined variable $page_faq D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 739
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 739
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Undefined variable $page_faq D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 745
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 745
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Undefined variable $page_service D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 762
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 762
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Undefined variable $page_service D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 768
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 768
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Undefined variable $page_service D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 774
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 774
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Undefined variable $page_service D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 780
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 780
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Undefined variable $page_news D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 832
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 832
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Undefined variable $page_news D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 838
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 838
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Undefined variable $page_news D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 844
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 844
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Undefined variable $page_news D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 850
+ERROR - 2022-12-13 15:49:58 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 850
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_event D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 867
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 867
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_event D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 873
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 873
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_event D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 879
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 879
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_event D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 885
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 885
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_search D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 963
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 963
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_search D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 969
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 969
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_search D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 975
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 975
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_search D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 981
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 981
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_term D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 998
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 998
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_term D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1004
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1004
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_term D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1010
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1010
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_term D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1016
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1016
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_term D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1022
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1022
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_privacy D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1039
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1039
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_privacy D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1045
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1045
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_privacy D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1051
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1051
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_privacy D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1057
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1057
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_privacy D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1063
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1063
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_team D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1080
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1080
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_team D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1086
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1086
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_team D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1092
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1092
+ERROR - 2022-12-13 15:49:59 --> Severity: Warning --> Undefined variable $page_team D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1098
+ERROR - 2022-12-13 15:50:00 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1098
+ERROR - 2022-12-13 15:50:00 --> Severity: Warning --> Undefined variable $page_portfolio D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1115
+ERROR - 2022-12-13 15:50:00 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1115
+ERROR - 2022-12-13 15:50:00 --> Severity: Warning --> Undefined variable $page_portfolio D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1121
+ERROR - 2022-12-13 15:50:00 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1121
+ERROR - 2022-12-13 15:50:00 --> Severity: Warning --> Undefined variable $page_portfolio D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1127
+ERROR - 2022-12-13 15:50:00 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1127
+ERROR - 2022-12-13 15:50:00 --> Severity: Warning --> Undefined variable $page_portfolio D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1133
+ERROR - 2022-12-13 15:50:00 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1133
+ERROR - 2022-12-13 16:15:55 --> Severity: error --> Exception: Call to undefined method Model_portfolio::all_page_about() D:\xampp\htdocs\jnp_aha\application\controllers\JnpHome.php 18
+ERROR - 2022-12-13 16:15:59 --> Severity: error --> Exception: Call to undefined method Model_portfolio::all_page_about() D:\xampp\htdocs\jnp_aha\application\controllers\JnpHome.php 18
+ERROR - 2022-12-13 16:18:57 --> 404 Page Not Found: Public/uploads
+ERROR - 2022-12-13 16:19:00 --> Severity: error --> Exception: syntax error, unexpected variable "$item", expecting "," or ";" D:\xampp\htdocs\jnp_aha\application\views\page\jnp_homepage.php 119
+ERROR - 2022-12-13 16:19:25 --> Severity: error --> Exception: syntax error, unexpected variable "$item", expecting "," or ";" D:\xampp\htdocs\jnp_aha\application\views\page\jnp_homepage.php 119
+ERROR - 2022-12-13 16:19:58 --> Severity: error --> Exception: syntax error, unexpected variable "$item", expecting "," or ";" D:\xampp\htdocs\jnp_aha\application\views\page\jnp_homepage.php 119
+ERROR - 2022-12-13 16:20:14 --> Severity: error --> Exception: syntax error, unexpected variable "$item", expecting "," or ";" D:\xampp\htdocs\jnp_aha\application\views\page\jnp_homepage.php 119
+ERROR - 2022-12-13 16:20:53 --> Severity: error --> Exception: syntax error, unexpected token "echo" D:\xampp\htdocs\jnp_aha\application\views\page\jnp_homepage.php 121

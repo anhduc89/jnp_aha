@@ -156,7 +156,7 @@
 			          </a>
 			        </li>
 					
-			        <li class="treeview <?php if( ($class_name == 'category') || ($class_name == 'news')) {echo 'active';} ?>">
+			        <!-- <li class="treeview <?php if( ($class_name == 'category') || ($class_name == 'news')) {echo 'active';} ?>">
 						<a href="#">
 							<i class="fa fa-newspaper-o"></i>
 							<span>Tin tức</span>
@@ -169,15 +169,15 @@
 							<li><a href="<?php echo base_url(); ?>admin/news"><i class="fa fa-circle-o"></i> Đăng tin mới</a></li>
 							
 						</ul>
-					</li>
+					</li> -->
 
-					<li class="treeview <?php if( ($class_name == 'event') ) {echo 'active';} ?>">
+					<!-- <li class="treeview <?php if( ($class_name == 'event') ) {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/event">
 			            <i class="fa fa-calendar"></i> <span>Sự kiện</span>
 			          </a>
-			        </li>
+			        </li> -->
 
-					<li class="treeview <?php if( ($class_name == 'subscriber') ) {echo 'active';} ?>">
+					<!-- <li class="treeview <?php if( ($class_name == 'subscriber') ) {echo 'active';} ?>">
 						<a href="#">
 							<i class="fa fa-comment"></i>
 							<span>Người đăng ký</span>
@@ -189,17 +189,33 @@
 							<li><a href="<?php echo base_url(); ?>admin/subscriber"><i class="fa fa-circle-o"></i>Danh sách đăng ký</a></li>
 							<li><a href="<?php echo base_url(); ?>admin/subscriber/send_email"><i class="fa fa-circle-o"></i>Gởi Email</a></li>
 						</ul>
-					</li>
+					</li> -->
 
-			        <li class="treeview <?php if( ($class_name == 'team_member') ) {echo 'active';} ?>">
+			        <!-- <li class="treeview <?php if( ($class_name == 'team_member') ) {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/team_member">
 			            <i class="fa fa-users"></i> <span>Thành viên nhóm</span>
 			          </a>
-			        </li>
+			        </li> -->
+					
+					<li class="treeview <?php if( ($class_name == 'portfolio')||($class_name == 'portfolio_category') ) {echo 'active';} ?>">
+						<a href="#">
+							<i class="fa fa-bars"></i>
+							<span>Sản phẩm</span>
+							<span class="pull-right-container">
+								<i class="fa fa-angle-left pull-right"></i>
+							</span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="<?php echo base_url(); ?>admin/portfolio_category"><i class="fa fa-circle-o"></i>Danh mục sản phẩm</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/portfolio"><i class="fa fa-circle-o"></i> Các sản phẩm </a></li>
+						</ul>
+					</li>
+
+
 					<li class="treeview <?php if( ($class_name == 'slider') || ($class_name == 'photo')) {echo 'active';} ?>">
 						<a href="#">
 							<i class="fa fa-picture-o"></i>
-							<span>Trình chiếu</span>
+							<span>Photo</span>
 							<span class="pull-right-container">
 								<i class="fa fa-angle-left pull-right"></i>
 							</span>
@@ -210,39 +226,30 @@
 						</ul>
 					</li>
 			       
-			        <li class="treeview <?php if( ($class_name == 'testimonial') ) {echo 'active';} ?>">
-			          <a href="<?php echo base_url(); ?>admin/testimonial">
-			            <i class="fa fa-user-plus"></i> <span>Người dùng nhận xét</span>
-			          </a>
-			        </li>
-
-			        <li class="treeview <?php if( ($class_name == 'pricing_table') ) {echo 'active';} ?>">
-			          <a href="<?php echo base_url(); ?>admin/pricing_table">
-			            <i class="fa fa-usd"></i> <span>Bảng giá</span>
-			          </a>
-			        </li>
-
-			        <li class="treeview <?php if( ($class_name == 'portfolio')||($class_name == 'portfolio_category') ) {echo 'active';} ?>">
-						<a href="#">
-							<i class="fa fa-bars"></i>
-							<span>Dự án</span>
-							<span class="pull-right-container">
-								<i class="fa fa-angle-left pull-right"></i>
-							</span>
-						</a>
-						<ul class="treeview-menu">
-							<li><a href="<?php echo base_url(); ?>admin/portfolio_category"><i class="fa fa-circle-o"></i>Danh mục dự án</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/portfolio"><i class="fa fa-circle-o"></i> Các dự án</a></li>
-						</ul>
-					</li>
-
-			        <li class="treeview <?php if( ($class_name == 'client') ) {echo 'active';} ?>">
+					<li class="treeview <?php if( ($class_name == 'client') ) {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/client">
 			            <i class="fa fa-clone"></i> <span>Khách hàng</span>
 			          </a>
 			        </li>
 
-			        <li class="treeview <?php if( ($class_name == 'service') ) {echo 'active';} ?>">
+
+			        <li class="treeview <?php if( ($class_name == 'testimonial') ) {echo 'active';} ?>">
+			          <a href="<?php echo base_url(); ?>admin/testimonial">
+			            <i class="fa fa-user-plus"></i> <span>Khách hàng nhận xét</span>
+			          </a>
+			        </li>
+
+			        <!-- <li class="treeview <?php if( ($class_name == 'pricing_table') ) {echo 'active';} ?>">
+			          <a href="<?php echo base_url(); ?>admin/pricing_table">
+			            <i class="fa fa-usd"></i> <span>Bảng giá</span>
+			          </a>
+			        </li> -->
+
+			       
+
+			        
+
+			        <!-- <li class="treeview <?php if( ($class_name == 'service') ) {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/service">
 			            <i class="fa fa-life-ring"></i> <span>Dịch vụ</span>
 			          </a>
@@ -252,7 +259,7 @@
 			          <a href="<?php echo base_url(); ?>admin/feature">
 			            <i class="fa fa-cube"></i> <span>Nổi bật</span>
 			          </a>
-			        </li>
+			        </li> -->
 
 			        <li class="treeview <?php if( ($class_name == 'why_choose') ) {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/why_choose">
@@ -275,7 +282,7 @@
 						</a>
 						<ul class="treeview-menu">
 							<li><a href="<?php echo base_url(); ?>admin/setting"><i class="fa fa-circle-o"></i>Cài đặt chung</a></li>
-							<li><a href="<?php echo base_url(); ?>admin/language"><i class="fa fa-circle-o"></i>Ngôn ngữ</a></li>
+							<!-- <li><a href="<?php echo base_url(); ?>admin/language"><i class="fa fa-circle-o"></i>Ngôn ngữ</a></li> -->
 							<li><a href="<?php echo base_url(); ?>admin/comment"><i class="fa fa-circle-o"></i> Bình luận</a></li>
 							<li><a href="<?php echo base_url(); ?>admin/social_media"><i class="fa fa-circle-o"></i>Mạng xã hội</a></li>
 						</ul>

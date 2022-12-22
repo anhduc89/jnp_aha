@@ -6,10 +6,10 @@ if(!$this->session->userdata('id')) {
 
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>Dự án thực hiện</h1>
+		<h1>Danh sách sản phẩm</h1>
 	</div>
 	<div class="content-header-right">
-		<a href="<?php echo base_url(); ?>admin/portfolio/add" class="btn btn-primary btn-sm"><i class="fa fa-plus-circle" aria-hidden="true"></i> Thêm dự án mới</a>
+		<a href="<?php echo base_url(); ?>admin/portfolio/add" class="btn btn-primary btn-sm"><i class="fa fa-plus-circle" aria-hidden="true"></i> Thêm sản phẩm mới</a>
 	</div>
 </section>
 

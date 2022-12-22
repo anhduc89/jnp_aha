@@ -897,12 +897,12 @@ if(!$this->session->userdata('id')) {
 
                         <div class="tab-pane" id="tab_9">
                             <?php echo form_open(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label for="" class="col-sm-2 control-label">Tiêu đề </label>
                                     <div class="col-sm-6">
                                         <input type="text" name="contact_heading" class="form-control" value="<?php echo $page_contact['contact_heading']; ?>">
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="form-group">
                                     <label for="" class="col-sm-2 control-label">Địa chỉ liên hệ </label>
                                     <div class="col-sm-9">
@@ -927,7 +927,7 @@ if(!$this->session->userdata('id')) {
                                         <textarea class="form-control" name="contact_map" style="height:120px;"><?php echo $page_contact['contact_map']; ?></textarea>
                                     </div>
                                 </div> 
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label for="" class="col-sm-2 control-label">Mô tả tiêu đề</label>
                                     <div class="col-sm-9">
                                         <input type="text" name="mt_contact" class="form-control" value="<?php echo $page_contact['mt_contact']; ?>">
@@ -944,7 +944,7 @@ if(!$this->session->userdata('id')) {
                                     <div class="col-sm-9">
                                         <textarea class="form-control" name="md_contact" style="height:60px;"><?php echo $page_contact['md_contact']; ?></textarea>
                                     </div>
-                                </div>  
+                                </div>   -->
                                 <div class="form-group">
                                     <label for="" class="col-sm-2 control-label"></label>
                                     <div class="col-sm-6">

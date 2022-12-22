@@ -15,6 +15,9 @@ foreach ($social as $row) {
 	if($row['social_name'] == 'Facebook') {
 		$facebook = $row['social_url'];
 	}
+	if($row['social_name'] == 'YouTube') {
+		$youtube = $row['social_url'];
+	}
 	if($row['social_name'] == 'Twitter') {
 		$twitter = $row['social_url'];
 	}
@@ -27,9 +30,7 @@ foreach ($social as $row) {
 	if($row['social_name'] == 'Pinterest') {
 		$pinterest = $row['social_url'];
 	}
-	if($row['social_name'] == 'YouTube') {
-		$youtube = $row['social_url'];
-	}
+	
 	if($row['social_name'] == 'Instagram') {
 		$instagram = $row['social_url'];
 	}
@@ -93,7 +94,7 @@ foreach ($social as $row) {
 								<input type="text" class="form-control" name="facebook" value="<?php echo $facebook; ?>">
 							</div>
 						</div>
-						<div class="form-group">
+						<!-- <div class="form-group">
 							<label for="" class="col-sm-2 control-label">Twitter </label>
 							<div class="col-sm-6">
 								<input type="text" class="form-control" name="twitter" value="<?php echo $twitter; ?>">
@@ -116,14 +117,14 @@ foreach ($social as $row) {
 							<div class="col-sm-6">
 								<input type="text" class="form-control" name="pinterest" value="<?php echo $pinterest; ?>">
 							</div>
-						</div>
+						</div> -->
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">YouTube </label>
 							<div class="col-sm-6">
 								<input type="text" class="form-control" name="youtube" value="<?php echo $youtube; ?>">
 							</div>
 						</div>
-						<div class="form-group">
+						<!-- <div class="form-group">
 							<label for="" class="col-sm-2 control-label">Instagram </label>
 							<div class="col-sm-6">
 								<input type="text" class="form-control" name="instagram" value="<?php echo $instagram; ?>">
@@ -182,7 +183,7 @@ foreach ($social as $row) {
 							<div class="col-sm-6">
 								<input type="text" class="form-control" name="digg" value="<?php echo $digg; ?>">
 							</div>
-						</div>
+						</div> -->
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label"></label>
 							<div class="col-sm-6">
