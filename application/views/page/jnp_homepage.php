@@ -169,6 +169,10 @@
                                 <img src="'.base_url().'public/uploads/'.$item['photo'].'" alt="" class="card-img-top w-100">
                                 <div class="card-body">
                                     <h6 class="card-title">'.$item['name'].'</h6>
+<<<<<<< HEAD
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+=======
+>>>>>>> 59731d92bba94aaeb3d50462e3a6cf12d566fb44
                                 </div>
                             </div>
                         </div>';

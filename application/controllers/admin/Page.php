@@ -19,7 +19,7 @@ class Page extends CI_Controller
 		$data['page_about'] 		= $this->Model_page->show_about();
 
 		// echo base_url().'public/uploads/'.$data['page_about']['home_about_photo'];
-		// echo "<pre>"; print_r($data['page_about']); exit;
+		#echo "<pre>"; print_r($data['page_about']); exit;
 
 		// $data['page_faq'] 			= $this->Model_page->show_faq();
 		// $data['page_service'] 		= $this->Model_page->show_service();
@@ -366,6 +366,8 @@ class Page extends CI_Controller
 
 		// phần giới thiệu About us
 		if(isset($_POST['form_about'])) {
+			$id = $_POST['id'];
+			
         	$form_data = array(
 				'about_heading' => $_POST['about_heading'],
 				'about_content' => $_POST['about_content'],
@@ -373,7 +375,7 @@ class Page extends CI_Controller
 				'mk_about'      => '' , // $_POST['mk_about'],
 				'md_about'      => '' , // $_POST['md_about']
             );
-        	$this->Model_page->update_about($form_data);
+        	$this->Model_page->update_about($id, $form_data);
         	$success = 'About Page Setting is updated successfully!';
         	$this->session->set_flashdata('success',$success);
 		    redirect(base_url().'admin/page');

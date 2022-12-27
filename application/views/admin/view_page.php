@@ -657,19 +657,133 @@ if(!$this->session->userdata('id')) {
                         </div> -->
 
                         <div class="tab-pane active" id="tab_2">
-                            <?php echo form_open(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
-                                <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label">Tiêu đề </label>
-                                    <div class="col-sm-6">
-                                        <input type="text" name="about_heading" class="form-control" value="<?php echo $page_about['about_heading']; ?>">
+                            <?php echo form_open(base_url().'admin/page/update/',array('class' => 'form-horizontal'));  // update cho bản ghi có id = 1. bảng tbl_page_about
+                                foreach($page_about as $i)
+                                {
+                                    if($i['lang'] == 'vn') 
+                                    {
+                                        echo '<div class="form-group">
+                                                    <label for="" class="col-sm-2 control-label">Tiêu đề </label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" name="about_heading" class="form-control" value="'.$i['about_heading'].'">
+                                                    </div>
+                                                </div>
+
+                                
+                                                <div class="form-group">
+                                                    <label for="" class="col-sm-2 control-label">Nội dung </label>
+                                                    <div class="col-sm-9">
+                                                        <textarea name="about_content" class="form-control" cols="30" rows="10" id="editor1">
+                                                            '.$i['about_content'].'
+                                                        </textarea>
+                                                    </div>
+                                                </div>
+
+                                                <input type="hidden" name="id" value="'.$i['id'].'">
+                                            ';
+                                    }
+                                }
+
+                                        echo '<div class="form-group">
+                                                <label for="" class="col-sm-2 control-label"></label>
+                                                <div class="col-sm-6">
+                                                    <button type="submit" class="btn btn-success pull-left" name="form_about">Cập nhật</button>
+                                                </div>
+                                            </div>'; 
+                                echo form_close();
+                            ?>
+
+                            <?php echo form_open(base_url().'admin/page/update/',array('class' => 'form-horizontal'));  // update cho bản ghi có id = 2. bảng tbl_page_about
+                                    foreach($page_about as $i)
+                                    {
+                                        if($i['lang'] == 'en') 
+                                        {
+                                            echo '<div class="form-group">
+                                                        <label for="" class="col-sm-2 control-label">Heading </label>
+                                                        <div class="col-sm-6">
+                                                            <input type="text" name="about_heading" class="form-control" value="'.$i['about_heading'].'">
+                                                        </div>
+                                                    </div>
+
+                                    
+                                                    <div class="form-group">
+                                                        <label for="" class="col-sm-2 control-label">Content</label>
+                                                        <div class="col-sm-9">
+                                                            <textarea name="about_content" class="form-control" cols="30" rows="10" id="editor2">
+                                                                '.$i['about_content'].'
+                                                            </textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <input type="hidden"  name="id" value="'.$i['id'].'">
+                                                ';
+                                        }
+                                    }
+
+                                    echo '<div class="form-group">
+                                            <label for="" class="col-sm-2 control-label"></label>
+                                            <div class="col-sm-6">
+                                                <button type="submit" class="btn btn-success pull-left" name="form_about">Update</button>
+                                            </div>
+                                        </div>'; 
+                                echo form_close();
+                            ?>
+                            <?php echo form_open(base_url().'admin/page/update/',array('class' => 'form-horizontal'));  // update cho bản ghi có id = 3. bảng tbl_page_about
+                                    foreach($page_about as $i)
+                                    {
+                                        if($i['lang'] == 'kr') 
+                                        {
+                                            echo '<div class="form-group">
+                                                        <label for="" class="col-sm-2 control-label">과일을 </label>
+                                                        <div class="col-sm-6">
+                                                            <input type="text" name="about_heading" class="form-control" value="'.$i['about_heading'].'">
+                                                        </div>
+                                                    </div>
+
+                                    
+                                                    <div class="form-group">
+                                                        <label for="" class="col-sm-2 control-label">과일을</label>
+                                                        <div class="col-sm-9">
+                                                            <textarea name="about_content" class="form-control" cols="30" rows="10" id="editor3">
+                                                                '.$i['about_content'].'
+                                                            </textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <input type="hidden" name="id" value="'.$i['id'].'">
+                                                ';
+                                        }
+                                    }
+
+                                    echo '<div class="form-group">
+                                            <label for="" class="col-sm-2 control-label"></label>
+                                            <div class="col-sm-6">
+                                                <button type="submit" class="btn btn-success pull-left" name="form_about">과일을</button>
+                                            </div>
+                                        </div>'; 
+                                    echo form_close();
+                            ?>
+                            
+                                <!-- <div class="form-group">
+                                    <label for="" class="col-sm-2 control-label">Nội dung </label>
+                                    
+                                    <div class="col-sm-9">
+                                        <textarea name="about_content" class="form-control" cols="30" rows="10" id="editor1"><?php if($page_about['lang'] == 'en') {echo $page_about['about_content'];} ?></textarea>
                                     </div>
+                                  
                                 </div>
+
                                 <div class="form-group">
                                     <label for="" class="col-sm-2 control-label">Nội dung </label>
+                                    
                                     <div class="col-sm-9">
-                                        <textarea name="about_content" class="form-control" cols="30" rows="10" id="editor1"><?php echo $page_about['about_content']; ?></textarea>
+                                        <textarea name="about_content" class="form-control" cols="30" rows="10" id="editor1"><?php if($page_about['lang'] == 'kr') {echo $page_about['about_content'];} ?></textarea>
                                     </div>
-                                </div>
+                                  
+                                </div> -->
+
+
+
                                 <!-- <div class="form-group">
                                     <label for="" class="col-sm-2 control-label">Mô tả tiêu đề</label>
                                     <div class="col-sm-9">
@@ -688,17 +802,17 @@ if(!$this->session->userdata('id')) {
                                         <textarea class="form-control" name="md_about" style="height:60px;"><?php echo $page_about['md_about']; ?></textarea>
                                     </div>
                                 </div>   -->
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label for="" class="col-sm-2 control-label"></label>
                                     <div class="col-sm-6">
                                         <button type="submit" class="btn btn-success pull-left" name="form_about">Cập nhật</button>
                                     </div>
-                                </div>                              
-                            <?php echo form_close(); ?>
+                                </div>                               -->
+                            <!-- <?php #echo form_close(); ?> -->
                         </div>
 
                         <?php echo form_open_multipart(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label for="" class="col-sm-2 control-label">Hình ảnh giới thiệu</label>
                                     <div class="col-sm-6" style="padding-top:6px;">
                                         <img src="<?php echo base_url().'public/uploads/'.$page_about['home_about_photo'];?>" class="existing-photo" style="height:180px;">
@@ -715,8 +829,8 @@ if(!$this->session->userdata('id')) {
                                     <div class="col-sm-6">
                                         <button type="submit" class="btn btn-success pull-left" name="form_home_aboutus_photo">Cập nhật</button>
                                     </div>
-                                </div>
-                            <?php echo form_close(); ?>
+                                </div> -->
+                        <?php echo form_close(); ?>
                         
 
                         <!-- <div class="tab-pane" id="tab_4">

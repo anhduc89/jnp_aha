@@ -89,7 +89,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url','file','form','html');
+$autoload['helper'] = array('url','file','form','html','language');
 
 /*
 | -------------------------------------------------------------------
@@ -101,7 +101,7 @@ $autoload['helper'] = array('url','file','form','html');
 |
 | NOTE: This item is intended for use ONLY if you have created custom
 | config files.  Otherwise, leave it blank.
-|
+| 
 */
 $autoload['config'] = array();
 
