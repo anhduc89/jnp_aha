@@ -101,7 +101,7 @@
         <h6 class="section-title text-center">Sản phẩm chính</h6>
         <h6 class="section-subtitle mb-5 text-center"><a href="#">Xem thêm các sản phẩm khác</a></h6>
         <div class="filters">
-            <a href="#" data-filter=".new" class="active">
+            <a href="#" data-filter=".all" class="active">
                 Tất cả
             </a>
             <?php
@@ -114,80 +114,61 @@
             ?>
         </div>
 
-        <div class="portfolio-container"> 
-                  
+        <?php
+            $portfolioCategories = [];
+        ?>
+        <div class="portfolio-container">
+            <div class="lds-hourglass"></div>
+            <div class="portfolio-list owl-carousel all">
             <?php
                 foreach($home__products_portfolio as $item ) // chỗ này sẽ show ra sản phẩm mới nhất, hoặc sản phẩm bán chạy.
                 {
-                    echo ' <div class="col-md-6 col-lg-4 web new">
-                        <div class="portfolio-item">
-                            <img src="'.base_url().'public/uploads/'.$item['photo'].'" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
-                                <div class="text-holder">
+                    $view = $this->view('page/template_part/home_products_portfolio', [
+                        'category_id' => $item['category_id'],
+                        'photo' => $item['photo'],
+                        'name' => $item['name'],
+                        'short_content' => $item['short_content'],
+                    ], true);
+                    $portfolioCategories[$item['category_id']][] = $view;
 
-                                    <h6 class="title"><a href="#">'. $item['name'].'</a></h6>
-                                    <p class="subtitle"><a href="#">'. $item['short_content'].'</a></p>
-                                </div>
-                            </div>   
-                        </div>             
-                    </div>';
+                    echo $view;
                 }
             ?>
+            </div>
 
             <?php
-                foreach($home__products_portfolio as $item ) // chỗ này sẽ show ra sản phẩm mới nhất, hoặc sản phẩm bán chạy.
+            foreach($portfolioCategories as $id => $views )
+            {
+                echo '<div class="portfolio-list owl-carousel '.$id.'">';
+                foreach($views as $view )
                 {
-                    echo ' <div class="col-md-6 col-lg-4 '.$item['category_id'].'">
-                        <div class="portfolio-item">
-                            <img src="'.base_url().'public/uploads/'.$item['photo'].'" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                            <div class="content-holder">
-                                <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
-                                <div class="text-holder">
-
-                                    <h6 class="title"><a href="#">'. $item['name'].'</a></h6>
-                                    <p class="subtitle"><a href="#">'. $item['short_content'].'</a></p>
-                                </div>
-                            </div>   
-                        </div>             
-                    </div>';
+                    echo $view;
                 }
-                
-            
+                echo '</div>';
+            }
             ?>
-            <!-- <div class="col-md-6 col-lg-4 web new">
-                <div class="portfolio-item">
-                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/web-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
-                    <div class="content-holder">
-                        <a class="img-popup" href="<?php echo base_url()?>public/jnp_assets/imgs/web-2.jpg"></a>
-                        <div class="text-holder">
-                            <h6 class="title"><a href="#">BRANDING</a></h6>
-                            <p class="subtitle"><a href="#">Expedita corporis doloremque velit in totam!</a></p>
-                        </div>
-                    </div> 
-                </div>                         
-            </div>  -->
-        </div>   
-    </div>            
+
+            <div class="portfolio-dots owl-dots"></div>
+        </div>
+    </div>
 </section>
 <!-- End of portfolio section -->
 
 <!-- Blog Section -->
-<section class="section" id="blog">
+<section class="section blog-section" id="blog">
     <div class="container">
         <h6 class="section-title mb-0 text-center">Khách hàng của chúng tôi</h6>
         <h6 class="section-subtitle mb-5 text-center">Cảm ơn sự đồng hành của Quý khách hàng với Vina J&P</h6>
 
-        <div class="row">
+        <div class="row owl-carousel customers">
             <?php
                 foreach($clients as $item)
                 {
-                    echo '<div class="col-md-4">
-                            <div class="card border-0 mb-4">
+                    echo '<div class="customer">
+                            <div class="card border-0">
                                 <img src="'.base_url().'public/uploads/'.$item['photo'].'" alt="" class="card-img-top w-100">
-                                <div class="card-body">                         
+                                <div class="card-body">
                                     <h6 class="card-title">'.$item['name'].'</h6>
-                                    
                                 </div>
                             </div>
                         </div>';
@@ -204,6 +185,7 @@
                 </div>
             </div> -->
         </div>
+        <div class="blog-dots owl-dots"></div>
     </div>
 </section>
 <!-- End of Blog Section -->
@@ -306,6 +288,7 @@
                 </form>
             </div>
         </div>
+        
         <!-- Page Footer -->
         <footer class="mt-5 py-4 border-top border-secondary">
             <div class="row">

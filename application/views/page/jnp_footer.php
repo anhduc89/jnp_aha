@@ -8,8 +8,10 @@
     <!-- Isotope -->
     <script src="<?php echo base_url();?>public/jnp_assets/vendors/isotope/isotope.pkgd.js"></script>
 
+    <script src="<?php echo base_url();?>public/js/owl.carousel.min.js"></script>
     <!-- LeadMark js -->
     <script src="<?php echo base_url();?>public/jnp_assets/js/leadmark.js"></script>
 
+    <script src="<?php echo base_url();?>public/jnp_assets/js/leadmark-custom.js"></script>
 </body>
 </html>

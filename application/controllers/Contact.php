@@ -21,9 +21,9 @@ class Contact extends CI_Controller {
 		$data['testimonials'] = $this->Model_contact->all_testimonial();
 		$data['portfolio_footer'] = $this->Model_portfolio->get_portfolio_data();
 
-		$this->load->view('view_header',$data);
-		$this->load->view('view_contact',$data);
-		$this->load->view('view_footer',$data);
+		$this->load->view('page/jnp_header');
+		$this->load->view('page/page_contact',$data);
+		$this->load->view('page/jnp_footer');
 	}
 
 	public function send_email() 
