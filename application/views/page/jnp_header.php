@@ -9,13 +9,15 @@
     <!-- font icons -->
     <link rel="stylesheet" href="<?php echo base_url();?>public/jnp_assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + LeadMark main styles -->
+	<link rel="stylesheet" href="<?php echo base_url();?>public/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/jnp_assets/css/leadmark.css">
+	<link rel="stylesheet" href="<?php echo base_url();?>public/jnp_assets/css/leadmark-custom.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <!-- page Navigation -->
     <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
-        <div class="container">
+        <div class="container-fluid px-0 mx-0">
             <a class="navbar-brand" href="<?php echo base_url();?>">
                 <img src="<?php echo base_url();?>public/jnp_assets/imgs/logo.svg" alt="">
             </a>
@@ -44,9 +46,22 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Liên hệ</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item languages">
                         <!-- <a href="components.html" class="ml-4 nav-link btn btn-primary btn-sm rounded">Components</a> -->
-                        <a class="nav-link" href="#">Ngôn ngữ</a>
+                        <span class="nav-link ti-world"></span>
+                        <div class="language-list">
+                            <ul>
+                                <li class="language-item">
+                                    <a href="#" class="lang-1">English</a>
+                                </li>
+                                <li class="language-item">
+                                    <a href="#" class="lang-2">Korea</a>
+                                </li>
+                                <li class="language-item active">
+                                    <a href="#" class="lang-3">VN</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
