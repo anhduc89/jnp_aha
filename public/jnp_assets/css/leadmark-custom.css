@@ -383,12 +383,16 @@
     }
 }
 
-/* @media only screen and (min-width: 320px){
+.container {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+@media only screen and (max-width: 1200px){
     .container {
         max-width: unset;
     }
-} */
-
+}
 
 /* Contact Page Start */
 .contact-page .display-1 {
@@ -572,7 +576,7 @@
     object-fit: cover;
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1200px) {
     .contact-page .bg-container {
         left: calc((100% - 1140px) / 2);
     }

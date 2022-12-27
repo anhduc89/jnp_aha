@@ -4570,7 +4570,7 @@ input[type="button"].btn-block {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 0;
 }
 
 .navbar > .container,
