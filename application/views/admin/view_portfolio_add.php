@@ -88,7 +88,7 @@ if(!$this->session->userdata('id')) {
 							<div class="col-sm-4">
 								<input type="text" autocomplete="off" class="form-control" name="website" value="<?php if(isset($_POST['website'])){echo $_POST['website'];} ?>">
 							</div>
-						</div> -->
+						</div> 
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Giá cả</label>
 							<div class="col-sm-4">
@@ -100,7 +100,7 @@ if(!$this->session->userdata('id')) {
 							<div class="col-sm-8">
 								<textarea class="form-control" name="client_comment" style="height:250px;"><?php if(isset($_POST['client_comment'])){echo $_POST['client_comment'];} ?></textarea>
 							</div>
-						</div>
+						</div>  -->
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Danh mục sản phẩm *</label>
 							<div class="col-sm-4">
@@ -165,7 +165,7 @@ if(!$this->session->userdata('id')) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label"></label>
 							<div class="col-sm-6">
-								<button type="submit" class="btn btn-success pull-left" name="form1">Submit</button>
+								<button type="submit" class="btn btn-success pull-left" name="form1">Thêm mới</button>
 							</div>
 						</div>
 

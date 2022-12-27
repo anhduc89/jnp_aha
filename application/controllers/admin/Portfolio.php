@@ -72,18 +72,18 @@ class Portfolio extends CI_Controller
 					'name'             => $_POST['name'],
 					'short_content'    => $_POST['short_content'],
 					'content'          => $_POST['content'],
-					'client_name'      => $_POST['client_name'],
-					'client_company'   => $_POST['client_company'],
-					'start_date'       => $_POST['start_date'],
-					'end_date'         => $_POST['end_date'],
-					'website'          => $_POST['website'],
-					'cost'             => $_POST['cost'],
-					'client_comment'   => $_POST['client_comment'],
+					// 'client_name'      => $_POST['client_name'],
+					// 'client_company'   => $_POST['client_company'],
+					// 'start_date'       => $_POST['start_date'],
+					// 'end_date'         => $_POST['end_date'],
+					// 'website'          => $_POST['website'],
+					// 'cost'             => $_POST['cost'],
+					// 'client_comment'   => $_POST['client_comment'],
 					'category_id'      => $_POST['category_id'],
 					'photo'            => $final_name,
-					'meta_title'       => $_POST['meta_title'],
-					'meta_keyword'     => $_POST['meta_keyword'],
-					'meta_description' => $_POST['meta_description']
+					// 'meta_title'       => $_POST['meta_title'],
+					// 'meta_keyword'     => $_POST['meta_keyword'],
+					// 'meta_description' => $_POST['meta_description']
 	            );
 	            $this->Model_portfolio->add($form_data);
 

@@ -15,7 +15,7 @@ class Portfolio_category extends CI_Controller
 		$data['setting'] = $this->Model_common->get_setting_data();
 
 		$data['portfolio_category'] = $this->Model_portfolio_category->show();
-
+		# echo "<pre>"; print_r($data['portfolio_category']); exit;
 		$this->load->view('admin/view_header',$data);
 		$this->load->view('admin/view_portfolio_category',$data);
 		$this->load->view('admin/view_footer');
@@ -43,8 +43,9 @@ class Portfolio_category extends CI_Controller
 		    {
 				
 		        $form_data = array(
-					'category_name'=> $_POST['category_name'],
-					'status'       => $_POST['status']
+					'category_name'	=> $_POST['category_name'],
+					'status'       	=> $_POST['status'],
+					'lang'       	=> $_POST['lang']
 	            );
 	            $this->Model_portfolio_category->add($form_data);
 

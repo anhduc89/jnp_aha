@@ -187,7 +187,7 @@
                                 <img src="'.base_url().'public/uploads/'.$item['photo'].'" alt="" class="card-img-top w-100">
                                 <div class="card-body">                         
                                     <h6 class="card-title">'.$item['name'].'</h6>
-                                    
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                                 </div>
                             </div>
                         </div>';

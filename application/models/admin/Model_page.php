@@ -18,15 +18,25 @@ class Model_page extends CI_Model
 
     public function show_about()
     {
-        $query = $this->db->query("SELECT * from tbl_page_about WHERE id=1");
-        return $query->first_row('array');
+        // $query = $this->db->query("SELECT * from tbl_page_about WHERE id=1");
+        //  return $query->first_row('array');
+        $query = $this->db->query("SELECT * from tbl_page_about");
+        return $query->result_array();
+       
     }
 
-    public function update_about($data)
+    // public function update_about($data)
+    // {
+    //     $this->db->where('id',1);
+    //     $this->db->update('tbl_page_about',$data);
+    // }
+    
+    public function update_about($id, $data)
     {
-        $this->db->where('id',1);
+        $this->db->where('id',$id);
         $this->db->update('tbl_page_about',$data);
     }
+
 
     public function show_faq()
     {
