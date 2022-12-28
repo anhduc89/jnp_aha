@@ -17,7 +17,7 @@
 
     <!-- page Navigation -->
     <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
-        <div class="container-fluid px-0 mx-0">
+        <div class="container">
             <a class="navbar-brand" href="<?php echo base_url();?>">
                 <img src="<?php echo base_url();?>public/jnp_assets/imgs/logo.svg" alt="">
             </a>
