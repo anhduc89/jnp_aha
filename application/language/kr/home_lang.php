@@ -5,16 +5,14 @@
     $lang['menu_activities']                   = '작업';
     $lang['slide_welcome']                      = 'Vina J&P에 오신 것을 환영합니다.';
     $lang['slide_content']                      = '우리는 가족입니다';
-    $lang['tab_desc_aboutus_content_1']         = '<h6 class="section-title mb-0">About us</h6>
+    $lang['tab_desc_aboutus_content_1']         = '<h6 class="section-title mb-0">저는 보통 주말에 극장에 가서</h6>
                                                     <h6 class="section-subtitle mb-4">Vina J&P Company</h6>
-                                                    <p> Công ty Vina J&P là công ty liên doanh Việt Nam - Hàn Quốc chuyên sản xuất về các sản phẩm bao bì đóng gói.
-                                                        Được thành lập từ năm 200x, với gần 20 năm kinh nghiệm trong ngành, chúng tôi luôn cố gắng đem đến Quý khách hàng những sản phẩm tốt nhất về lĩnh vực bao bì đóng gói.
+                                                    <p> 제 취미는 영화를 보는 것입니다. 저는 보통 주말에 극장에 가서 영화를 봅니다. 혼자 영화를 볼 때도 있고 친구들과 같이 볼 때도 있습니다. 특히 저는 한국 영화를 좋아합니다. 왜냐하면 한국 영화에는 멋 있는 영화 배우가 많이 나오기 때문입니다. 그리고 한국 영화는 이야기도 재미있습니다. 그래서 저는 한국 영화 보는 것을 좋아합니다.
                                                     </p>';
-    $lang['tab_desc_aboutus_content_2']         = '<p> Chúng tôi cung cấp tất cả các sản phẩm bao bì liên quan đến các lĩnh vực : thực phẩm, y tế, hàng xuất khẩu, linh kiện điện tử ...</p>
-                                                    <p><b>Chúng tôi lựa chọn những nguyên liệu tốt nhất, thân thiện với môi trường.</b><br>
+    $lang['tab_desc_aboutus_content_2']         = '<p> 제 취미는 영화를 보는 것입니다. 저는 보통 주말에 극장에 가서 영화를 봅니다. 혼자 영화를 볼 때도 있고 친구들과 같이 볼 때도 있습니다. 특히 저는 한국 영화를 좋아합니다. 왜냐하면 한국 영화에는 멋 있는 영화 배우가 많이 나오기 때문입니다. 그리고 한국 영화는 이야기도 재미있습니다. 그래서 저는 한국 영화 보는 것을 좋아합니다.</p>
+                                                    <p><b>왜냐하면 한국 영화에는 멋 있는 영화 배우가 많이 나오기 때문입니다. 그리고 한국 영화는 이야기도 재미있습니다.</b><br>
                                                     </p>
-                                                    <p>Với những sản phẩm của mình, chúng tôi đã có được sự tin tưởng của các khách hàng lớn như : Samsung, LG, Hundai, ...
-                                                        cùng với những thành tựu đã đạt được, chúng tôi vẫn luôn tâm niệm cố gắng hết sức, cải tiến kĩ thuật để có những sản phẩm chất lượng tốt nhất đem đến Quý khách hàng.
+                                                    <p>제 취미는 영화를 보는 것입니다. 저는 보통 주말에 극장에 가서 영화를 봅니다. 혼자 영화를 볼 때도 있고 친구들과 같이 볼 때도 있습니다. 특히 저는 한국 영화를 좋아합니다. 왜냐하면 한국 영화에는 멋 있는 영화 배우가 많이 나오기 때문입니다. 그리고 한국 영화는 이야기도 재미있습니다. 그래서 저는 한국 영화 보는 것을 좋아합니다.
                                                     </p>';
     $lang['tab_img_company']                    = '회사의 얼굴';
     $lang['tab_img_company_slogan']             = 'Một tập thể gắn kết';

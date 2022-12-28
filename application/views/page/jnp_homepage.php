@@ -103,14 +103,8 @@
         <h6 class="section-title text-center"><?php echo $this->lang->line('tab_products');?></h6>
         <h6 class="section-subtitle mb-5 text-center"><a href="#"><?php echo $this->lang->line('tab_products_showmore');?></a></h6>
         <div class="filters">
-<<<<<<< HEAD
             <a href="#" data-filter=".all" class="active">
-                <?php echo $this->lang->line('tab_products_all_product');?>
-=======
-            <a href="#" data-filter=".new" class="active">
-                Tất cả
->>>>>>> a01ef6c58622dc1f7622760d70a0fc1ba7c6de1d
-            </a>
+                <?php echo $this->lang->line('tab_products_all_product');?>           
             <?php
                 foreach($home_categories_portfolio as $item )
                 {
@@ -143,6 +137,26 @@
             ?>
 
             <?php
+                foreach($home__products_portfolio as $item ) // chỗ này sẽ show ra sản phẩm mới nhất, hoặc sản phẩm bán chạy. Lấy ra limit tầm 8 sản phẩm
+                {
+                    echo ' <div class="col-md-6 col-lg-4 all">
+                        <div class="portfolio-item">
+                            <img src="'.base_url().'public/uploads/'.$item['photo'].'" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
+                                <div class="text-holder">
+
+                                    <h6 class="title"><a href="#">'. $item['name'].'</a></h6>
+                                    <p class="subtitle"><a href="#">'. $item['short_content'].'</a></p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>';
+                }
+            ?>
+
+
+            <?php
                 foreach($home__products_portfolio as $item ) // chỗ này sẽ show ra sản phẩm mới nhất, hoặc sản phẩm bán chạy.
                 {
                     echo ' <div class="col-md-6 col-lg-4 '.$item['category_id'].'">
@@ -159,8 +173,6 @@
                         </div>             
                     </div>';
                 }
-                
-            
             ?>
             <!-- <div class="col-md-6 col-lg-4 web new">
                 <div class="portfolio-item">
