@@ -48,25 +48,26 @@ $( document ).ready(function() {
         }
     }
 
+    // // protfolio filters
+    // var $productFilterList = $('.section.portfolio-section .filters');
+    // var $productPortfolioContainer = $(".section.portfolio-section .portfolio-container");
+    // var $activeTab = $productFilterList.find('a.active');
+    // portfolioCarousel($activeTab, $productPortfolioContainer);
+    
+    // $productFilterList.find('a').on('click', function(e) {
+    //     e.preventDefault();
+    //     $productFilterList.find('.active').removeClass("active");
+    //     $(this).addClass("active");
+
+    //     portfolioCarousel($(this), $productPortfolioContainer);
+    // });
+
+    
     // for scroll to section at header
     $('.header .mouse-icon').on('click', function() {
         $('html, body').animate({
             scrollTop: $("#about").offset().top - 50
         }, 500);
-    });
-
-    // protfolio filters
-    var $productFilterList = $('.section.portfolio-section .filters');
-    var $productPortfolioContainer = $(".section.portfolio-section .portfolio-container");
-    var $activeTab = $productFilterList.find('a.active');
-    portfolioCarousel($activeTab, $productPortfolioContainer);
-    
-    $productFilterList.find('a').on('click', function(e) {
-        e.preventDefault();
-        $productFilterList.find('.active').removeClass("active");
-        $(this).addClass("active");
-
-        portfolioCarousel($(this), $productPortfolioContainer);
     });
 
     // slider for customers section

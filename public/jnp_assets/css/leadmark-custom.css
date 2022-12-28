@@ -394,37 +394,81 @@
     }
 }
 
-/* Contact Page Start */
+
+
+/* Banner Start */
+.contact-page .bg-hero {
+    position: relative;
+    padding: 0;
+    padding-bottom: calc(100% * 650/ 1600) !important;
+    min-height: 400px;
+    background-size: contain;
+}
+
+.contact-page .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-page .bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-page .bg-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .contact-page .display-1 {
     font-weight: 700;
     font-size: 5rem;
 }
 
-.contact-page .bg-hero {
-    background-size: contain;
-    background-color: var(--secondary);
+@media only screen and (min-width: 1200px) {
+    .contact-page .bg-container {
+        left: calc((100% - 1140px) / 2);
+    }
 }
 
+@media (max-width: 991.98px) {
+    .contact-page .bg-hero {
+        background-size: cover;
+    }
+}
+/* Banner End */
+
+
+/* Contact Page Start */
 .contact-page .contact-item {
     background-size: cover;
     transition: .5s;
     background-color: var(--primary);
     height: 100%;
+    border: 1px solid red;
+    background-color: #fff;
 }
 
 .contact-page .contact-item:hover {
     background-size: cover;
-    background-color: var(--success);
+    /* background-color: var(--success); */
 }
 
 .contact-page .contact-item .contact-icon {
     margin-top: -50px;
     width: 100px;
     height: 100px;
-    color: var(--primary);
+    color: var(--success);
     background: #fff;
     transform: rotate(-45deg);
-    color: #fff;
+    /* color: #fff; */
+    border-left: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
 }
 
 .contact-page .contact-item .contact-icon div {
@@ -434,7 +478,9 @@
     align-items: center;
     justify-content: center;
     background: var(--success);
+    background: transparent;
     transition: .5s;
+    border: 1px solid var(--primary);
 }
 
 .contact-page .contact-item .contact-icon .icon {
@@ -446,10 +492,14 @@
 
 .contact-page .contact-item:hover .contact-icon div {
     background: var(--primary);
+    background: transparent;
+    border: 1px solid var(--primary);
+    /* border: 1px solid var(--success); */
 }
 
 .contact-page .contact-item:hover .contact-icon .icon {
     color: var(--success);
+    /* color: var(--primary); */
 }
 
 .contact-page .contact-form {
@@ -529,6 +579,7 @@
 .contact-page .contact-item h4 {
     font-weight: 700;
     color: #fff;
+    color: var(--success);
 }
 
 .contact-page .contact-form textarea:focus-visible,
@@ -543,49 +594,10 @@
     box-shadow: 0 0 0 0.2rem rgb(255 110 66 / 25%);
 }
 
-.contact-page .bg-hero {
-    position: relative;
-    padding: 0;
-    padding-bottom: calc(100% * 650/ 1600) !important;
-    min-height: 450px;
-}
-
-.contact-page .bg-container {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 .contact-page .btn-sendmail {
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 700;
-}
-
-.contact-page .bg-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.contact-page .bg-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-@media only screen and (min-width: 1200px) {
-    .contact-page .bg-container {
-        left: calc((100% - 1140px) / 2);
-    }
-}
-
-@media (max-width: 991.98px) {
-    .contact-page .bg-hero {
-        background-size: cover;
-    }
 }
 
 @media only screen and (max-width: 767.98px) {

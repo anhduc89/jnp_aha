@@ -101,7 +101,7 @@
         <h6 class="section-title text-center">Sản phẩm chính</h6>
         <h6 class="section-subtitle mb-5 text-center"><a href="#">Xem thêm các sản phẩm khác</a></h6>
         <div class="filters">
-            <a href="#" data-filter=".all" class="active">
+            <a href="#" data-filter=".new" class="active">
                 Tất cả
             </a>
             <?php
@@ -114,43 +114,61 @@
             ?>
         </div>
 
-        <?php
-            $portfolioCategories = [];
-        ?>
-        <div class="portfolio-container">
-            <div class="lds-hourglass"></div>
-            <div class="portfolio-list owl-carousel all">
+        <div class="portfolio-container"> 
+                  
             <?php
                 foreach($home__products_portfolio as $item ) // chỗ này sẽ show ra sản phẩm mới nhất, hoặc sản phẩm bán chạy.
                 {
-                    $view = $this->view('page/template_part/home_products_portfolio', [
-                        'category_id' => $item['category_id'],
-                        'photo' => $item['photo'],
-                        'name' => $item['name'],
-                        'short_content' => $item['short_content'],
-                    ], true);
-                    $portfolioCategories[$item['category_id']][] = $view;
+                    echo ' <div class="col-md-6 col-lg-4 web new">
+                        <div class="portfolio-item">
+                            <img src="'.base_url().'public/uploads/'.$item['photo'].'" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
+                                <div class="text-holder">
 
-                    echo $view;
+                                    <h6 class="title"><a href="#">'. $item['name'].'</a></h6>
+                                    <p class="subtitle"><a href="#">'. $item['short_content'].'</a></p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>';
                 }
             ?>
-            </div>
 
             <?php
-            foreach($portfolioCategories as $id => $views )
-            {
-                echo '<div class="portfolio-list owl-carousel '.$id.'">';
-                foreach($views as $view )
+                foreach($home__products_portfolio as $item ) // chỗ này sẽ show ra sản phẩm mới nhất, hoặc sản phẩm bán chạy.
                 {
-                    echo $view;
-                }
-                echo '</div>';
-            }
-            ?>
+                    echo ' <div class="col-md-6 col-lg-4 '.$item['category_id'].'">
+                        <div class="portfolio-item">
+                            <img src="'.base_url().'public/uploads/'.$item['photo'].'" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
+                                <div class="text-holder">
 
-            <div class="portfolio-dots owl-dots"></div>
-        </div>
-    </div>
+                                    <h6 class="title"><a href="#">'. $item['name'].'</a></h6>
+                                    <p class="subtitle"><a href="#">'. $item['short_content'].'</a></p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>';
+                }
+                
+            
+            ?>
+            <!-- <div class="col-md-6 col-lg-4 web new">
+                <div class="portfolio-item">
+                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/web-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                    <div class="content-holder">
+                        <a class="img-popup" href="<?php echo base_url()?>public/jnp_assets/imgs/web-2.jpg"></a>
+                        <div class="text-holder">
+                            <h6 class="title"><a href="#">BRANDING</a></h6>
+                            <p class="subtitle"><a href="#">Expedita corporis doloremque velit in totam!</a></p>
+                        </div>
+                    </div> 
+                </div>                         
+            </div>  -->
+        </div>   
+    </div>            
 </section>
 <!-- End of portfolio section -->
 
