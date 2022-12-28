@@ -53,6 +53,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'JnpHome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = TRUE;
+$route['^en/(.+)$'] = "$1";
+$route['^kr/(.+)$'] = "$1";
+$route['^vn/(.+)$'] = "$1";
+
+// '/en' and '/fr' URIs -> use default controller
+
+$route['^en$'] = $route['default_controller'];
+$route['^kr$'] = $route['default_controller'];
+$route['^vn$'] = $route['default_controller'];
+
 
 $route['team-member/(:num)'] = 'team-member/view/$1';
 $route['category/(:num)'] = 'category/index/$1';

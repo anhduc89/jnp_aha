@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 
-$config['base_url'] = 'http://localhost/jnp_aha/';
+$config['base_url'] = 'http://localhost:8080/jnp_aha/';
 
 /*
 |--------------------------------------------------------------------------
@@ -102,7 +102,7 @@ $config['charset'] = 'UTF-8';
 | setting this variable to TRUE (boolean).  See the user guide for details.
 |
 */
-$config['enable_hooks'] = FALSE;
+$config['enable_hooks'] = TRUE; //FALSE;
 
 /*
 |--------------------------------------------------------------------------

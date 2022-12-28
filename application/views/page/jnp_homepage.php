@@ -1,8 +1,8 @@
 <!-- Page Header -->
 <header class="header">
-    <div class="overlay">
-        <h1 class="subtitle">Welcome to Vina J&P Company</h1>
-        <h1 class="title">We Are Family</h1>  
+    <div class="overlay"> 
+        <h1 class="subtitle"><?php echo $this->lang->line('slide_welcome');?></h1>
+        <h1 class="title"><?php echo $this->lang->line('slide_content');?></h1>  
     </div>  
     <div class="shape">
         <svg viewBox="0 0 1500 200">
@@ -20,11 +20,12 @@
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
-                <h6 class="section-title mb-0">Về chúng tôi</h6>
+                <!-- <h6 class="section-title mb-0">Về chúng tôi</h6>
                 <h6 class="section-subtitle mb-4">Vina J&P Company</h6>
                 <p> Công ty Vina J&P là công ty liên doanh Việt Nam - Hàn Quốc chuyên sản xuất về các sản phẩm bao bì đóng gói.
                     Được thành lập từ năm 200x, với gần 20 năm kinh nghiệm trong ngành, chúng tôi luôn cố gắng đem đến Quý khách hàng những sản phẩm tốt nhất về lĩnh vực bao bì đóng gói.
-                </p>
+                </p> -->
+                <?php echo $this->lang->line('tab_desc_aboutus_content_1');?>
                 <img src="<?php echo base_url();?>public/jnp_assets/imgs/about.jpg" alt="" class="w-100 mt-3 shadow-sm">
             </div>
             <div class="col-md-6 pl-md-5">
@@ -36,12 +37,13 @@
                         <img src="<?php echo base_url();?>public/jnp_assets//imgs/about-2.jpg" alt="" class="w-100 shadow-sm">
                     </div>
                     <div class="col-12 mt-4">
-                        <p> Chúng tôi cung cấp tất cả các sản phẩm bao bì liên quan đến các lĩnh vực : thực phẩm, y tế, hàng xuất khẩu, linh kiện điện tử ...</p>
+                        <?php echo $this->lang->line('tab_desc_aboutus_content_2');?>
+                        <!-- <p> Chúng tôi cung cấp tất cả các sản phẩm bao bì liên quan đến các lĩnh vực : thực phẩm, y tế, hàng xuất khẩu, linh kiện điện tử ...</p>
                         <p><b>Chúng tôi lựa chọn những nguyên liệu tốt nhất, thân thiện với môi trường.</b><br>
                         </p>
                         <p>Với những sản phẩm của mình, chúng tôi đã có được sự tin tưởng của các khách hàng lớn như : Samsung, LG, Hundai, ...
                             cùng với những thành tựu đã đạt được, chúng tôi vẫn luôn tâm niệm cố gắng hết sức, cải tiến kĩ thuật để có những sản phẩm chất lượng tốt nhất đem đến Quý khách hàng.
-                        </p>
+                        </p> -->
                     </div>
                 </div>
             </div>
@@ -53,9 +55,9 @@
 <!-- Service Section -->
 
 <section  id="service" class="section pt-0">
-    <div class="container">
-        <h6 class="section-title text-center">Hình ảnh của công ty</h6>
-        <h6 class="section-subtitle text-center mb-5 pb-3">Một tập thể gắn kết</h6>
+    <div class="container"> 
+        <h6 class="section-title text-center"><?php echo $this->lang->line('tab_img_company');?></h6>
+        <h6 class="section-subtitle text-center mb-5 pb-3"><?php echo $this->lang->line('tab_img_company_slogan');?></h6>
 
         <div class="row">
             <div class="col-md-4">
@@ -98,11 +100,11 @@
 <!-- Portfolio Section -->
 <section id="portfolio" class="section portfolio-section">
     <div class="container">
-        <h6 class="section-title text-center">Sản phẩm chính</h6>
-        <h6 class="section-subtitle mb-5 text-center"><a href="#">Xem thêm các sản phẩm khác</a></h6>
+        <h6 class="section-title text-center"><?php echo $this->lang->line('tab_products');?></h6>
+        <h6 class="section-subtitle mb-5 text-center"><a href="#"><?php echo $this->lang->line('tab_products_showmore');?></a></h6>
         <div class="filters">
             <a href="#" data-filter=".all" class="active">
-                Tất cả
+                <?php echo $this->lang->line('tab_products_all_product');?>
             </a>
             <?php
                 foreach($home_categories_portfolio as $item )
@@ -157,8 +159,8 @@
 <!-- Blog Section -->
 <section class="section blog-section" id="blog">
     <div class="container">
-        <h6 class="section-title mb-0 text-center">Khách hàng của chúng tôi</h6>
-        <h6 class="section-subtitle mb-5 text-center">Cảm ơn sự đồng hành của Quý khách hàng với Vina J&P</h6>
+        <h6 class="section-title mb-0 text-center"><?php echo $this->lang->line('tab_customers');?></h6>
+        <h6 class="section-subtitle mb-5 text-center"><?php echo $this->lang->line('tab_customers_slogan');?></h6>
 
         <div class="row owl-carousel customers">
             <?php
@@ -169,10 +171,7 @@
                                 <img src="'.base_url().'public/uploads/'.$item['photo'].'" alt="" class="card-img-top w-100">
                                 <div class="card-body">
                                     <h6 class="card-title">'.$item['name'].'</h6>
-<<<<<<< HEAD
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-=======
->>>>>>> 59731d92bba94aaeb3d50462e3a6cf12d566fb44
                                 </div>
                             </div>
                         </div>';
@@ -197,8 +196,8 @@
 <!-- Testmonial Section -->
 <section class="section" id="testmonial">
     <div class="container">
-        <h6 class="section-title text-center mb-0">Sự tin tưởng của khách hàng</h6>
-        <h6 class="section-subtitle mb-5 text-center">Chất lượng sản phẩm là uy tín của Vina J&P</h6>
+        <h6 class="section-title text-center mb-0"><?php echo $this->lang->line('tab_comment');?></h6>
+        <h6 class="section-subtitle mb-5 text-center"><?php echo $this->lang->line('tab_comment_slogan');?></h6>
         <div class="row">
             <?php
                 foreach($testimonials as $item)
@@ -258,35 +257,35 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-5 my-3">
-                <h6 class="mb-0">Phone</h6>
+                <h6 class="mb-0"><?php echo $this->lang->line('tab_contact_phone');?></h6>
                 <p class="mb-4">+ 123-456-7890</p>
 
-                <h6 class="mb-0">Địa chỉ</h6>
+                <h6 class="mb-0"><?php echo $this->lang->line('tab_contact_address');?></h6>
                 <p class="mb-4">Khu công nghiệp Bảo Đà - P. Dữu Lâu - Tp Việt Trì - Phú Thọ</p>
 
-                <h6 class="mb-0">Email</h6>
+                <h6 class="mb-0"><?php echo $this->lang->line('tab_contact_email');?></h6>
                 <p class="mb-0">jpvina.co.ltd@gmail.com</p>
                 <p></p>
             </div>
             <div class="col-md-7">
                 <form>
-                    <h4 class="mb-4">Liên hệ với chúng tôi</h4>
+                    <h4 class="mb-4"><?php echo $this->lang->line('tab_contact');?></h4>
                     <div class="form-row">
                         <div class="form-group col-sm-4">
-                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="Họ tên">
+                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="<?php echo $this->lang->line('frm_contact_name');?>">
                         </div>
                         <div class="form-group col-sm-4">
-                            <input type="email" class="form-control text-white rounded-0 bg-transparent" name="Email" placeholder="Email">
+                            <input type="email" class="form-control text-white rounded-0 bg-transparent" name="Email" placeholder="<?php echo $this->lang->line('frm_contact_email');?>">
                         </div>
                         <div class="form-group col-sm-4">
-                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="subject" placeholder="Tiêu đề">
+                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="subject" placeholder="<?php echo $this->lang->line('frm_contact_subject');?>">
                         </div>
                         <div class="form-group col-12">
-                            <textarea name="message" id="" cols="30" rows="6" class="form-control text-white rounded-0 bg-transparent" placeholder="Tin nhắn"></textarea>
+                            <textarea name="message" id="" cols="30" rows="6" class="form-control text-white rounded-0 bg-transparent" placeholder="<?php echo $this->lang->line('frm_contact_message');?>"></textarea>
 
                         </div>
                         <div class="form-group col-12 mb-0">
-                            <button type="submit" class="btn btn-primary rounded w-md mt-3">Gửi phản hồi</button>
+                            <button type="submit" class="btn btn-primary rounded w-md mt-3"><?php echo $this->lang->line('frm_contact_btnsubmit');?></button>
                         </div>                          
                     </div>                          
                 </form>

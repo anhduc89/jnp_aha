@@ -27,38 +27,45 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">   
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Về chúng tôi</a>
+                        <a class="nav-link" href="#about"> <?php echo $this->lang->line('menu_aboutus');?> </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#service">Hoạt động</a>
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="#service"> <?php echo $this->lang->line('menu_activities');?> </a>
                     </li>
 
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Sản phẩm</a> 
+                        <a class="nav-link" href="#portfolio"> <?php echo $this->lang->line('menu_product');?> </a> 
                     </li>
                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><?php echo $this->lang->line('menu_contact');?></a>
+                    </li>
                     
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="#blog">Blog</a>
                     </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Liên hệ</a>
-                    </li>
+                   
                     <li class="nav-item languages">
                         <!-- <a href="components.html" class="ml-4 nav-link btn btn-primary btn-sm rounded">Components</a> -->
                         <span class="nav-link ti-world"></span>
                         <div class="language-list">
+                            <?php 
+                                $lang = $this->uri->segment(1);
+                            ?>
                             <ul>
-                                <li class="language-item">
-                                    <a href="#" class="lang-1">English</a>
+
+                                <li class="language-item <?php if($lang == 'vn') echo 'active';?>">
+                                    <a href="<?=base_url().'vn'?>" class="lang-3">Vietnamese</a>
                                 </li>
-                                <li class="language-item">
-                                    <a href="#" class="lang-2">Korea</a>
+
+                                <li class="language-item <?php if($lang == 'kr') echo 'active';?>">
+                                    <a href="<?=base_url().'kr'?>" class="lang-2">Korean</a>
                                 </li>
-                                <li class="language-item active">
-                                    <a href="#" class="lang-3">VN</a>
+                                
+                                <li class="language-item <?php if($lang == 'en') echo 'active';?>">
+                                    <a href="<?=base_url().'en'?>" class="lang-1">English</a>
                                 </li>
                             </ul>
                         </div>
