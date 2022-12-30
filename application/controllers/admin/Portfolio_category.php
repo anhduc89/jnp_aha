@@ -107,7 +107,8 @@ class Portfolio_category extends CI_Controller
 		    {
 	    		$form_data = array(
 					'category_name'=> $_POST['category_name'],
-					'status'       => $_POST['status']
+					'status'       => $_POST['status'],
+					'lang'         => $_POST['lang']
 	            );
 	            $this->Model_portfolio_category->update($id,$form_data);
 				

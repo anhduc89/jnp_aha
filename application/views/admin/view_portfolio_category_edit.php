@@ -41,7 +41,7 @@ if(!$this->session->userdata('id')) {
 
 	            <div class="box-body">
 	                <div class="form-group">
-	                    <label for="" class="col-sm-2 control-label">Tên chuyên mục *</label>
+	                    <label for="" class="col-sm-2 control-label">Tên danh mục *</label>
 	                    <div class="col-sm-4">
 	                        <input type="text" class="form-control" name="category_name" value="<?php echo $portfolio_category['category_name']; ?>">
 	                    </div>
@@ -52,6 +52,16 @@ if(!$this->session->userdata('id')) {
 			            	<select name="status" class="form-control select2">
 			            		<option value="Active" <?php if($portfolio_category['status']=='Active') {echo 'selected';} ?>>Active</option>
 			            		<option value="Inactive" <?php if($portfolio_category['status']=='Inactive') {echo 'selected';} ?>>Inactive</option>
+			            	</select>
+			            </div>
+			        </div>
+					<div class="form-group">
+			            <label for="" class="col-sm-2 control-label">Ngôn ngữ *</label>
+			            <div class="col-sm-4">
+			            	<select name="lang" class="form-control select2">
+			            		<option value="vn" <?php if($portfolio_category['lang']=='vn') {echo 'selected';} ?>>Vietnamese</option>
+			            		<option value="en" <?php if($portfolio_category['lang']=='en') {echo 'selected';} ?>>English</option>
+								<option value="kr" <?php if($portfolio_category['lang']=='kr') {echo 'selected';} ?>>Korean</option>
 			            	</select>
 			            </div>
 			        </div>

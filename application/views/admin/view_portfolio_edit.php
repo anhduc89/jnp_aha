@@ -57,7 +57,7 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						
-						<div class="form-group">
+						<!-- <div class="form-group">
 							<label for="" class="col-sm-2 control-label">Client Name</label>
 							<div class="col-sm-4">
 								<input type="text" autocomplete="off" class="form-control" name="client_name" value="<?php echo $portfolio['client_name']; ?>">
@@ -98,11 +98,25 @@ if(!$this->session->userdata('id')) {
 							<div class="col-sm-8">
 								<textarea class="form-control" name="client_comment" style="height:250px;"><?php echo $portfolio['client_comment']; ?></textarea>
 							</div>
-						</div>
+						</div> -->
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Select Category *</label>
 							<div class="col-sm-4">
 								<select name="category_id" class="form-control select2">
+									<?php
+									foreach ($all_photo_category as $row) {
+										?>
+										<option value="<?php echo $row['category_id']; ?>" <?php if($row['category_id'] == $portfolio['category_id']) {echo 'selected';} ?>><?php echo $row['category_name']; ?></option>
+										<?php
+									}
+									?>	
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Select language *</label>
+							<div class="col-sm-4">
+								<select name="lang" class="form-control select2">
 									<?php
 									foreach ($all_photo_category as $row) {
 										?>
@@ -168,7 +182,7 @@ if(!$this->session->userdata('id')) {
                                 <input type="button" id="btnAddNew" value="Add Item" style="margin-bottom:10px;border:0;color: #fff;font-size: 14px;border-radius:3px;" class="btn btn-warning btn-xs">
                             </div>
 						</div>
-						<h3 class="seo-info">Thông tin SEO</h3>
+						<!-- <h3 class="seo-info">Thông tin SEO</h3>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Mô tả tiêu đề</label>
 							<div class="col-sm-6">
@@ -186,7 +200,7 @@ if(!$this->session->userdata('id')) {
 							<div class="col-sm-8">
 								<textarea class="form-control" name="meta_description" style="height:100px;"><?php echo $portfolio['meta_description']; ?></textarea>
 							</div>
-						</div>
+						</div> -->
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label"></label>
 							<div class="col-sm-6">
