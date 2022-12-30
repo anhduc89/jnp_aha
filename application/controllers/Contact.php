@@ -8,10 +8,15 @@ class Contact extends CI_Controller {
         $this->load->model('Model_common');
         $this->load->model('Model_contact');
         $this->load->model('Model_portfolio');
+
+		$this->session->set_userdata("lang",$this->uri->segment(1));
     }
 
 	public function index()
 	{
+		$lang =  $this->session->userdata('lang');
+        $this->lang->load('home', $lang == '' ? 'vn' :$lang);
+
 		$data['setting'] = $this->Model_common->all_setting();
 		$data['page_contact'] = $this->Model_common->all_page_contact();
 		$data['comment'] = $this->Model_common->all_comment();
@@ -22,7 +27,7 @@ class Contact extends CI_Controller {
 		$data['portfolio_footer'] = $this->Model_portfolio->get_portfolio_data();
 
 		$this->load->view('page/jnp_header');
-		$this->load->view('page/page_contact',$data);
+		$this->load->view('page/jnp_page_contact',$data);
 		$this->load->view('page/jnp_footer');
 	}
 

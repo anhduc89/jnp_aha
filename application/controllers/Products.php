@@ -7,10 +7,15 @@ class Products extends CI_Controller {
         parent::__construct();
         $this->load->model('Model_common');
         $this->load->model('Model_portfolio');
+
+        $this->session->set_userdata("lang",$this->uri->segment(1));
     }
 
 	public function index($id=null)
 	{
+        $lang =  $this->session->userdata('lang');
+        $this->lang->load('home', $lang == '' ? 'vn' :$lang);
+
 		$data['setting'] = $this->Model_common->all_setting();
 		$data['page_about'] = $this->Model_common->all_page_about();
 		$data['comment'] = $this->Model_common->all_comment();
@@ -22,9 +27,9 @@ class Products extends CI_Controller {
 		$this->load->view('page/jnp_header');
 
         if( !isset($id) || !is_numeric($id) ) {
-			$this->load->view('page/page_product_list',$data);
+			$this->load->view('page/jnp_page_product_list',$data);
         } else {
-            $this->load->view('page/page_product_detail',$data);
+            $this->load->view('page/jnp_page_product_detail',$data);
         }
 
 		$this->load->view('page/jnp_footer');

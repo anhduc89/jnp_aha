@@ -52,10 +52,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['default_controller'] = 'JnpHome';
 
-$route['^en/(.+)$'] = "$1";
-$route['^kr/(.+)$'] = "$1";
-$route['^vn/(.+)$'] = "$1";
-
 // '/en' and '/fr' URIs -> use default controller
 
 $route['^en$'] = $route['default_controller'];
@@ -72,5 +68,21 @@ $route['team-member/(:num)'] = 'team-member/view/$1';
 $route['category/(:num)'] = 'category/index/$1';
 
 $route['admin'] = 'admin/login';
+
 $route['products/(:num)'] = 'products/index/$1';
+
+// for product list and product detail
+$route['^(en|kr|vn)/danh-sach-san-pham'] = 'products';
+$route['^(en|kr|vn)/danh-sach-san-pham/(:num)'] = 'products/index/$2';
+
+// for about page
+$route['^(en|kr|vn)/gioi-thieu'] = 'about';
+
+// for contact page
+$route['^(en|kr|vn)/lien-he'] = 'contact';
+
+// must be setting at last
+$route['^en/(.+)$'] = "$1";
+$route['^kr/(.+)$'] = "$1";
+$route['^vn/(.+)$'] = "$1";
 

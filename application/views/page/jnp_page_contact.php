@@ -1,4 +1,4 @@
-<div class="contact-page">
+<div class="contact-page common-banner">
     <!-- Hero Start -->
     <div class="container-fluid bg-secondary py-5 bg-hero">
         <div class="bg-image">

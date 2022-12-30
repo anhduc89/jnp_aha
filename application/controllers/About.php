@@ -7,10 +7,15 @@ class About extends CI_Controller {
         parent::__construct();
         $this->load->model('Model_common');
         $this->load->model('Model_portfolio');
+
+		$this->session->set_userdata("lang",$this->uri->segment(1));
     }
 
 	public function index()
 	{
+		$lang =  $this->session->userdata('lang');
+        $this->lang->load('home', $lang == '' ? 'vn' :$lang);
+
 		$data['setting'] = $this->Model_common->all_setting();
 		$data['page_about'] = $this->Model_common->all_page_about();
 		$data['comment'] = $this->Model_common->all_comment();
@@ -23,7 +28,7 @@ class About extends CI_Controller {
 		// $this->load->view('view_about',$data);
 		// $this->load->view('view_footer',$data);
 		$this->load->view('page/jnp_header');
-		$this->load->view('page/page_about',$data);
+		$this->load->view('page/jnp_page_about',$data);
 		$this->load->view('page/jnp_footer');
 	}
 }
