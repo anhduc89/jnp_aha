@@ -80,6 +80,7 @@ class Portfolio extends CI_Controller
 					// 'cost'             => $_POST['cost'],
 					// 'client_comment'   => $_POST['client_comment'],
 					'category_id'      => $_POST['category_id'],
+					'lang'			   => $_POST['lang'],	
 					'photo'            => $final_name,
 					// 'meta_title'       => $_POST['meta_title'],
 					// 'meta_keyword'     => $_POST['meta_keyword'],

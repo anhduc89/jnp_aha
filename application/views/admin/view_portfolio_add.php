@@ -115,6 +115,18 @@ if(!$this->session->userdata('id')) {
 								</select>
 							</div>
 						</div>
+
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Ngôn ngữ *</label>
+							<div class="col-sm-4">
+								<select name="lang" class="form-control">
+									<option value='vn'> Vietnamese	</option>
+									<option value='kr'> Korean	</option>
+									<option value='en'> English	</option>
+								</select>
+							</div>
+						</div>
+
 						<h3 class="seo-info">Hình ảnh</h3>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Hình ảnh *</label>
