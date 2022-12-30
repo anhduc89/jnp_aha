@@ -15,6 +15,12 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
+    <?php
+        $lang =  $this->session->userdata('lang');
+    ?>
+
+
+
     <!-- page Navigation -->
     <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
         <div class="container">
@@ -30,14 +36,17 @@
                         <a class="nav-link" href="#about"> <?php echo $this->lang->line('menu_aboutus');?> </a>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo base_url().$lang.'/danh-sach-san-pham';?>"> <?php echo $this->lang->line('menu_product');?> </a> 
+                    </li>
+
+
                     <li class="nav-item"> 
                         <a class="nav-link" href="#service"> <?php echo $this->lang->line('menu_activities');?> </a>
                     </li>
 
                     
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio"> <?php echo $this->lang->line('menu_product');?> </a> 
-                    </li>
+                    
                     
                     <li class="nav-item">
                         <a class="nav-link" href="#contact"><?php echo $this->lang->line('menu_contact');?></a>

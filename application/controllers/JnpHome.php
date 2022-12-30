@@ -11,15 +11,33 @@ class JnpHome extends CI_Controller {
         $this->load->model('admin/Model_portfolio');
         $this->load->model('admin/Model_page');
 
-        $this->session->set_userdata("lang",$this->uri->segment(1));
+        $this->session->set_userdata("lang", $this->uri->segment(1));
+        $lang =  $this->session->userdata('lang');
+        
+       
 
        
     }
 
     public function index()
     {
+        $this->session->set_userdata("lang", $this->uri->segment(1));
         $lang =  $this->session->userdata('lang');
-        $this->lang->load('home', $lang == '' ? 'vn' :$lang);
+        if($lang == '') 
+        {
+            $lang = 'vn';
+            $this->lang->load('home', $lang);
+        }
+        else 
+        {
+            echo $lang;
+            $this->lang->load('home', $lang);
+        }
+        // $this->lang->load('home', $lang == '' ? 'en' :$lang);
+        
+        // echo $lang; exit;
+
+
         $data['home_about']                 = $this->Model_common->all_page_about(); // về chúng tôi
         $data['home_categories_portfolio']  = $this->Model_portfolio->get_portfolio_category($lang); // danh mục sản phẩm
         $data['home__products_portfolio']   = $this->Model_portfolio->get_portfolio_data($lang); // danh sách sản phẩm
