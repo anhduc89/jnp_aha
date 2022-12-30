@@ -58,3 +58,4 @@ $route['team-member/(:num)'] = 'team-member/view/$1';
 $route['category/(:num)'] = 'category/index/$1';
 
 $route['admin'] = 'admin/login';
+$route['products/(:num)'] = 'products/index/$1';

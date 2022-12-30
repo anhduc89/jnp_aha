@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class About extends CI_Controller {
+class Products extends CI_Controller {
 	function __construct()
 	{
         parent::__construct();
@@ -9,7 +9,7 @@ class About extends CI_Controller {
         $this->load->model('Model_portfolio');
     }
 
-	public function index()
+	public function index($id=null)
 	{
 		$data['setting'] = $this->Model_common->all_setting();
 		$data['page_about'] = $this->Model_common->all_page_about();
@@ -19,11 +19,14 @@ class About extends CI_Controller {
 
 		$data['portfolio_footer'] = $this->Model_portfolio->get_portfolio_data();
 
-		// $this->load->view('view_header',$data);
-		// $this->load->view('view_about',$data);
-		// $this->load->view('view_footer',$data);
 		$this->load->view('page/jnp_header');
-		$this->load->view('page/page_about',$data);
+
+        if( !isset($id) || !is_numeric($id) ) {
+			$this->load->view('page/page_product_list',$data);
+        } else {
+            $this->load->view('page/page_product_detail',$data);
+        }
+
 		$this->load->view('page/jnp_footer');
 	}
 }
