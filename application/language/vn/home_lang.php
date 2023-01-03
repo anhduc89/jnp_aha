@@ -43,4 +43,9 @@
     $lang['contact_btn_page']                   = 'Liên hệ';
     $lang['contact_heading_line']               = 'Thông tin liên hệ';
     $lang['contact_btn_sendmail']               = 'Gửi';
+
+    // trang giới thiệu About us
+    $lang['about']                              = 'Giới thiệu công ty';
+    $lang['about_btn_home']                     = 'Trang chủ';
+    $lang['about_btn_page']                     = 'Về chúng tôi';
 ?>

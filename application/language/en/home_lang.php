@@ -1,4 +1,5 @@
 <?php
+    // trang chủ Home
     $lang['menu_aboutus']                       = 'About us';
     $lang['menu_product']                       = 'Products';
     $lang['menu_contact']                       = 'Contact';
@@ -45,5 +46,8 @@
     $lang['contact_heading_line']               = 'Please Feel Free To Contact Us';
     $lang['contact_btn_sendmail']               = 'Send';
 
-
+    // trang giới thiệu About us
+    $lang['about']                              = 'About us';
+    $lang['about_btn_home']                     = 'Home';
+    $lang['about_btn_page']                     = 'About us';
 ?>

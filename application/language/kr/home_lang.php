@@ -40,4 +40,9 @@
     $lang['contact_btn_page']                   = '전화 번호';
     $lang['contact_heading_line']               = '제 취미는 영화를 보는 것입니다';
     $lang['contact_btn_sendmail']               = '번호';
+
+    // trang giới thiệu About us
+    $lang['about']                              = '문의';
+    $lang['about_btn_home']                     = '주소';
+    $lang['about_btn_page']                     = '회사의얼굴';
 ?>

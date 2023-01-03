@@ -20,7 +20,7 @@ class Model_page extends CI_Model
     {
         // $query = $this->db->query("SELECT * from tbl_page_about WHERE id=1");
         //  return $query->first_row('array');
-        $query = $this->db->query("SELECT * from tbl_page_about");
+        $query = $this->db->query("SELECT * FROM tbl_page_about");
         return $query->result_array();
        
     }
