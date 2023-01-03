@@ -11,11 +11,9 @@ class JnpHome extends CI_Controller {
         $this->load->model('admin/Model_portfolio');
         $this->load->model('admin/Model_page');
 
-        $this->session->set_userdata("lang", $this->uri->segment(1));
-        $lang =  $this->session->userdata('lang');
+        // $this->session->set_userdata("lang", $this->uri->segment(1));
+        // $lang =  $this->session->userdata('lang');
         
-       
-
        
     }
 
@@ -26,11 +24,12 @@ class JnpHome extends CI_Controller {
         if($lang == '') 
         {
             $lang = 'vn';
+            $this->session->set_userdata("lang", $lang);
             $this->lang->load('home', $lang);
         }
         else 
         {
-            echo $lang;
+            // echo $lang;
             $this->lang->load('home', $lang);
         }
         // $this->lang->load('home', $lang == '' ? 'en' :$lang);

@@ -7,10 +7,10 @@
         <div class="bg-container container py-5">
             <div class="justify-content-start">
                 <div class="text-center text-lg-left">
-                    <h1 class="display-1 text-dark">Product Title</h1>
+                    <h1 class="display-1 text-dark text-light-present">Product Title</h1>
                     <div class="pt-2">
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-4 mx-2">Home</a>
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-4 mx-2">Detail Page</a>
+                        <a href="" class="btn btn-primary rounded-pill py-2 px-4 mx-2 btn-rounded-pill">Home</a>
+                        <a href="" class="btn btn-primary rounded-pill py-2 px-4 mx-2 btn-rounded-pill">Detail Page</a>
                     </div>
                 </div>
             </div>

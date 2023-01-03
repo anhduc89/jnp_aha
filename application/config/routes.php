@@ -72,14 +72,14 @@ $route['admin'] = 'admin/login';
 $route['products/(:num)'] = 'products/index/$1';
 
 // for product list and product detail
-$route['^(en|kr|vn)/danh-sach-san-pham'] = 'products';
-$route['^(en|kr|vn)/danh-sach-san-pham/(:num)'] = 'products/index/$2';
+$route['^(en|kr|vn)/danh-sach-san-pham']        = 'Jnp_products';
+$route['^(en|kr|vn)/danh-sach-san-pham/(:num)'] = 'Jnp_products/index/$2';
 
 // for about page
-$route['^(en|kr|vn)/gioi-thieu'] = 'about';
+$route['^(en|kr|vn)/gioi-thieu'] = 'Jnp_about/index';
 
 // for contact page
-$route['^(en|kr|vn)/lien-he'] = 'contact';
+$route['^(en|kr|vn)/lien-he'] = 'Jnp_contact/index';
 
 // must be setting at last
 $route['^en/(.+)$'] = "$1";

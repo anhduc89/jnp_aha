@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Contact extends CI_Controller {
+class Jnp_contact extends CI_Controller {
 	function __construct()
 	{
         parent::__construct();
@@ -17,14 +17,15 @@ class Contact extends CI_Controller {
 		$lang =  $this->session->userdata('lang');
         $this->lang->load('home', $lang == '' ? 'vn' :$lang);
 
-		$data['setting'] = $this->Model_common->all_setting();
+		// $data['setting'] = $this->Model_common->all_setting();
 		$data['page_contact'] = $this->Model_common->all_page_contact();
-		$data['comment'] = $this->Model_common->all_comment();
-		$data['social'] = $this->Model_common->all_social();
-		$data['all_news'] = $this->Model_common->all_news();
+		#echo "<pre>"; print_r($data); exit;
+		// $data['comment'] = $this->Model_common->all_comment();
+		// $data['social'] = $this->Model_common->all_social();
+		// $data['all_news'] = $this->Model_common->all_news();
 
-		$data['testimonials'] = $this->Model_contact->all_testimonial();
-		$data['portfolio_footer'] = $this->Model_portfolio->get_portfolio_data();
+		// $data['testimonials'] = $this->Model_contact->all_testimonial();
+		// $data['portfolio_footer'] = $this->Model_portfolio->get_portfolio_data();
 
 		$this->load->view('page/jnp_header');
 		$this->load->view('page/jnp_page_contact',$data);
@@ -85,11 +86,11 @@ class Contact extends CI_Controller {
         		$this->session->set_flashdata('error',$error);
 		    }
 
-			redirect(base_url().'contact');
+			redirect(base_url().'lien-he');
             
         } else {
             
-            redirect(base_url().'contact');
+            redirect(base_url().'lien-he');
         }
 	}
 }

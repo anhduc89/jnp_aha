@@ -36,4 +36,14 @@
     $lang['frm_contact_message']               = 'Message';
     $lang['frm_contact_btnsubmit']             = 'Submit';
 
+
+    // trang liên hệ contact
+
+    $lang['contact_heading']                    = 'Contact us';
+    $lang['contact_btn_home']                   = 'Home';
+    $lang['contact_btn_page']                   = 'Contact us';
+    $lang['contact_heading_line']               = 'Please Feel Free To Contact Us';
+    $lang['contact_btn_sendmail']               = 'Send';
+
+
 ?>

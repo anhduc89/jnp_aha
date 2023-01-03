@@ -328,3 +328,35 @@ ERROR - 2022-12-30 15:34:23 --> 404 Page Not Found: Danh_sach_san_pham/index
 ERROR - 2022-12-30 15:34:30 --> 404 Page Not Found: Danh_sach_san_pham/index
 ERROR - 2022-12-30 15:35:47 --> 404 Page Not Found: Danh_sach_san_pham/index
 ERROR - 2022-12-30 15:36:06 --> 404 Page Not Found: Danh_sach_san_pham/index
+ERROR - 2022-12-30 16:32:14 --> Could not find the language line "menu_aboutus"
+ERROR - 2022-12-30 16:32:14 --> Could not find the language line "menu_product"
+ERROR - 2022-12-30 16:32:14 --> Could not find the language line "menu_activities"
+ERROR - 2022-12-30 16:32:14 --> Could not find the language line "menu_contact"
+ERROR - 2022-12-30 16:32:29 --> Could not find the language line "menu_aboutus"
+ERROR - 2022-12-30 16:32:29 --> Could not find the language line "menu_product"
+ERROR - 2022-12-30 16:32:29 --> Could not find the language line "menu_activities"
+ERROR - 2022-12-30 16:32:29 --> Could not find the language line "menu_contact"
+ERROR - 2022-12-30 16:33:01 --> Could not find the language line "menu_aboutus"
+ERROR - 2022-12-30 16:33:01 --> Could not find the language line "menu_product"
+ERROR - 2022-12-30 16:33:01 --> Could not find the language line "menu_activities"
+ERROR - 2022-12-30 16:33:01 --> Could not find the language line "menu_contact"
+ERROR - 2022-12-30 16:33:03 --> Could not find the language line "menu_aboutus"
+ERROR - 2022-12-30 16:33:03 --> Could not find the language line "menu_product"
+ERROR - 2022-12-30 16:33:03 --> Could not find the language line "menu_activities"
+ERROR - 2022-12-30 16:33:03 --> Could not find the language line "menu_contact"
+ERROR - 2022-12-30 16:33:30 --> Could not find the language line "menu_aboutus"
+ERROR - 2022-12-30 16:33:30 --> Could not find the language line "menu_product"
+ERROR - 2022-12-30 16:33:30 --> Could not find the language line "menu_activities"
+ERROR - 2022-12-30 16:33:30 --> Could not find the language line "menu_contact"
+ERROR - 2022-12-30 16:33:31 --> 404 Page Not Found: Public/jnp_assets
+ERROR - 2022-12-30 16:33:31 --> 404 Page Not Found: Public/jnp_assets
+ERROR - 2022-12-30 16:33:31 --> 404 Page Not Found: Public/jnp_assets
+ERROR - 2022-12-30 16:33:31 --> 404 Page Not Found: Public/jnp_assets
+ERROR - 2022-12-30 16:35:18 --> Could not find the language line "menu_aboutus"
+ERROR - 2022-12-30 16:35:18 --> Could not find the language line "menu_product"
+ERROR - 2022-12-30 16:35:18 --> Could not find the language line "menu_activities"
+ERROR - 2022-12-30 16:35:18 --> Could not find the language line "menu_contact"
+ERROR - 2022-12-30 16:38:56 --> 404 Page Not Found: Danh_sach_san_pham/index
+ERROR - 2022-12-30 16:39:06 --> 404 Page Not Found: Danh_sach_san_pham/index
+ERROR - 2022-12-30 16:39:55 --> Severity: Warning --> Undefined variable $lang D:\xampp\htdocs\jnp_aha\application\controllers\JnpHome.php 24
+ERROR - 2022-12-30 16:40:31 --> 404 Page Not Found: Danh_sach_san_pham/index

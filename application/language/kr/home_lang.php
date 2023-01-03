@@ -33,4 +33,11 @@
     $lang['frm_contact_subject']               = '주소';
     $lang['frm_contact_message']               = '주소';
     $lang['frm_contact_btnsubmit']             = '주소';
+
+    // trang liên hệ contact
+    $lang['contact_heading']                    = '전화 번호';
+    $lang['contact_btn_home']                   = '주소';
+    $lang['contact_btn_page']                   = '전화 번호';
+    $lang['contact_heading_line']               = '제 취미는 영화를 보는 것입니다';
+    $lang['contact_btn_sendmail']               = '번호';
 ?>

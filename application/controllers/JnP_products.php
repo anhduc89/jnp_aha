@@ -18,8 +18,8 @@ class JnP_products extends CI_Controller {
     {
         // $this->session->set_userdata("lang", $this->uri->segment(1));
         $lang =  $this->session->userdata('lang');
-        echo 'products '.$lang; exit;
-        // $this->lang->load('home', $this->session->userdata('lang') == '' ? 'english' : $this->session->userdata('lang') );
+        // echo 'products '.$lang; exit;
+        $this->lang->load('home', $lang == '' ? 'vn' : $lang );
         // echo $this->session->userdata('lang'); exit;
 
 
@@ -29,9 +29,9 @@ class JnP_products extends CI_Controller {
         // $data['clients'] 				    = $this->Model_home->all_client(); // khách hàng của chúng tôi
         // $data['testimonials'] 			    = $this->Model_home->all_testimonial();	// nhận xét của khách hàng
 
-        echo "<pre>"; print_r($data['home__products_portfolio']); exit;
+        # echo "<pre>"; print_r($data['home__products_portfolio']); exit;
         $this->load->view('page/jnp_header');
-		$this->load->view('page/jnp_product_list',$data);
+		$this->load->view('page/jnp_page_product_list',$data);
 		$this->load->view('page/jnp_footer');
     }
 }

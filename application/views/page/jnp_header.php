@@ -17,6 +17,8 @@
 
     <?php
         $lang =  $this->session->userdata('lang');
+        // xử lý việc khi người dùng đang ở trong 1 trang con mà chuyển ngôn ngữ thì sẽ giữ nguyên trang và đổi sang ngôn ngữ được chọn
+        $current_uri_part = $this->uri->segment(2);
     ?>
 
 
@@ -33,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">   
                     <li class="nav-item">
-                        <a class="nav-link" href="#about"> <?php echo $this->lang->line('menu_aboutus');?> </a>
+                        <a class="nav-link" href="<?php echo base_url().$lang.'/gioi-thieu';?>"> <?php echo $this->lang->line('menu_aboutus');?> </a>
                     </li>
 
                     <li class="nav-item">
@@ -49,7 +51,7 @@
                     
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact"><?php echo $this->lang->line('menu_contact');?></a>
+                        <a class="nav-link" href="<?php echo base_url().$lang.'/lien-he';?>"><?php echo $this->lang->line('menu_contact');?></a>
                     </li>
                     
                     <!-- <li class="nav-item">
@@ -66,15 +68,15 @@
                             <ul>
 
                                 <li class="language-item <?php if($lang == 'vn') echo 'active';?>">
-                                    <a href="<?=base_url().'vn'?>" class="lang-3">Vietnamese</a>
+                                    <a href="<?=base_url().'vn/'.$current_uri_part?>" class="lang-3">Vietnamese</a>
                                 </li>
 
                                 <li class="language-item <?php if($lang == 'kr') echo 'active';?>">
-                                    <a href="<?=base_url().'kr'?>" class="lang-2">Korean</a>
+                                    <a href="<?=base_url().'kr/'.$current_uri_part?>" class="lang-2">Korean</a>
                                 </li>
                                 
                                 <li class="language-item <?php if($lang == 'en') echo 'active';?>">
-                                    <a href="<?=base_url().'en'?>" class="lang-1">English</a>
+                                    <a href="<?=base_url().'en/'.$current_uri_part?>" class="lang-1">English</a>
                                 </li>
                             </ul>
                         </div>

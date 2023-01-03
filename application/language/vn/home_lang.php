@@ -36,4 +36,11 @@
     $lang['frm_contact_subject']               = 'Tiêu đề';
     $lang['frm_contact_message']               = 'Tin nhắn';
     $lang['frm_contact_btnsubmit']             = 'Gửi thông tin';
+
+    // trang liên hệ contact
+    $lang['contact_heading']                    = 'Liên hệ';
+    $lang['contact_btn_home']                   = 'Trang chủ';
+    $lang['contact_btn_page']                   = 'Liên hệ';
+    $lang['contact_heading_line']               = 'Thông tin liên hệ';
+    $lang['contact_btn_sendmail']               = 'Gửi';
 ?>

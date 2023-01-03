@@ -1,14 +1,14 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class About extends CI_Controller {
+class Jnp_about extends CI_Controller {
 	function __construct()
 	{
         parent::__construct();
         $this->load->model('Model_common');
         $this->load->model('Model_portfolio');
 
-		$this->session->set_userdata("lang",$this->uri->segment(1));
+		// $this->session->set_userdata("lang",$this->uri->segment(1));
     }
 
 	public function index()

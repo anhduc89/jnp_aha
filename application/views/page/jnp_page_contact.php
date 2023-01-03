@@ -1,3 +1,7 @@
+<?php
+    $lang =  $this->session->userdata('lang');
+?>
+
 <div class="contact-page common-banner">
     <!-- Hero Start -->
     <div class="container-fluid bg-secondary py-5 bg-hero">
@@ -7,10 +11,10 @@
         <div class="bg-container container py-5">
             <div class="justify-content-start">
                 <div class="text-center text-lg-left">
-                    <h1 class="display-1 text-dark">Contact Us</h1>
+                    <h1 class="display-1 text-dark text-light-present"><?php echo $this->lang->line('contact_heading');?></h1>
                     <div class="pt-2">
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-4 mx-2">Home</a>
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-4 mx-2">Contact Us</a>
+                        <a href="<?php echo base_url().$lang;?>" class="btn btn-primary rounded-pill py-2 px-4 mx-2 btn-rounded-pill"><?php echo $this->lang->line('contact_btn_home');?></a>
+                        <a href="" class="btn btn-primary rounded-pill py-2 px-4 mx-2 btn-rounded-pill"><?php echo $this->lang->line('contact_btn_page');?></a>
                     </div>
                 </div>
             </div>
@@ -22,7 +26,7 @@
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="text-center mx-auto mb-5">
-                <h1 class="display-5">Please Feel Free To Contact Us</h1>
+                <h1 class="display-5"><?php echo $this->lang->line('contact_heading_line');?></h1>
                 <hr class="w-25 mx-auto text-primary">
             </div>
             <div class="row g-3 mb-3 pt-2">
@@ -31,7 +35,7 @@
                         <div class="contact-icon p-3">
                             <div><span class="ti-location-pin icon"></span></div>
                         </div>
-                        <h4 class="mt-5">123 Street, New York, USA</h4>
+                        <h4 class="mt-5"><?php echo $page_contact['contact_address'];?></h4>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 pt-5">
@@ -39,7 +43,7 @@
                         <div class="contact-icon p-3">
                             <div><span class="ti-mobile icon"></span></div>
                         </div>
-                        <h4 class="mt-5">+012 345 6789</h4>
+                        <h4 class="mt-5"><?php echo $page_contact['contact_phone'];?></h4>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 pt-5">
@@ -47,7 +51,7 @@
                         <div class="contact-icon p-3">
                             <div><span class="ti-email icon"></span></div>
                         </div>
-                        <h4 class="mt-5">info@example.com</h4>
+                        <h4 class="mt-5"><?php echo $page_contact['contact_email'];?></h4>
                     </div>
                 </div>
             </div>
@@ -75,7 +79,7 @@
                            <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message</textarea>
                         </div>
                         <div class="col-md-12">
-                           <button class="btn btn-sendmail btn-outline-primary rounded-pill py-2 px-4 mx-2">Send</button>
+                           <button class="btn btn-sendmail btn-outline-primary rounded-pill py-2 px-4 mx-2"><?php echo $this->lang->line('contact_btn_sendmail');?></button>
                         </div>
                      </div>
                   </form>
@@ -83,7 +87,8 @@
                <div class="col-md-6 padding_left0">
                   <div class="map_main">
                      <div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="600" height="463" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+                        <?php echo $page_contact['contact_map'];?>
+                        <!-- <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="600" height="463" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe> -->
                      </div>
                   </div>
                </div>
