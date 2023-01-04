@@ -514,3 +514,5 @@ ERROR - 2023-01-03 15:29:21 --> Severity: Warning --> Undefined variable $page_p
 ERROR - 2023-01-03 15:29:21 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1241
 ERROR - 2023-01-03 15:29:21 --> Severity: Warning --> Undefined variable $page_portfolio D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1247
 ERROR - 2023-01-03 15:29:21 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\admin\view_page.php 1247
+ERROR - 2023-01-03 16:56:42 --> Severity: Warning --> Undefined variable $setting D:\xampp\htdocs\jnp_aha\application\views\page\jnp_header.php 15
+ERROR - 2023-01-03 16:56:42 --> Severity: Warning --> Trying to access array offset on value of type null D:\xampp\htdocs\jnp_aha\application\views\page\jnp_header.php 15

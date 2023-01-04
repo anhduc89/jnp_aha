@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="<?php echo base_url();?>public/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/jnp_assets/css/leadmark.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/jnp_assets/css/leadmark-custom.css">
+    <link rel="icon" type="image/png" href="<?php echo base_url(); ?>public/uploads/<?php echo $setting['favicon']; ?>">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 

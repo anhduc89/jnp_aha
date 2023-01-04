@@ -17,7 +17,7 @@ class Jnp_contact extends CI_Controller {
 		$lang =  $this->session->userdata('lang');
         $this->lang->load('home', $lang == '' ? 'vn' :$lang);
 
-		// $data['setting'] = $this->Model_common->all_setting();
+		$data['setting'] = $this->Model_common->all_setting();
 		$data['page_contact'] = $this->Model_common->all_page_contact();
 		#echo "<pre>"; print_r($data); exit;
 		// $data['comment'] = $this->Model_common->all_comment();
@@ -27,7 +27,7 @@ class Jnp_contact extends CI_Controller {
 		// $data['testimonials'] = $this->Model_contact->all_testimonial();
 		// $data['portfolio_footer'] = $this->Model_portfolio->get_portfolio_data();
 
-		$this->load->view('page/jnp_header');
+		$this->load->view('page/jnp_header',$data);
 		$this->load->view('page/jnp_page_contact',$data);
 		$this->load->view('page/jnp_footer');
 	}
