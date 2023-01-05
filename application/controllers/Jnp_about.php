@@ -17,7 +17,7 @@ class Jnp_about extends CI_Controller {
 		$lang =  $this->session->userdata('lang');
         $this->lang->load('home', $lang == '' ? 'vn' :$lang);
 
-		// $data['setting'] = $this->Model_common->all_setting();
+		$data['setting'] = $this->Model_common->all_setting();
 		// $data['page_about'] = $this->Model_common->all_page_about();
 		$data['page_about'] = $this->Model_page->show_about($lang);
 		// $data['comment'] = $this->Model_common->all_comment();
@@ -27,7 +27,7 @@ class Jnp_about extends CI_Controller {
 		// $data['portfolio_footer'] = $this->Model_portfolio->get_portfolio_data();
 
 		// echo "<pre>"; print_r($data['page_about']); exit;
-		$this->load->view('page/jnp_header');
+		$this->load->view('page/jnp_header',$data);
 		$this->load->view('page/jnp_page_about',$data);
 		$this->load->view('page/jnp_footer');
 	}

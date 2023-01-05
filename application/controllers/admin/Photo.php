@@ -14,9 +14,7 @@ class Photo extends CI_Controller
 	public function index()
 	{
 		$data['setting'] = $this->Model_common->get_setting_data();
-
 		$data['photo'] = $this->Model_photo->show();
-
 		$this->load->view('admin/view_header',$data);
 		$this->load->view('admin/view_photo',$data);
 		$this->load->view('admin/view_footer');

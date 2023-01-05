@@ -263,15 +263,15 @@
 
 			        <li class="treeview <?php if( ($class_name == 'why_choose') ) {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/why_choose">
-			            <i class="fa fa-paper-plane-o"></i> <span>Tại sao chọn chúng tôi</span>
+			            <i class="fa fa-paper-plane-o"></i> <span>Người dùng liên hệ</span>
 			          </a>
 			        </li>
 
-			        <li class="treeview <?php if( ($class_name == 'faq') ) {echo 'active';} ?>">
+			        <!-- <li class="treeview <?php if( ($class_name == 'faq') ) {echo 'active';} ?>">
 			          <a href="<?php echo base_url(); ?>admin/faq">
 			            <i class="fa fa-bolt"></i> <span>Câu hỏi thường gặp</span>
 			          </a>
-			        </li>
+			        </li> -->
 					<li class="treeview <?php if( ($class_name == 'setting') || ($class_name == 'language') || ($class_name == 'comment') || ($class_name == 'social_media') ) {echo 'active';} ?>">
 						<a href="#">
 							<i class="fa fa-cog"></i>
@@ -283,7 +283,7 @@
 						<ul class="treeview-menu">
 							<li><a href="<?php echo base_url(); ?>admin/setting"><i class="fa fa-circle-o"></i>Cài đặt chung</a></li>
 							<!-- <li><a href="<?php echo base_url(); ?>admin/language"><i class="fa fa-circle-o"></i>Ngôn ngữ</a></li> -->
-							<li><a href="<?php echo base_url(); ?>admin/comment"><i class="fa fa-circle-o"></i> Bình luận</a></li>
+							<li><a href="<?php echo base_url(); ?>admin/comment"><i class="fa fa-circle-o"></i> Chat với người dùng</a></li>
 							<li><a href="<?php echo base_url(); ?>admin/social_media"><i class="fa fa-circle-o"></i>Mạng xã hội</a></li>
 						</ul>
 					</li>

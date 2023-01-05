@@ -20,7 +20,8 @@
         $lang =  $this->session->userdata('lang');
         // xử lý việc khi người dùng đang ở trong 1 trang con mà chuyển ngôn ngữ thì sẽ giữ nguyên trang và đổi sang ngôn ngữ được chọn
         $current_uri_part = $this->uri->segment(2);
-    ?>
+        $current_id_product = $this->uri->segment(3);
+    ?>  
 
 
 
@@ -69,15 +70,15 @@
                             <ul>
 
                                 <li class="language-item <?php if($lang == 'vn') echo 'active';?>">
-                                    <a href="<?=base_url().'vn/'.$current_uri_part?>" class="lang-3">Vietnamese</a>
+                                    <a href="<?=base_url().'vn/'.$current_uri_part.'/'.$current_id_product?>" class="lang-3">Vietnamese</a>
                                 </li>
 
                                 <li class="language-item <?php if($lang == 'kr') echo 'active';?>">
-                                    <a href="<?=base_url().'kr/'.$current_uri_part?>" class="lang-2">Korean</a>
+                                    <a href="<?=base_url().'kr/'.$current_uri_part.'/'.$current_id_product?>" class="lang-2">Korean</a>
                                 </li>
                                 
                                 <li class="language-item <?php if($lang == 'en') echo 'active';?>">
-                                    <a href="<?=base_url().'en/'.$current_uri_part?>" class="lang-1">English</a>
+                                    <a href="<?=base_url().'en/'.$current_uri_part.'/'.$current_id_product?>" class="lang-1">English</a>
                                 </li>
                             </ul>
                         </div>

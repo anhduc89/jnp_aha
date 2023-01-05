@@ -22,7 +22,7 @@ class JnP_products extends CI_Controller {
         $this->lang->load('home', $lang == '' ? 'vn' : $lang );
         // echo $this->session->userdata('lang'); exit;
 
-
+        $data['setting'] = $this->Model_common->all_setting();
         // $data['home_about']                 = $this->Model_common->all_page_about(); // về chúng tôi
         // $data['home_categories_portfolio']  = $this->Model_portfolio->get_portfolio_category($lang); // danh mục sản phẩm
         $data['home__products_portfolio']   = $this->Model_portfolio->get_portfolio_data($lang); // danh sách sản phẩm
@@ -30,8 +30,23 @@ class JnP_products extends CI_Controller {
         // $data['testimonials'] 			    = $this->Model_home->all_testimonial();	// nhận xét của khách hàng
 
         # echo "<pre>"; print_r($data['home__products_portfolio']); exit;
-        $this->load->view('page/jnp_header');
+        $this->load->view('page/jnp_header',$data);
 		$this->load->view('page/jnp_page_product_list',$data);
+		$this->load->view('page/jnp_footer');
+    }
+
+    public function product_detail()
+    {
+        $lang =  $this->session->userdata('lang');
+        $this->lang->load('home', $lang == '' ? 'vn' : $lang );
+
+        $id_product = $this->uri->segment(3);
+        $data['setting'] = $this->Model_common->all_setting();
+        $data['product_detail']   = $this->Model_portfolio->get_portfolio_detail($id_product); 
+        #echo "<pre>"; print_r($data['product_detail']); exit;
+
+        $this->load->view('page/jnp_header',$data);
+		$this->load->view('page/jnp_page_product_detail',$data);
 		$this->load->view('page/jnp_footer');
     }
 }

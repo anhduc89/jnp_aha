@@ -19,7 +19,7 @@ class Page extends CI_Controller
 		$data['page_about'] 		= $this->Model_page->show_about();
 
 		// echo base_url().'public/uploads/'.$data['page_about']['home_about_photo'];
-		#echo "<pre>"; print_r($data['page_about']); exit;
+		# echo "<pre>"; print_r($data['page_about']); exit;
 
 		// $data['page_faq'] 			= $this->Model_page->show_faq();
 		// $data['page_service'] 		= $this->Model_page->show_service();
@@ -414,7 +414,7 @@ class Page extends CI_Controller
 				$form_data = array(
 					'home_about_photo' => $final_name 
 	            );
-	        	$this->Model_page->update_about($form_data); // update tên ảnh vào trường home_about_photo
+	        	$this->Model_page->update_image_about($form_data); // update tên ảnh vào trường home_about_photo
 
 	        	$success = 'Home page about us photo is updated successfully!';
 		    	$this->session->set_flashdata('success',$success);

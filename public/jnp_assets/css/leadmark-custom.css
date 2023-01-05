@@ -658,3 +658,6 @@ img {
 .btn-rounded-pill {
     background-color: transparent !important;
 }
+.card-comment {
+    margin-bottom: 10px;
+}

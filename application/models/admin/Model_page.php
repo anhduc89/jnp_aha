@@ -37,6 +37,12 @@ class Model_page extends CI_Model
         $this->db->update('tbl_page_about',$data);
     }
 
+    // update ảnh trong phần about us
+    public function update_image_about($data)
+    {
+        $this->db->update('tbl_page_about',$data);
+    }
+
 
     public function show_faq()
     {

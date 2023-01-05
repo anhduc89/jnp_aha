@@ -1,3 +1,6 @@
+<?php
+    $lang =  $this->session->userdata('lang');
+?>
 <!-- Page Header -->
 <header class="header">
     <div class="overlay"> 
@@ -20,11 +23,6 @@
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
-                <!-- <h6 class="section-title mb-0">Về chúng tôi</h6>
-                <h6 class="section-subtitle mb-4">Vina J&P Company</h6>
-                <p> Công ty Vina J&P là công ty liên doanh Việt Nam - Hàn Quốc chuyên sản xuất về các sản phẩm bao bì đóng gói.
-                    Được thành lập từ năm 200x, với gần 20 năm kinh nghiệm trong ngành, chúng tôi luôn cố gắng đem đến Quý khách hàng những sản phẩm tốt nhất về lĩnh vực bao bì đóng gói.
-                </p> -->
                 <?php echo $this->lang->line('tab_desc_aboutus_content_1');?>
                 <img src="<?php echo base_url();?>public/jnp_assets/imgs/about.jpg" alt="" class="w-100 mt-3 shadow-sm">
             </div>
@@ -38,12 +36,6 @@
                     </div>
                     <div class="col-12 mt-4">
                         <?php echo $this->lang->line('tab_desc_aboutus_content_2');?>
-                        <!-- <p> Chúng tôi cung cấp tất cả các sản phẩm bao bì liên quan đến các lĩnh vực : thực phẩm, y tế, hàng xuất khẩu, linh kiện điện tử ...</p>
-                        <p><b>Chúng tôi lựa chọn những nguyên liệu tốt nhất, thân thiện với môi trường.</b><br>
-                        </p>
-                        <p>Với những sản phẩm của mình, chúng tôi đã có được sự tin tưởng của các khách hàng lớn như : Samsung, LG, Hundai, ...
-                            cùng với những thành tựu đã đạt được, chúng tôi vẫn luôn tâm niệm cố gắng hết sức, cải tiến kĩ thuật để có những sản phẩm chất lượng tốt nhất đem đến Quý khách hàng.
-                        </p> -->
                     </div>
                 </div>
             </div>
@@ -60,36 +52,17 @@
         <h6 class="section-subtitle text-center mb-5 pb-3"><?php echo $this->lang->line('tab_img_company_slogan');?></h6>
 
         <div class="row">
-            <div class="col-md-4">
-                <div class="card border-0 mb-4">
-                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100">
-                    <div class="card-body">                         
-                        <h6 class="card-title">Pariatur Omnis Harum quae sint.</h6>
-                        <p>Fuga quae ratione inventore Perferendis porro.</p>
-                        <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card border-0 mb-4">
-                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/blog-2.jpg" alt="" class="card-img-top w-100">
-                    <div class="card-body">                         
-                        <h6 class="card-title"> Harum Quae Porro</h5>
-                        <p>Fuga quae ratione inventore Perferendis porro.</p>
-                        <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card border-0 mb-4">
-                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/blog-3.jpg" alt="" class="card-img-top w-100">
-                    <div class="card-body">                         
-                        <h6 class="card-title">Qui optio neque alias</h6>
-                        <p>Fuga quae ratione inventore Perferendis porro.</p>
-                        <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
-                    </div>
-                </div>
-            </div>
+            <?php
+                foreach($photo_activities as $item)
+                {
+                    echo '<div class="col-md-4">
+                            <div class="card border-0 mb-4">
+                                <img src="'.base_url().'public/uploads/'.$item['photo_name'].'" alt="" class="card-img-top w-100">
+                                
+                            </div>
+                        </div>';
+                }
+            ?>
         </div>
     </div>
 </section>
@@ -101,16 +74,14 @@
 <section id="portfolio" class="section portfolio-section">
     <div class="container">
         <h6 class="section-title text-center"><?php echo $this->lang->line('tab_products');?></h6>
-        <h6 class="section-subtitle mb-5 text-center"><a href="#"><?php echo $this->lang->line('tab_products_showmore');?></a></h6>
+        <h6 class="section-subtitle mb-5 text-center"><a href="<?php echo base_url().$lang.'/danh-sach-san-pham';?>"><?php echo $this->lang->line('tab_products_showmore');?></a></h6>
         <div class="filters">
             <a href="#" data-filter=".all" class="active">
                 <?php echo $this->lang->line('tab_products_all_product');?>           
             <?php
                 foreach($home_categories_portfolio as $item )
                 {
-                    echo '<a href="#" data-filter=".'.$item['category_id'].'">';
-                    echo        $item['category_name'];
-                    echo    '</a>';
+                    echo '<a href="#" data-filter=".'.$item['category_id'].'">'. $item['category_name'].'</a>';
                 }
             ?>
         </div>
@@ -127,8 +98,8 @@
                                 <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
                                 <div class="text-holder">
 
-                                    <h6 class="title"><a href="#">'. $item['name'].'</a></h6>
-                                    <p class="subtitle"><a href="#">'. $item['short_content'].'</a></p>
+                                    <h6 class="title"><a href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">'. $item['name'].'</a></h6>
+                                    <p class="subtitle"><a href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">'. $item['short_content'].'</a></p>
                                 </div>
                             </div>   
                         </div>             
@@ -238,7 +209,7 @@
                 foreach($testimonials as $item)
                 {
                     echo '<div class="col-md-4 my-3 my-md-0">
-                            <div class="card">
+                            <div class="card card-comment">
                                 <div class="card-body">
                                     <div class="media align-items-center mb-3">
                                         <img class="mr-3" src="'.base_url().'public/uploads/'.$item['photo'].'" alt="">
@@ -342,3 +313,20 @@
         <!-- End of Page Footer -->  
     </div>
 </section>
+   <!-- core  -->
+   <script src="<?php echo base_url();?>public/jnp_assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="<?php echo base_url();?>public/jnp_assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="<?php echo base_url();?>public/jnp_assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope -->
+    <script src="<?php echo base_url();?>public/jnp_assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <script src="<?php echo base_url();?>public/js/owl.carousel.min.js"></script>
+    <!-- LeadMark js -->
+    <script src="<?php echo base_url();?>public/jnp_assets/js/leadmark.js"></script>
+
+    <script src="<?php echo base_url();?>public/jnp_assets/js/leadmark-custom.js"></script>
+</body>
+</html>

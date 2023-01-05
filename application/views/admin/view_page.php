@@ -762,6 +762,28 @@ if(!$this->session->userdata('id')) {
                                             </div>
                                         </div>'; 
                                     echo form_close();
+
+
+                                    echo form_open_multipart(base_url().'admin/page/update',array('class' => 'form-horizontal'));
+                                    echo '<div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">Hình ảnh giới thiệu</label>
+                                        <div class="col-sm-6" style="padding-top:6px;">
+                                            <img src="'.base_url().'public/uploads/'.$page_about[0]['home_about_photo'].'" class="existing-photo" style="height:180px;">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">Thay đổi hình giới thiệu</label>
+                                        <div class="col-sm-6" style="padding-top:6px;">
+                                            <input type="file" name="home_about_photo">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label"></label>
+                                        <div class="col-sm-6">
+                                            <button type="submit" class="btn btn-success pull-left" name="form_home_aboutus_photo">Cập nhật</button>
+                                        </div>
+                                    </div>';
+                                    echo form_close();
                             ?>
                             
                                 <!-- <div class="form-group">
@@ -811,11 +833,11 @@ if(!$this->session->userdata('id')) {
                             <!-- <?php #echo form_close(); ?> -->
                         </div>
 
-                        <?php echo form_open_multipart(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
-                                <!-- <div class="form-group">
+                        <!-- <?php echo form_open_multipart(base_url().'admin/page/update',array('class' => 'form-horizontal')); ?>
+                                <div class="form-group">
                                     <label for="" class="col-sm-2 control-label">Hình ảnh giới thiệu</label>
                                     <div class="col-sm-6" style="padding-top:6px;">
-                                        <img src="<?php echo base_url().'public/uploads/'.$page_about['home_about_photo'];?>" class="existing-photo" style="height:180px;">
+                                        <img src="<?php echo base_url().'public/uploads/'.$page_about[0]['home_about_photo'];?>" class="existing-photo" style="height:180px;">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -829,8 +851,8 @@ if(!$this->session->userdata('id')) {
                                     <div class="col-sm-6">
                                         <button type="submit" class="btn btn-success pull-left" name="form_home_aboutus_photo">Cập nhật</button>
                                     </div>
-                                </div> -->
-                        <?php echo form_close(); ?>
+                                </div>
+                        <?php echo form_close(); ?> -->
                         
 
                         <!-- <div class="tab-pane" id="tab_4">

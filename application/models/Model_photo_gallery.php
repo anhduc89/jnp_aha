@@ -5,7 +5,7 @@ class Model_photo_gallery extends CI_Model
 {
     public function all_photo()
     {
-        $query = $this->db->query("SELECT * FROM tbl_photo ORDER BY photo_id ASC");
+        $query = $this->db->query("SELECT * FROM tbl_photo ORDER BY photo_id ASC LIMIT 3");
         return $query->result_array();
     }
 }
