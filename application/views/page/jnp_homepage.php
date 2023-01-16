@@ -93,7 +93,7 @@
                 {
                     echo ' <div class="col-md-6 col-lg-4 web new">
                         <div class="portfolio-item">
-                            <img src="'.base_url().'public/uploads/'.$item['photo'].'" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <img src="'.base_url().'public/uploads/'.$item['photo'].'" class="img-fluid" alt="">
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
                                 <div class="text-holder">
@@ -112,7 +112,7 @@
                 {
                     echo ' <div class="col-md-6 col-lg-4 all">
                         <div class="portfolio-item">
-                            <img src="'.base_url().'public/uploads/'.$item['photo'].'" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <img src="'.base_url().'public/uploads/'.$item['photo'].'" class="img-fluid" alt="">
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
                                 <div class="text-holder">
@@ -132,7 +132,7 @@
                 {
                     echo ' <div class="col-md-6 col-lg-4 '.$item['category_id'].'">
                         <div class="portfolio-item">
-                            <img src="'.base_url().'public/uploads/'.$item['photo'].'" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                            <img src="'.base_url().'public/uploads/'.$item['photo'].'" class="img-fluid" alt="">
                             <div class="content-holder">
                                 <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
                                 <div class="text-holder">

@@ -62,7 +62,7 @@ if(!$this->session->userdata('id')) {
 	                    </td>
 	                    <td>
 	                        <a href="<?php echo base_url(); ?>admin/photo/edit/<?php echo $row['photo_id']; ?>" class="btn btn-primary btn-xs"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Chỉnh sửa</a>
-                            <a href="<?php echo base_url(); ?>admin/photo/delete/<?php echo $row['photo_id']; ?>" class="btn btn-danger btn-xs" onClick="return confirm('Are you sure?');"><i class="fa fa-trash-o" aria-hidden="true"></i> Xóa</a> 
+                            <a href="<?php echo base_url(); ?>admin/photo/delete/<?php echo $row['photo_id']; ?>" class="btn btn-danger btn-xs" onClick="return confirm('Bạn có muốn xóa ảnh?');"><i class="fa fa-trash-o" aria-hidden="true"></i> Xóa</a> 
 	                    </td>
 	                </tr>
 	                <?php

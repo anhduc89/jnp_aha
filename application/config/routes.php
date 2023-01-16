@@ -74,7 +74,7 @@ $route['products/(:num)'] = 'products/index/$1';
 // for product list and product detail
 $route['^(en|kr|vn)/danh-sach-san-pham']        = 'Jnp_products';
 $route['^(en|kr|vn)/danh-sach-san-pham/(:num)'] = 'Jnp_products/index/$2';
-$route['^(en|kr|vn)/thong-tin-san-pham/(:num)'] = 'Jnp_products/product_detail/$2';
+$route['^(en|kr|vn)/thong-tin-san-pham/(:num)'] = 'Jnp_products/product_detail/$k';
 // for about page
 $route['^(en|kr|vn)/gioi-thieu'] = 'Jnp_about/index';
 
