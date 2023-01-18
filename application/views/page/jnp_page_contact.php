@@ -64,25 +64,29 @@
         <div class="container">
             <div class="row">
                <div class="col-md-6 padding_right0">
-                  <form id="request" class="main_form">
+                    <?php echo form_open_multipart(base_url().$lang.'/JnpHome/send_message',array('class' => 'form-horizontal main_form')) ; ?> <!--id="request" class="main_form" -->
                      <div class="row">
+                     
                         <div class="col-md-12 ">
-                           <input class="contactus" placeholder="Name" type="type" name="Name"> 
+                           <input class="contactus form-control text-white rounded-0 bg-transparent" placeholder="Name" type="type" name="name"> 
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Phone" type="type" name="Phone">
+                           <input class="contactus form-control text-white rounded-0 bg-transparent" placeholder="Email" type="type" name="email"> 
                         </div>
                         <div class="col-md-12">
-                           <input class="contactus" placeholder="Email" type="type" name="Email"> 
+                           <input class="contactus form-control text-white rounded-0 bg-transparent" placeholder="Subject" type="type" name="subject">
                         </div>
                         <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message</textarea>
+                           <textarea class="textarea form-control text-white rounded-0 bg-transparent" name="message">Message</textarea>
                         </div>
                         <div class="col-md-12">
-                           <button class="btn btn-sendmail btn-outline-primary rounded-pill py-2 px-4 mx-2"><?php echo $this->lang->line('contact_btn_sendmail');?></button>
+                           <button class="btn btn-sendmail btn-outline-primary rounded-pill py-2 px-4 mx-2" name="btn_sendmail"><?php echo $this->lang->line('contact_btn_sendmail');?></button>
                         </div>
+                        <div class="callout callout-success col-12">
+                                <p><?php echo $this->session->flashdata('success'); ?></p>
+                            </div>       
                      </div>
-                  </form>
+                     <?php echo form_close(); ?>
                </div>
                <div class="col-md-6 padding_left0">
                   <div class="map_main">

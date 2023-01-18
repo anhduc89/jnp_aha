@@ -29,7 +29,7 @@ class JnP_products extends CI_Controller {
         // $data['clients'] 				    = $this->Model_home->all_client(); // khách hàng của chúng tôi
         // $data['testimonials'] 			    = $this->Model_home->all_testimonial();	// nhận xét của khách hàng
 
-        # echo "<pre>"; print_r($data['home__products_portfolio']); exit;
+        #echo "<pre>"; print_r($data['home__products_portfolio']); exit;
         $this->load->view('page/jnp_header',$data);
 		$this->load->view('page/jnp_page_product_list',$data);
 		$this->load->view('page/jnp_footer');
@@ -43,7 +43,8 @@ class JnP_products extends CI_Controller {
         $id_product = $this->uri->segment(3);
         $data['setting'] = $this->Model_common->all_setting();
         $data['product_detail']   = $this->Model_portfolio->get_portfolio_detail($id_product); 
-        #echo "<pre>"; print_r($data['product_detail']); exit;
+        $data['home__products_portfolio']   = $this->Model_portfolio->get_portfolio_data_limit($lang);
+        // echo "<pre>"; print_r($data['home__products_portfolio']); exit;
 
         $this->load->view('page/jnp_header',$data);
 		$this->load->view('page/jnp_page_product_detail',$data);

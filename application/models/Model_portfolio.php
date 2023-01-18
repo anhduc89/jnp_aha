@@ -20,13 +20,30 @@ class Model_portfolio extends CI_Model
         
         return $query->result_array();
     }
-    public function get_portfolio_data()
+    public function get_portfolio_data($limit = null)
     {
         // $query = $this->db->query("SELECT * from tbl_portfolio  ORDER BY id DESC");
         $lang = $this->session->userdata('lang');
-        $query = $this->db->query("SELECT * from tbl_portfolio WHERE lang = '$lang' ORDER BY id DESC");
+        $sql = 'SELECT * FROM tbl_portfolio 
+                WHERE lang = "'.$lang.'" 
+                ORDER BY id DESC ';
+        
+        $query = $this->db->query($sql);
         return $query->result_array();
     }
+
+    public function get_portfolio_data_limit()
+    {
+        // $query = $this->db->query("SELECT * from tbl_portfolio  ORDER BY id DESC");
+        $lang = $this->session->userdata('lang');
+        $sql = 'SELECT * FROM tbl_portfolio 
+                WHERE lang = "'.$lang.'" 
+                ORDER BY RAND()
+                LIMIT 4';
+        $query = $this->db->query($sql);
+        return $query->result_array();
+    }
+
     public function get_portfolio_data_order_by_name()
     {
         // $query = $this->db->query("SELECT * from tbl_portfolio ORDER BY name ASC");

@@ -116,15 +116,29 @@ if(!$this->session->userdata('id')) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Select language *</label>
 							<div class="col-sm-4">
-								<select name="lang" class="form-control select2">
+								<!-- <select name="lang" class="form-control select2"> -->
 									<?php
-									foreach ($all_photo_category as $row) {
-										?>
-										<option value="<?php echo $row['category_id']; ?>" <?php if($row['category_id'] == $portfolio['category_id']) {echo 'selected';} ?>><?php echo $row['category_name']; ?></option>
-										<?php
-									}
-									?>	
-								</select>
+										if($portfolio['lang'] == 'vn')
+										{
+											$lang_edit = 'Vietnamese';
+										}
+										else if($portfolio['lang'] == 'en')
+										{
+											$lang_edit = 'English';
+										}
+										else
+										{
+											$lang_edit = 'Korean';
+										}
+										
+									?>
+									<select name="lang" class="form-control">
+										<option value="<?php echo $portfolio['lang']; ?>" selected ?><?php echo $lang_edit; ?></option>
+										<option value="vn"> Vietnamese</option>
+										<option value="kr"> Korean	</option>
+										<option value="en"> English	</option>
+									
+									</select>
 							</div>
 						</div>
 						<h3 class="seo-info">Featured Photo</h3>

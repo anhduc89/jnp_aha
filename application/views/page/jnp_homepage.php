@@ -264,37 +264,42 @@
         <div class="row align-items-center">
             <div class="col-md-5 my-3">
                 <h6 class="mb-0"><?php echo $this->lang->line('tab_contact_phone');?></h6>
-                <p class="mb-4">+ 123-456-7890</p>
+                <p class="mb-4"><?php echo $page_contact['contact_phone'];?></p>
 
                 <h6 class="mb-0"><?php echo $this->lang->line('tab_contact_address');?></h6>
-                <p class="mb-4">Khu công nghiệp Bảo Đà - P. Dữu Lâu - Tp Việt Trì - Phú Thọ</p>
+                <p class="mb-4"><?php echo $page_contact['contact_address'];?></p>
 
                 <h6 class="mb-0"><?php echo $this->lang->line('tab_contact_email');?></h6>
-                <p class="mb-0">jpvina.co.ltd@gmail.com</p>
+                <p class="mb-0"><?php echo $page_contact['contact_email'];?></p>
                 <p></p>
             </div>
             <div class="col-md-7">
-                <form>
-                    <h4 class="mb-4"><?php echo $this->lang->line('tab_contact');?></h4>
-                    <div class="form-row">
-                        <div class="form-group col-sm-4">
-                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="<?php echo $this->lang->line('frm_contact_name');?>">
-                        </div>
-                        <div class="form-group col-sm-4">
-                            <input type="email" class="form-control text-white rounded-0 bg-transparent" name="Email" placeholder="<?php echo $this->lang->line('frm_contact_email');?>">
-                        </div>
-                        <div class="form-group col-sm-4">
-                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="subject" placeholder="<?php echo $this->lang->line('frm_contact_subject');?>">
-                        </div>
-                        <div class="form-group col-12">
-                            <textarea name="message" id="" cols="30" rows="6" class="form-control text-white rounded-0 bg-transparent" placeholder="<?php echo $this->lang->line('frm_contact_message');?>"></textarea>
+                
 
-                        </div>
-                        <div class="form-group col-12 mb-0">
-                            <button type="submit" class="btn btn-primary rounded w-md mt-3"><?php echo $this->lang->line('frm_contact_btnsubmit');?></button>
+                    <h4 class="mb-4"><?php echo $this->lang->line('tab_contact');?></h4>
+                    <?php echo form_open_multipart(base_url().$lang.'/JnpHome/send_message',array('class' => 'form-horizontal')); ?>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="<?php echo $this->lang->line('frm_contact_name');?>">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="email" class="form-control text-white rounded-0 bg-transparent" name="email" placeholder="<?php echo $this->lang->line('frm_contact_email');?>">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="text" class="form-control text-white rounded-0 bg-transparent" name="subject" placeholder="<?php echo $this->lang->line('frm_contact_subject');?>">
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea  id="" cols="30" rows="6" class="form-control text-white rounded-0 bg-transparent" name="message" placeholder="<?php echo $this->lang->line('frm_contact_message');?>"></textarea>
+
+                            </div>
+                            <div class="form-group col-12 mb-0">
+                                <button type="submit" class="btn btn-primary rounded w-md mt-3" name="btn_send_message"><?php echo $this->lang->line('frm_contact_btnsubmit');?></button>
+                            </div>  
+                            <div class="callout callout-success col-12">
+                                <p><?php echo $this->session->flashdata('success'); ?></p>
+                            </div>                       
                         </div>                          
-                    </div>                          
-                </form>
+                    <?php echo form_close(); ?>
             </div>
         </div>
         

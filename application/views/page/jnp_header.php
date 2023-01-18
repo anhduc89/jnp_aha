@@ -6,13 +6,39 @@
     <meta name="description" content="Start your development with LeadMark landing page.">
     <meta name="author" content="Devcrud">
     <title>Vina J&P Company</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="<?php echo base_url();?>public/jnp_assets/vendors/themify-icons/css/themify-icons.css">
+     <!-- font icons -->
+     <link rel="stylesheet" href="<?php echo base_url();?>public/jnp_assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + LeadMark main styles -->
 	<link rel="stylesheet" href="<?php echo base_url();?>public/css/owl.carousel.min.css">
+
+   
+
+
 	<link rel="stylesheet" href="<?php echo base_url();?>public/jnp_assets/css/leadmark.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/jnp_assets/css/leadmark-custom.css">
+    
+    
+    
     <link rel="icon" type="image/png" href="<?php echo base_url(); ?>public/uploads/<?php echo $setting['favicon']; ?>">
+<!-- 
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>public/jnp_assets/Resources/Slider/style68b3.css?ver=1" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>public/jnp_assets/Resources/Theme_00/style/style68b3.css?ver=1" /> -->
+
+    <!-- script -->
+    <!-- <script type="text/javascript" src="<?php echo base_url();?>public/jnp_assets/Resources/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url();?>public/jnp_assets/Resources/js/fotorama.js"></script>
+    <script type="text/javascript" src="<?php echo base_url();?>public/jnp_assets/Resources/js/foundation.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url();?>public/jnp_assets/Resources/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url();?>public/jnp_assets/Resources/js/app.js"></script>
+    <script type="text/javascript" src="<?php echo base_url();?>public/jnp_assets/Resources/js/mainScript.js"></script>
+    <script type="text/javascript" src="<?php echo base_url();?>public/jnp_assets/Resources/Slider/script.js"></script>
+
+    <script type="text/javascript" src="<?php echo base_url();?>public/jnp_assets/Resources/js/tooltip/ajax-dynamic-content.js"></script>
+    <script type="text/javascript" src="<?php echo base_url();?>public/jnp_assets/Resources/js/tooltip/ajax-tooltip.js"></script>
+    <script type="text/javascript" src="<?php echo base_url();?>public/jnp_assets/Resources/js/tooltip/ajax.js"></script>
+     -->
+    
+   
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 

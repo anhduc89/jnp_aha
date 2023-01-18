@@ -156,6 +156,7 @@ class Portfolio extends CI_Controller
 	public function edit($id)
 	{
 		
+
     	// If there is no service in this id, then redirect
     	$tot = $this->Model_portfolio->portfolio_check($id);
     	if(!$tot) {
@@ -205,18 +206,20 @@ class Portfolio extends CI_Controller
 						'name'             => $_POST['name'],
 						'short_content'    => $_POST['short_content'],
 						'content'          => $_POST['content'],
-						'client_name'      => $_POST['client_name'],
-						'client_company'   => $_POST['client_company'],
-						'start_date'       => $_POST['start_date'],
-						'end_date'         => $_POST['end_date'],
-						'website'          => $_POST['website'],
-						'cost'             => $_POST['cost'],
-						'client_comment'   => $_POST['client_comment'],
+						'lang'          	=> $_POST['lang'],
+						// 'client_name'      => $_POST['client_name'],
+						// 'client_company'   => $_POST['client_company'],
+						// 'start_date'       => $_POST['start_date'],
+						// 'end_date'         => $_POST['end_date'],
+						// 'website'          => $_POST['website'],
+						// 'cost'             => $_POST['cost'],
+						// 'client_comment'   => $_POST['client_comment'],
 						'category_id'      => $_POST['category_id'],
-						'meta_title'       => $_POST['meta_title'],
-						'meta_keyword'     => $_POST['meta_keyword'],
-						'meta_description' => $_POST['meta_description']
+						// 'meta_title'       => $_POST['meta_title'],
+						// 'meta_keyword'     => $_POST['meta_keyword'],
+						// 'meta_description' => $_POST['meta_description']
 		            );
+					#echo "<pre>"; print_r($form_data); exit;
 		            $this->Model_portfolio->update($id,$form_data);
 				}
 				else {
@@ -229,19 +232,21 @@ class Portfolio extends CI_Controller
 						'name'             => $_POST['name'],
 						'short_content'    => $_POST['short_content'],
 						'content'          => $_POST['content'],
-						'client_name'      => $_POST['client_name'],
-						'client_company'   => $_POST['client_company'],
-						'start_date'       => $_POST['start_date'],
-						'end_date'         => $_POST['end_date'],
-						'website'          => $_POST['website'],
-						'cost'             => $_POST['cost'],
-						'client_comment'   => $_POST['client_comment'],
+						'lang'             => $_POST['lang'],
+						// 'client_name'      => $_POST['client_name'],
+						// 'client_company'   => $_POST['client_company'],
+						// 'start_date'       => $_POST['start_date'],
+						// 'end_date'         => $_POST['end_date'],
+						// 'website'          => $_POST['website'],
+						// 'cost'             => $_POST['cost'],
+						// 'client_comment'   => $_POST['client_comment'],
 						'category_id'      => $_POST['category_id'],
 						'photo'            => $final_name,
-						'meta_title'       => $_POST['meta_title'],
-						'meta_keyword'     => $_POST['meta_keyword'],
-						'meta_description' => $_POST['meta_description']
+						// 'meta_title'       => $_POST['meta_title'],
+						// 'meta_keyword'     => $_POST['meta_keyword'],
+						// 'meta_description' => $_POST['meta_description']
 		            );
+					#echo "<pre>"; print_r($form_data); exit;
 		            $this->Model_portfolio->update($id,$form_data);
 				}
 
@@ -302,6 +307,7 @@ class Portfolio extends CI_Controller
 		} else {
 			$data['portfolio'] = $this->Model_portfolio->getData($id);
 			$data['all_photo_category'] = $this->Model_portfolio->get_all_photo_category();
+			// echo "<pre>"; print_r($data['portfolio']); exit;
 			$data['all_photos_by_id'] = $this->Model_portfolio->get_all_photos_by_category_id($id);
 	       	$this->load->view('admin/view_header',$data);
 			$this->load->view('admin/view_portfolio_edit',$data);

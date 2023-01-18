@@ -68,7 +68,7 @@ if(!$this->session->userdata('id')) {
 			                            <div class="modal-content">
 			                                <div class="modal-header">
 			                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			                                    <h4 class="modal-title" id="myModalLabel">View Details</h4>
+			                                    <h4 class="modal-title" id="myModalLabel">Thông tin chi tiết </h4>
 			                                </div>
 			                                <div class="modal-body">
 			                                    <div class="rTable">
@@ -84,7 +84,7 @@ if(!$this->session->userdata('id')) {
 			                                                <?php echo $row['content']; ?>
 			                                            </div>
 			                                        </div>
-			                                        <div class="rTableRow">
+			                                        <!-- <div class="rTableRow">
 			                                            <div class="rTableHead"><strong>Client Name</strong></div>
 			                                            <div class="rTableCell">
 			                                                <?php echo $row['client_name']; ?>
@@ -125,7 +125,7 @@ if(!$this->session->userdata('id')) {
 			                                            <div class="rTableCell">
 			                                                <?php echo $row['client_comment']; ?>
 			                                            </div>
-			                                        </div>
+			                                        </div> -->
 			                                        <div class="rTableRow">
 			                                            <div class="rTableHead"><strong>Category</strong></div>
 			                                            <div class="rTableCell">

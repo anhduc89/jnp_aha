@@ -1,3 +1,6 @@
+<?php
+    $lang =  $this->session->userdata('lang');
+?>
 <div class="product-list-page common-banner">
     <!-- Hero Start -->
     <div class="container-fluid bg-secondary py-5 bg-hero">
@@ -27,11 +30,11 @@
                         echo '
                             <div class="col-12 col-md-6 col-xl-4 my-3 my-md-5">
                                 <div class="product-item">
-                                    <a class="image-container" href="">
+                                    <a class="image-container" href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">
                                         <img src="'.base_url().'public/uploads/'.$item['photo'].'" alt="">
                                     </a>
                                     <div class="content">
-                                        <a class="title" href="">
+                                        <a class="title" href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">
                                             <h4 class="ellipsis-text">'.$item['name'].'</h4>
                                         </a>
                                         <div class="short-description ellipsis-text">
