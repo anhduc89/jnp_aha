@@ -145,6 +145,18 @@
                     </div>';
                 }
             ?>
+            <!-- <div class="col-md-6 col-lg-4 web new">
+                <div class="portfolio-item">
+                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/web-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                    <div class="content-holder">
+                        <a class="img-popup" href="<?php echo base_url()?>public/jnp_assets/imgs/web-2.jpg"></a>
+                        <div class="text-holder">
+                            <h6 class="title"><a href="#">BRANDING</a></h6>
+                            <p class="subtitle"><a href="#">Expedita corporis doloremque velit in totam!</a></p>
+                        </div>
+                    </div> 
+                </div>                         
+            </div>  -->
         </div>   
     </div>            
 </section>
@@ -171,6 +183,16 @@
                         </div>';
                 }
             ?>
+            <!-- <div class="col-md-4">
+                <div class="card border-0 mb-4">
+                    <img src="<?php echo base_url()?>public/jnp_assets/imgs/blog-1.jpg" alt="" class="card-img-top w-100">
+                    <div class="card-body">                         
+                        <h6 class="card-title">SAMSUNG VINA ELECTRONICS CO.,LTD</h6>
+                        <p>Công ty TNHH Điện tử Samsung Vina</p>
+                        <a href="javascript:void(0)" class="small text-muted">Go To The Article</a>
+                    </div>
+                </div>
+            </div> -->
         </div>
         <div class="blog-dots owl-dots"></div>
     </div>
@@ -202,6 +224,7 @@
                         </div>';
                 }
             ?>
+        
         </div>
     </div>
 </section>
@@ -223,29 +246,28 @@
                 <p></p>
             </div>
             <div class="col-md-7">
-
                 <h4 class="mb-4"><?php echo $this->lang->line('tab_contact');?></h4>
+                
                 <form  id="frm-send-message"  method="post" novalidate="novalidate" enctype="multipart/form-data">
                     <div class="form-row">
                         <div class="form-group col-sm-4">
-                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" placeholder="<?php echo $this->lang->line('frm_contact_name');?>">
+                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name" minlength = "5" placeholder="<?php echo $this->lang->line('frm_contact_name');?>" required/>
                         </div>
                         <div class="form-group col-sm-4">
-                            <input type="email" class="form-control text-white rounded-0 bg-transparent" name="email" placeholder="<?php echo $this->lang->line('frm_contact_email');?>">
+                            <input type="email" class="form-control text-white rounded-0 bg-transparent" name="email" placeholder="<?php echo $this->lang->line('frm_contact_email');?>" required/>
                         </div>
                         <div class="form-group col-sm-4">
-                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="subject" placeholder="<?php echo $this->lang->line('frm_contact_subject');?>">
+                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="subject" placeholder="<?php echo $this->lang->line('frm_contact_subject');?>" required/>
                         </div>
                         <div class="form-group col-12">
-                            <textarea  id="" cols="30" rows="6" class="form-control text-white rounded-0 bg-transparent" name="message" placeholder="<?php echo $this->lang->line('frm_contact_message');?>"></textarea>
+                            <textarea  id="" cols="30" rows="6" class="form-control text-white rounded-0 bg-transparent" name="message" placeholder="<?php echo $this->lang->line('frm_contact_message');?>" required/></textarea>
 
                         </div>
                         <div class="form-group col-12 mb-0">
-                            <button type="submit" class="btn btn-primary rounded w-md mt-3" ><?php echo $this->lang->line('frm_contact_btnsubmit');?></button>
+                            <button type="submit" class="btn btn-primary rounded w-md mt-3" name="btn_send_message" id="btn_send_message"><?php echo $this->lang->line('frm_contact_btnsubmit');?></button>
                         </div>  
-                                       
-                    </div>                          
-                </form>
+                        <input type="hidden" name="status" value="0">                
+                </form>      
             </div>
         </div>
         
@@ -264,71 +286,63 @@
         <!-- End of Page Footer -->  
     </div>
 </section>
-   <!-- core  -->
-   <script src="<?php echo base_url();?>public/jnp_assets/vendors/jquery/jquery-3.4.1.js"></script>
+<!-- core  -->
+    <script src="<?php echo base_url();?>public/jnp_assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="<?php echo base_url();?>public/jnp_assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-     <script src="<?php echo base_url();?>public/jnp_assets/js/jquery.validate.js"></script>
-     <script type="text/javascript">
-    $(document).ready(function () {
-        $("#frm-send-message").validate({
-            rules:{
-                name: {
-                    required: true,
-                    minlength: 3
-                },
-                subject: "required",
-                message : "required",
-                email: {
-                    required: true,
-                    email: true
-                },
-            },
-            messages:{
-                name:"Please enter your name..!",
-                subject:"Please enter message..!",
-                message:"Please enter message..!",
-                email:"Please enter your email..!",
-            },
-            submitHandler: function(form) {
-                alert('Cảm ơn Quý khách đã gửi tin nhắn. Chúng tôi sẽ sớm liên lạc Quý khách');
-                var base_url= '<?php echo base_url().$lang;?>';
-                
-                $.ajax({
-                    type: "POST",
-                    url: base_url + "/JnpHome/send_message",
-                    data: $(form).serialize(),
-                    success: function(data) {}
-                }); 
-            }
-        });
-    });
-      
-               
-            // ====================================================
+    <!-- <script src="<?php echo base_url();?>public/jnp_assets/js/jquery.validate.min.js"></script> -->
+    <script type="text/javascript">
+        $("#frm-send-message").on('submit', function (e){
+            e.preventDefault();
+            var base_url = '<?php echo base_url().$lang;?>';
+            // ----------------------------------
+        //     $("#frm-send-message").validate({
+		// 	rules: {
+		// 		name: "required",
+		// 		subject: "required",
+		// 		message : "required",
+		// 		email: {
+		// 			required: true,
+		// 			email: true
+		// 		},
+				
+		// 	},
+		// 	messages: {
+		// 		name: "Vui lòng điền họ tên để chúng tôi tiện liên lạc",
+		// 		subject: "Tiêu đề không được để trống ",
+		// 		email: "Vui lòng điền địa chỉ email",
+				
+		// 	}
 
-            // $.ajax({
-                // method: "POST",
-                // url: base_url + "/JnpHome/send_message",
-                // dataType: "json",
-                // data: new FormData(this),
-                // mimeType: "multipart/form-data",
-                // contentType: false,
-                // processData: false,
+        //     submitHandler: function(form) {
+        //     var base_url = '<?php echo base_url().$lang;?>';
+            
+        // }  
+		// });
+
+        $.ajax({
+                method: "POST",
+                url: base_url + "/JnpHome/send_message",
+                dataType: "json",
+                data: new FormData(this),
+                mimeType: "multipart/form-data",
+                contentType: false,
+                processData: false,
                         
-                // success : function (data) 
-                // {
-                //     console.log('data');
-                //     if(data.success == "1")
-                //     {
-                //         alert(data.response);
-                //     }
-                // }
-            // });
+                success : function (data) 
+                {
+                    console.log('data');
+                    if(data.success == "1")
+                    {
+                        alert(data.response);
+                    }
+                }
+            });
         
-  
-    </script>
-    
+        });
 
+    </script>
+
+   
 
     <!-- bootstrap 3 affix -->
 	<script src="<?php echo base_url();?>public/jnp_assets/vendors/bootstrap/bootstrap.affix.js"></script>

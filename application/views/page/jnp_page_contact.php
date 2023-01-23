@@ -63,8 +63,8 @@
     <div class="contact-form">
         <div class="container">
             <div class="row">
-               <div class="col-md-6 padding_right0">
-                    <?php echo form_open_multipart(base_url().$lang.'/JnpHome/send_message',array('class' => 'form-horizontal main_form')) ; ?> <!--id="request" class="main_form" -->
+               <!-- <div class="col-md-6 padding_right0">
+                    <?php echo form_open_multipart(base_url().$lang.'/JnpHome/send_message',array('class' => 'form-horizontal main_form')) ; ?> id="request" class="main_form"
                      <div class="row">
                      
                         <div class="col-md-12 ">
@@ -87,8 +87,9 @@
                             </div>       
                      </div>
                      <?php echo form_close(); ?>
-               </div>
-               <div class="col-md-6 padding_left0">
+               </div> -->
+
+               <div class="col-md-12">
                   <div class="map_main">
                      <div class="map-responsive">
                         <?php echo $page_contact['contact_map'];?>

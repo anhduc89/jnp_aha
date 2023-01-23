@@ -73,11 +73,3 @@
     </div>
 
 </div>
-<style>
-    
-    .btn-outline-dark:hover {
-        background-color: #ff6e42;
-        color : #fff;
-        border : none;
-    }
-</style>

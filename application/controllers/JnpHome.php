@@ -50,6 +50,8 @@ class JnpHome extends CI_Controller {
 
     public function send_message()
     {
+        $dataUpload = $this->input->post();
+       
         $this->session->set_userdata("lang", $this->uri->segment(1));
         $lang =  $this->session->userdata('lang');
         // echo $lang; exit;
@@ -64,63 +66,13 @@ class JnpHome extends CI_Controller {
             $this->lang->load('home', $lang);
         }
 
-        $error = '';
-		$success = '';
-
-        if(isset($_POST['btn_send_message'])) // trang home
-		{
-            $valid = 1;
-
-            $this->form_validation->set_rules('name', 'Name', 'trim|required');
-			$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|xss_clean');
-			$this->form_validation->set_rules('subject', 'Subject', 'trim|required');
-
-            if($this->form_validation->run() == FALSE) {
-				$valid = 0;
-                $error .= 'Điền đầy đủ thông tin';
-            }
-
-            $form_data = array(
-                'name'              => $_POST['name'],
-                'email'             => $_POST['email'],
-                'subject'           => $_POST['subject'],
-                'message'          	=> $_POST['message'],
-                'status'            => '0'     
-            );
-
-            $this->Model_contact->add_message($form_data);
-
-            $success = 'Cảm ơn sự liên hệ của quý khách. Chúng tôi sẽ sớm gửi phản hồi.';
-            $this->session->set_flashdata('success',$success);
-            redirect(base_url().$lang);
+        $result = $this->Model_contact->add_message($dataUpload);
+        if($result == true)
+        {
+            echo json_encode(array("success" => 1, "response" => "Cảm ơn Quý khách đã gửi thông tin liên lạc. Chúng tôi sẽ sớm gửi phản hồi cho Quý khách"));	
         }
-        else if(isset($_POST['btn_sendmail'])) // trang contact 
-		{
-            $valid = 1;
-
-            $this->form_validation->set_rules('name', 'Name', 'trim|required');
-			$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|xss_clean');
-			$this->form_validation->set_rules('subject', 'Subject', 'trim|required');
-
-            if($this->form_validation->run() == FALSE) {
-				$valid = 0;
-                $error .= 'Điền đầy đủ thông tin';
-            }
-
-            $form_data = array(
-                'name'              => $_POST['name'],
-                'email'             => $_POST['email'],
-                'subject'           => $_POST['subject'],
-                'message'          	=> $_POST['message'],
-                'status'            => '0'     
-            );
-
-            $this->Model_contact->add_message($form_data);
-
-            $success = 'Cảm ơn sự liên hệ của quý khách. Chúng tôi sẽ sớm gửi phản hồi.';
-            $this->session->set_flashdata('success',$success);
-            redirect(base_url().$lang.'/lien-he');
-        }
+      
+     
     }
 }
 ?>

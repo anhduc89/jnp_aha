@@ -3267,14 +3267,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-dark {
-  color: #1b1b1b;
-  border-color: #1b1b1b;
+  color: #ff6e42 !important;
+  border-color: #ff6e42 !important;
 }
 
 .btn-outline-dark:hover {
-  color: #fff;
-  background-color: #1b1b1b;
-  border-color: #1b1b1b;
+  background-color: #ff6e42 !important;
+  color : #fff !important;
+  border : none !important;
 }
 
 .btn-outline-dark:focus, .btn-outline-dark.focus {
