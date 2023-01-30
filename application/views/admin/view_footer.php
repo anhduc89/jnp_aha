@@ -3,6 +3,37 @@
 	</div>
 
 	<script src="<?php echo base_url(); ?>public/admin/js/jquery-2.2.4.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('input[name="change_status_mess"]').on('change', function() {
+
+				if (confirm('Trạng thái của tin nhắn sẽ được chuyển sang đã phản hồi')) {
+
+					$('input[name="change_status_mess"]').not(this).prop('checked', false);
+					var id = $('input[name="change_status_mess"]:checked').attr("id");
+					var base_url = '<?php echo base_url();?>';
+					$.ajax({
+						url: base_url + 'admin/Message_customer/change_status',
+						dataType : "json",
+						type: "POST",
+						data: {
+							id : id
+						},
+						success: function (data) {
+							if(data.status == 'success')
+							{
+								alert(data.response);
+							}
+							
+						}
+					});
+				}
+			});
+		});
+	</script>
+
+
 	<script src="<?php echo base_url(); ?>public/admin/js/bootstrap.min.js"></script>
 	<script src="<?php echo base_url(); ?>public/admin/js/jquery.dataTables.min.js"></script>
 	<script src="<?php echo base_url(); ?>public/admin/js/dataTables.bootstrap.min.js"></script>

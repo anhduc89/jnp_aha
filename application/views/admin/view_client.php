@@ -70,6 +70,7 @@ if(!$this->session->userdata('id')) {
 					</table>
 				</div>
 			</div>
+			
 		</div>
 	</div>
 

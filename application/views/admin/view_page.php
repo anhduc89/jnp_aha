@@ -8,7 +8,7 @@ if(!$this->session->userdata('id')) {
 
 <section class="content-header">
     <div class="content-header-left">
-        <h1>Cài đặt trang / Setup page</h1>
+        <h1>Về chúng tôi</h1>
     </div>
 </section>
 

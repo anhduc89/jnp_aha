@@ -261,8 +261,8 @@
 			          </a>
 			        </li> -->
 
-			        <li class="treeview <?php if( ($class_name == 'why_choose') ) {echo 'active';} ?>">
-			          <a href="<?php echo base_url(); ?>admin/why_choose">
+			        <li class="treeview <?php if( ($class_name == 'message_customer') ) {echo 'active';} ?>">
+			          <a href="<?php echo base_url(); ?>admin/message_customer">
 			            <i class="fa fa-paper-plane-o"></i> <span>Người dùng liên hệ</span>
 			          </a>
 			        </li>

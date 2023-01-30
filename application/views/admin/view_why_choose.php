@@ -53,12 +53,12 @@ if(!$this->session->userdata('id')) {
 								?>
 								<tr>
 									<td><?php echo $i; ?></td>
-									<td><?php echo $row['name']; ?></td>
-									<td><i class="<?php echo $row['icon']; ?>" style="font-size:30px;"></i></td>
-									<td style="width:200px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['name']; ?>" style="width:200px;"></td>									
+									<td><?php echo  $row['name']; ?></td>
+									<td><i class="<?php echo  $row['icon']; ?>" style="font-size:30px;"></i></td>
+									<td style="width:200px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo  $row['photo']; ?>" alt="<?php echo  $row['name']; ?>" style="width:200px;"></td>									
 									<td>
-										<a href="<?php echo base_url(); ?>admin/why_choose/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Chỉnh sửa</a>
-										<a href="<?php echo base_url(); ?>admin/why_choose/delete/<?php echo $row['id']; ?>" class="btn btn-danger btn-xs" onClick="return confirm('Are you sure?');"><i class="fa fa-trash-o" aria-hidden="true"></i> Xóa</a> 
+										<a href="<?php echo base_url(); ?>admin/why_choose/edit/<?php echo  $row['id']; ?>" class="btn btn-primary btn-xs"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Chỉnh sửa</a>
+										<a href="<?php echo base_url(); ?>admin/why_choose/delete/<?php echo  $row['id']; ?>" class="btn btn-danger btn-xs" onClick="return confirm('Are you sure?');"><i class="fa fa-trash-o" aria-hidden="true"></i> Xóa</a> 
 									</td>
 								</tr>
 								<?php
