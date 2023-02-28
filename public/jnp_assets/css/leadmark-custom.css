@@ -366,7 +366,7 @@
 @media only screen and (max-width: 600px) {
     .portfolio-section .filters {
         border: none;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     .portfolio-section .filters a {

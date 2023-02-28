@@ -72,9 +72,15 @@ $route['admin'] = 'admin/login';
 $route['products/(:num)'] = 'products/index/$1';
 
 // for product list and product detail
-$route['^(en|kr|vn)/danh-sach-san-pham']        = 'JnP_products';
+// <<<<<<< HEAD
+// $route['^(en|kr|vn)/danh-sach-san-pham']        = 'JnP_products';
+// $route['^(en|kr|vn)/danh-sach-san-pham/(:num)'] = 'JnP_products/index/$2';
+// $route['^(en|kr|vn)/thong-tin-san-pham/(:num)'] = 'JnP_products/product_detail/$3;
+
+$route['^(en|kr|vn)/danh-sach-san-pham']        = 'JnP_products/index';
 $route['^(en|kr|vn)/danh-sach-san-pham/(:num)'] = 'JnP_products/index/$2';
-$route['^(en|kr|vn)/thong-tin-san-pham/(:num)'] = 'JnP_products/product_detail/$3;
+$route['^(en|kr|vn)/thong-tin-san-pham/(:num)'] = 'JnP_products/product_detail/$3';
+
 // for about page
 $route['^(en|kr|vn)/gioi-thieu'] = 'Jnp_about/index';
 

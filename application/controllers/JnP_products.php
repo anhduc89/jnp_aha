@@ -29,7 +29,6 @@ class JnP_products extends CI_Controller {
         // $data['home_categories_portfolio']  = $this->Model_portfolio->get_portfolio_category($lang); // danh mục sản phẩm
         // $data['clients'] 				    = $this->Model_home->all_client(); // khách hàng của chúng tôi
         // $data['testimonials'] 			    = $this->Model_home->all_testimonial();	// nhận xét của khách hàng
-
         #echo "<pre>"; print_r($data); exit;
         $this->load->view('page/jnp_header',$data);
 		$this->load->view('page/jnp_page_product_list',$data);
