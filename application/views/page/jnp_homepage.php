@@ -1,5 +1,19 @@
 <?php
+    // $lang =  $this->session->userdata('lang');
+
+    $this->session->set_userdata("lang", $this->uri->segment(1));
     $lang =  $this->session->userdata('lang');
+    if($lang == '') 
+    {
+        $lang = 'vn';
+        $this->session->set_userdata("lang", $lang);
+        $this->lang->load('home', $lang);
+    }
+    else 
+    {
+        // echo $lang;
+        $this->lang->load('home', $lang);
+    }
 ?>
 <!-- Page Header -->
 <header class="header">
@@ -8,9 +22,10 @@
         <h1 class="title"><?php echo $this->lang->line('slide_content');?></h1>  
     </div>  
     <div class="shape">
-        <svg viewBox="0 0 1500 200">
+        <!-- <svg viewBox="0 0 1500 200">
             <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
-        </svg>
+        </svg> -->
+        <img src="<?php echo base_url().'public/uploads/'.$home_about['home_about_photo'];?>" alt="">
     </div>  
     <div class="mouse-icon"><div class="wheel"></div></div>
 </header>
@@ -117,8 +132,8 @@
                                 <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
                                 <div class="text-holder">
 
-                                    <h6 class="title"><a href="#">'. $item['name'].'</a></h6>
-                                    <p class="subtitle"><a href="#">'. $item['short_content'].'</a></p>
+                                    <h6 class="title"><a href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">'. $item['name'].'</a></h6>
+                                    <p class="subtitle"><a href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">'. $item['short_content'].'</a></p>
                                 </div>
                             </div>   
                         </div>             
@@ -137,8 +152,8 @@
                                 <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
                                 <div class="text-holder">
 
-                                    <h6 class="title"><a href="#">'. $item['name'].'</a></h6>
-                                    <p class="subtitle"><a href="#">'. $item['short_content'].'</a></p>
+                                    <h6 class="title"><a href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">'. $item['name'].'</a></h6>
+                                    <p class="subtitle"><a href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">'. $item['short_content'].'</a></p>
                                 </div>
                             </div>   
                         </div>             

@@ -41,11 +41,12 @@
         <section class="py-5 bg-light">
             <div class="container px-4 px-lg-5 mt-5">
                 <h2 class="fw-bolder mb-4">Sản phẩm khác </h2>
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <!-- <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"> -->
+                <div class="row justify-content-center">
                     <?php
                         foreach($home__products_portfolio as $i)
                         {
-                            echo '<div class="col mb-5">
+                            echo '<div class="col-xs-12 col-sm-12 col-md-3">
                                     <div class="card h-100">
                                         <!-- Product image-->
                                         <img class="card-img-top" src="'.base_url().'public/uploads/'.$i['photo'].'" alt="...">

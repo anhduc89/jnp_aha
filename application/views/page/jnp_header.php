@@ -11,14 +11,9 @@
     <!-- Bootstrap + LeadMark main styles -->
 	<link rel="stylesheet" href="<?php echo base_url();?>public/css/owl.carousel.min.css">
 
-   
-
-
 	<link rel="stylesheet" href="<?php echo base_url();?>public/jnp_assets/css/leadmark.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/jnp_assets/css/leadmark-custom.css">
-    
-    
-    
+        
     <link rel="icon" type="image/png" href="<?php echo base_url(); ?>public/uploads/<?php echo $setting['favicon']; ?>">    
    
 </head>
@@ -35,9 +30,9 @@
 
     <!-- page Navigation -->
     <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
-        <div class="container">
+        <div class="container container-menu">
             <a class="navbar-brand" href="<?php echo base_url();?>">
-                <img src="<?php echo base_url();?>public/jnp_assets/imgs/logo.svg" alt="">
+                <img src="http://jpvina.com.vn/jnp/public/uploads/logo.png" alt="">
             </a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
