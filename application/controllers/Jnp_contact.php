@@ -19,6 +19,7 @@ class Jnp_contact extends CI_Controller {
 
 		$data['setting'] = $this->Model_common->all_setting();
 		$data['page_contact'] = $this->Model_common->all_page_contact();
+		$data['home_about']   = $this->Model_common->all_page_about(); // về chúng tôi
 		#echo "<pre>"; print_r($data); exit;
 		// $data['comment'] = $this->Model_common->all_comment();
 		// $data['social'] = $this->Model_common->all_social();

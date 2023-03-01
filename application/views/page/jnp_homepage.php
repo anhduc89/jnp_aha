@@ -18,8 +18,8 @@
 <!-- Page Header -->
 <header class="header">
     <div class="overlay"> 
-        <h1 class="subtitle"><?php echo $this->lang->line('slide_welcome');?></h1>
-        <h1 class="title"><?php echo $this->lang->line('slide_content');?></h1>  
+        <!-- <h1 class="subtitle"><?php echo $this->lang->line('slide_welcome');?></h1> -->
+        <h1 class="title"><?php echo $this->lang->line('slide_welcome');?></h1> 
     </div>  
     <div class="shape">
         <!-- <svg viewBox="0 0 1500 200">

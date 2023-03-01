@@ -3,22 +3,21 @@
     $lang['menu_product']                       = 'Sản phẩm';
     $lang['menu_contact']                       = 'Liên hệ';
     $lang['menu_activities']                    = 'Hoạt động';
-    $lang['slide_welcome']                      = 'Chào mừng đến với Vina J&P';
+    $lang['slide_welcome']                      = 'Chào mừng đến với J&P Vina';
     $lang['slide_content']                      = 'Chúng ta là một gia đình';
     // $lang['tab_desc_aboutus']                   = 'Về chúng tôi';
     $lang['tab_desc_aboutus_content_1']         = '<h6 class="section-title mb-0">Về chúng tôi</h6>
-                                                    <h6 class="section-subtitle mb-4">Vina J&P Company</h6>
-                                                    <p> Công ty Vina J&P là công ty liên doanh Việt Nam - Hàn Quốc chuyên sản xuất về các sản phẩm bao bì đóng gói.
-                                                        Được thành lập từ năm 200x, với gần 20 năm kinh nghiệm trong ngành, chúng tôi luôn cố gắng đem đến Quý khách hàng những sản phẩm tốt nhất về lĩnh vực bao bì đóng gói.
+                                                    <h6 class="section-subtitle mb-4">J&P Vina  Company</h6>
+                                                    <p>J&P được thành lập vào năm 1998 bởi các chuyên gia quản lý, kỹ thuật về vải bạt polyethylene(P.E.). 
+                                                    Thông qua các cơ sở vật chất, trang thiết bị mới nhất và hệ thống quản lý chất lượng đã được hệ thống hóa, 
+                                                    J&P luôn ưu tiên và cam kết đem lại những sản phẩm có chất lượng cao nhằm đạt được sự hài lòng của khách hàng.
                                                     </p>';
-    $lang['tab_desc_aboutus_content_2']         = '<p> Chúng tôi cung cấp tất cả các sản phẩm bao bì liên quan đến các lĩnh vực : thực phẩm, y tế, hàng xuất khẩu, linh kiện điện tử ...</p>
-                                                    <p><b>Chúng tôi lựa chọn những nguyên liệu tốt nhất, thân thiện với môi trường.</b><br>
-                                                    </p>
-                                                    <p>Với những sản phẩm của mình, chúng tôi đã có được sự tin tưởng của các khách hàng lớn như : Samsung, LG, Hundai, ...
-                                                        cùng với những thành tựu đã đạt được, chúng tôi vẫn luôn tâm niệm cố gắng hết sức, cải tiến kĩ thuật để có những sản phẩm chất lượng tốt nhất đem đến Quý khách hàng.
+    $lang['tab_desc_aboutus_content_2']         = '<p>
+                                                      <b> Chúng tôi tôn trọng mọi yêu cầu của khách hàng và cam kết sẽ đáp lại tất cả sự ưu ái của khách hàng bằng cách 
+                                                      luôn cung cấp các sản phẩm cải tiến hơn trong tương lai.  </b>
                                                     </p>';
     $lang['tab_img_company']                    = 'Hình ảnh công ty';
-    $lang['tab_img_company_slogan']             = 'Một tập thể gắn kết';
+    $lang['tab_img_company_slogan']             = 'Xem thêm';
     $lang['tab_products']                       = 'Sản phẩm chính';
     $lang['tab_products_showmore']              = 'Xem thêm các sản phẩm khác';
     $lang['tab_products_all_product']           = 'Tất cả';
@@ -37,6 +36,12 @@
     $lang['frm_contact_message']               = 'Tin nhắn';
     $lang['frm_contact_btnsubmit']             = 'Gửi thông tin';
 
+    // trang sản phẩm và chi tiết sản phẩm 
+    $lang['products_title']                    = 'Danh sách sản phẩm';
+    $lang['btn_products']                      = 'Sản phẩm';
+    $lang['product_detail_title']              = 'Thông tin sản phẩm';
+    $lang['orther_product']                    = 'Sản phẩm khác';
+
     // trang liên hệ contact
     $lang['contact_heading']                    = 'Liên hệ';
     $lang['contact_btn_home']                   = 'Trang chủ';
@@ -48,4 +53,8 @@
     $lang['about']                              = 'Giới thiệu công ty';
     $lang['about_btn_home']                     = 'Trang chủ';
     $lang['about_btn_page']                     = 'Về chúng tôi';
+
+    // trang giới thiệu hình ảnh hoạt động của công ty
+    $lang['img_activities']                     = 'Hoạt động sản xuất';
+    $lang['btn_img_activities']                 = 'Hình ảnh';
 ?>

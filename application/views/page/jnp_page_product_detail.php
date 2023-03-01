@@ -1,23 +1,26 @@
 <?php
     $lang =  $this->session->userdata('lang');
 ?>
-<div class="product-detail-page common-banner">
-    <!-- Hero Start -->
-    <div class="container-fluid bg-secondary py-5 bg-hero">
+<div class="product-detail-page common-banner header">
+   <!-- Hero Start -->
+   <div class="container-fluid bg-secondary py-5 bg-hero">
         <div class="bg-image">
-            <img src="<?php echo base_url();?>public/jnp_assets/imgs/header.jpg" alt="">
+            <img src="<?php echo base_url().'public/uploads/'.$home_about['home_about_photo'];?>" alt="">
         </div>
-        <div class="bg-container container py-5">
-            <div class="justify-content-start">
-                <div class="text-center text-lg-left">
-                    <h1 class="display-1 text-dark text-light-present">Thông tin sản phẩm</h1>
-                    <div class="pt-2">
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-4 mx-2 btn-rounded-pill">Home</a>
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-4 mx-2 btn-rounded-pill">Thông tin sản phẩm</a>
+        <div class="overlay">
+            <div class="bg-container container py-5 ">
+                <div class="justify-content-start ">
+                    <div class="text-center text-lg-left">
+                        <h1 class="display-1 text-dark text-light-present"><?php echo $this->lang->line('product_detail_title');?></h1>
+                        <div class="pt-2">
+                            <a href="<?php echo base_url().$lang;?>" class="btn btn-primary rounded-pill py-2 px-4 mx-2 btn-rounded-pill"><?php echo $this->lang->line('about_btn_home');?></a>
+                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 mx-2 btn-rounded-pill"><?php echo $this->lang->line('btn_products');?></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        
     </div>
     <!-- Hero End -->
 
@@ -40,22 +43,21 @@
         <!-- Related items section-->
         <section class="py-5 bg-light">
             <div class="container px-4 px-lg-5 mt-5">
-                <h2 class="fw-bolder mb-4">Sản phẩm khác </h2>
+                <h2 class="fw-bolder mb-4"><?php echo $this->lang->line('orther_product');?></h2>
                 <!-- <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"> -->
                 <div class="row justify-content-center">
                     <?php
                         foreach($home__products_portfolio as $i)
                         {
-                            echo '<div class="col-xs-12 col-sm-12 col-md-3">
+                            echo '<div class="col-xs-12 col-sm-12 col-md-3" style="margin-bottom: 10px;">
                                     <div class="card h-100">
                                         <!-- Product image-->
-                                        <img class="card-img-top" src="'.base_url().'public/uploads/'.$i['photo'].'" alt="...">
+                                        <!-- <img class="card-img-top" src="'.base_url().'public/uploads/'.$i['photo'].'" alt="'.$i['name'].'">-->
+                                        <div class="img-activities" style="margin-right: 10px; width: 100%; height: 160px; background-size: cover;background-image:url('.base_url().'public/uploads/'.$i['photo'].')"> </div>
                                         <!-- Product details-->
                                         <div class="card-body p-4">
                                             <div class="text-center">
-                                               
                                                 <h5 class="fw-bolder">'.$i['name'].'</h5>
-                                               
                                             </div>
                                         </div>
                                         <!-- Product actions-->

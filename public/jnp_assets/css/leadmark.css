@@ -11420,9 +11420,10 @@ textarea.form-control {
 
 .header {
   position: relative;
-  height: 100vh;
-  min-height: 500px;
-  background: url(../imgs/header.jpg) no-repeat center center fixed;
+  /* height: 100vh; */
+  /* min-height: 400px;
+  max-height: 950px; */
+  /* background: url(../imgs/header.jpg) no-repeat center center fixed; */
   background-size: cover;
   overflow: hidden;
 }
@@ -11433,7 +11434,7 @@ textarea.form-control {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.3);
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;

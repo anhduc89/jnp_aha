@@ -14,7 +14,8 @@
 	<link rel="stylesheet" href="<?php echo base_url();?>public/jnp_assets/css/leadmark.css">
 	<link rel="stylesheet" href="<?php echo base_url();?>public/jnp_assets/css/leadmark-custom.css">
         
-    <link rel="icon" type="image/png" href="<?php echo base_url(); ?>public/uploads/<?php echo $setting['favicon']; ?>">    
+    <!-- <link rel="icon" type="image/png" href="<?php echo base_url(); ?>public/uploads/<?php echo $setting['favicon']; ?>"> -->
+    <link rel="icon" type="image/png" href="<?php echo base_url().'/public/uploads/logo.png' ?>">    
    
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -31,8 +32,8 @@
     <!-- page Navigation -->
     <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
         <div class="container container-menu">
-            <a class="navbar-brand" href="<?php echo base_url();?>">
-                <img src="http://jpvina.com.vn/jnp/public/uploads/logo.png" alt="">
+            <a class="navbar-brand" href="<?php echo base_url().$lang;;?>">
+                <img src="<?php echo base_url()?>/public/uploads/logo.png" alt="">
             </a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -47,13 +48,9 @@
                         <a class="nav-link" href="<?php echo base_url().$lang.'/danh-sach-san-pham';?>"> <?php echo $this->lang->line('menu_product');?> </a> 
                     </li>
 
-
                     <li class="nav-item"> 
-                        <a class="nav-link" href="#service"> <?php echo $this->lang->line('menu_activities');?> </a>
+                        <a class="nav-link" href="<?php echo base_url().$lang.'/hinh-anh-cong-ty';?>"> <?php echo $this->lang->line('menu_activities');?> </a>
                     </li>
-
-                    
-                    
                     
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo base_url().$lang.'/lien-he';?>"><?php echo $this->lang->line('menu_contact');?></a>

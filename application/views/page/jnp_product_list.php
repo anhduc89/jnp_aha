@@ -2,23 +2,26 @@
      $lang =  $this->session->userdata('lang');
 ?>
 
-<div class="product-list-page common-banner">
-    <!-- Hero Start -->
-    <div class="container-fluid bg-secondary py-5 bg-hero">
+<div class="product-list-page common-banner header">
+   <!-- Hero Start -->
+   <div class="container-fluid bg-secondary py-5 bg-hero">
         <div class="bg-image">
-            <img src="<?php echo base_url();?>public/jnp_assets/imgs/header.jpg" alt="">
+            <img src="<?php echo base_url().'public/uploads/'.$page_about['home_about_photo'];?>" alt="">
         </div>
-        <div class="bg-container container py-5">
-            <div class="justify-content-start">
-                <div class="text-center text-lg-left">
-                    <h1 class="display-1 text-dark">All Products</h1>
-                    <div class="pt-2">
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-4 mx-2">Home</a>
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-4 mx-2">Product Listing Page</a>
+        <div class="overlay">
+            <div class="bg-container container py-5 ">
+                <div class="justify-content-start ">
+                    <div class="text-center text-lg-left">
+                        <h1 class="display-1 text-dark text-light-present"><?php echo $this->lang->line('products_title');?></h1>
+                        <div class="pt-2">
+                            <a href="<?php echo base_url().$lang;?>" class="btn btn-primary rounded-pill py-2 px-4 mx-2 btn-rounded-pill"><?php echo $this->lang->line('about_btn_home');?></a>
+                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 mx-2 btn-rounded-pill"><?php echo $this->lang->line('btn_products');?></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        
     </div>
     <!-- Hero End -->
 

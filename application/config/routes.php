@@ -72,7 +72,6 @@ $route['admin'] = 'admin/login';
 $route['products/(:num)'] = 'products/index/$1';
 
 // for product list and product detail
-// <<<<<<< HEAD
 // $route['^(en|kr|vn)/danh-sach-san-pham']        = 'JnP_products';
 // $route['^(en|kr|vn)/danh-sach-san-pham/(:num)'] = 'JnP_products/index/$2';
 // $route['^(en|kr|vn)/thong-tin-san-pham/(:num)'] = 'JnP_products/product_detail/$3;
@@ -87,8 +86,11 @@ $route['^(en|kr|vn)/gioi-thieu'] = 'Jnp_about/index';
 // for contact page
 $route['^(en|kr|vn)/lien-he'] = 'Jnp_contact/index';
 
+// image activities 
+$route['^(en|kr|vn)/hinh-anh-cong-ty']          = 'Jnp_activity';
+$route['^(en|kr|vn)/hinh-anh-cong-ty/(:num)']   = 'Jnp_activity/index/$2';
+
 // must be setting at last
 $route['^en/(.+)$'] = "$1";
 $route['^kr/(.+)$'] = "$1";
 $route['^vn/(.+)$'] = "$1";
-

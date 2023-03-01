@@ -4,21 +4,16 @@
     $lang['menu_product']                       = 'Products';
     $lang['menu_contact']                       = 'Contact';
     $lang['menu_activities']                   = 'Activities';
-    $lang['slide_welcome']                      = 'Welcome to Vina J&P';
+    $lang['slide_welcome']                      = 'Welcome to J&P Vina ';
     $lang['slide_content']                      = 'We are family';
     $lang['tab_desc_aboutus_content_1']         = '<h6 class="section-title mb-0">About us</h6>
-                                                    <h6 class="section-subtitle mb-4">Vina J&P Company</h6>
-                                                    <p> Công ty Vina J&P là công ty liên doanh Việt Nam - Hàn Quốc chuyên sản xuất về các sản phẩm bao bì đóng gói.
-                                                        Được thành lập từ năm 200x, với gần 20 năm kinh nghiệm trong ngành, chúng tôi luôn cố gắng đem đến Quý khách hàng những sản phẩm tốt nhất về lĩnh vực bao bì đóng gói.
+                                                    <h6 class="section-subtitle mb-4">J&P Vina Company</h6>
+                                                    <p>J&P was founded in 1998 by polyethylene(P.E.) tarpaulin management, engineering experts. J&P prioritizes and ensures to bring the highest quality products and the customer satisfaction through the newest facility, equipment, and systemized quality control. 
                                                     </p>';
-    $lang['tab_desc_aboutus_content_2']         = '<p> Chúng tôi cung cấp tất cả các sản phẩm bao bì liên quan đến các lĩnh vực : thực phẩm, y tế, hàng xuất khẩu, linh kiện điện tử ...</p>
-                                                    <p><b>Chúng tôi lựa chọn những nguyên liệu tốt nhất, thân thiện với môi trường.</b><br>
-                                                    </p>
-                                                    <p>Với những sản phẩm của mình, chúng tôi đã có được sự tin tưởng của các khách hàng lớn như : Samsung, LG, Hundai, ...
-                                                        cùng với những thành tựu đã đạt được, chúng tôi vẫn luôn tâm niệm cố gắng hết sức, cải tiến kĩ thuật để có những sản phẩm chất lượng tốt nhất đem đến Quý khách hàng.
+    $lang['tab_desc_aboutus_content_2']         = '<p><b>We ensure to respect any of customers\' requests. We will also return customers the favor by providing more improved products in our future.</b><br>
                                                     </p>';
     $lang['tab_img_company']                    = 'The corporate image';
-    $lang['tab_img_company_slogan']             = 'Một tập thể gắn kết';
+    $lang['tab_img_company_slogan']             = 'Show more';
     $lang['tab_products']                       = 'Primary products';
     $lang['tab_products_showmore']              = 'Show more';
     $lang['tab_products_all_product']           = 'All';
@@ -37,7 +32,13 @@
     $lang['frm_contact_message']               = 'Message';
     $lang['frm_contact_btnsubmit']             = 'Submit';
 
-
+    // trang sản phẩm và chi tiết sản phẩm 
+    $lang['products_title']                    = 'All products';
+    $lang['btn_products']                      = 'Products';
+    $lang['product_detail_title']              = 'Product Details';
+    $lang['orther_product']                    = 'Other Products';
+   
+    
     // trang liên hệ contact
 
     $lang['contact_heading']                    = 'Contact us';
@@ -50,4 +51,8 @@
     $lang['about']                              = 'About us';
     $lang['about_btn_home']                     = 'Home';
     $lang['about_btn_page']                     = 'About us';
+
+     // trang giới thiệu hình ảnh hoạt động của công ty
+     $lang['img_activities']                     = 'Production activities';
+     $lang['btn_img_activities']                 = 'Photos';
 ?>

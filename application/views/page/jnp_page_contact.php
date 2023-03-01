@@ -2,23 +2,26 @@
     $lang =  $this->session->userdata('lang');
 ?>
 
-<div class="contact-page common-banner">
-    <!-- Hero Start -->
-    <div class="container-fluid bg-secondary py-5 bg-hero">
+<div class="contact-page common-banner header">
+   <!-- Hero Start -->
+   <div class="container-fluid bg-secondary py-5 bg-hero">
         <div class="bg-image">
-            <img src="<?php echo base_url();?>public/jnp_assets/imgs/header.jpg" alt="">
+            <img src="<?php echo base_url().'public/uploads/'.$home_about['home_about_photo'];?>" alt="">
         </div>
-        <div class="bg-container container py-5">
-            <div class="justify-content-start">
-                <div class="text-center text-lg-left">
-                    <h1 class="display-1 text-dark text-light-present"><?php echo $this->lang->line('contact_heading');?></h1>
-                    <div class="pt-2">
-                        <a href="<?php echo base_url().$lang;?>" class="btn btn-primary rounded-pill py-2 px-4 mx-2 btn-rounded-pill"><?php echo $this->lang->line('contact_btn_home');?></a>
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-4 mx-2 btn-rounded-pill"><?php echo $this->lang->line('contact_btn_page');?></a>
+        <div class="overlay">
+            <div class="bg-container container py-5 ">
+                <div class="justify-content-start ">
+                    <div class="text-center text-lg-left">
+                        <h1 class="display-1 text-dark text-light-present"><?php echo $this->lang->line('about');?></h1>
+                        <div class="pt-2">
+                            <a href="<?php echo base_url().$lang;?>" class="btn btn-primary rounded-pill py-2 px-4 mx-2 btn-rounded-pill"><?php echo $this->lang->line('about_btn_home');?></a>
+                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 mx-2 btn-rounded-pill"><?php echo $this->lang->line('about_btn_page');?></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        
     </div>
     <!-- Hero End -->
 
@@ -51,7 +54,8 @@
                         <div class="contact-icon p-3">
                             <div><span class="ti-email icon"></span></div>
                         </div>
-                        <h4 class="mt-5"><?php echo $page_contact['contact_email'];?></h4>
+                        <h4 class="mt-5">
+                            <a href="mailto:gairun79@naver.com?subject=Email%20from%20website%20J&PVina"><?php echo $page_contact['contact_email'];?></a></h4>
                     </div>
                 </div>
             </div>

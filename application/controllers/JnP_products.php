@@ -25,7 +25,7 @@ class JnP_products extends CI_Controller {
 
         $data['setting'] = $this->Model_common->all_setting();
         $data['home__products_portfolio']   = $this->Model_portfolio->get_portfolio_data($lang); // danh sách sản phẩm
-        // $data['home_about']                 = $this->Model_common->all_page_about(); // về chúng tôi
+        $data['home_about']   = $this->Model_common->all_page_about(); // về chúng tôi
         // $data['home_categories_portfolio']  = $this->Model_portfolio->get_portfolio_category($lang); // danh mục sản phẩm
         // $data['clients'] 				    = $this->Model_home->all_client(); // khách hàng của chúng tôi
         // $data['testimonials'] 			    = $this->Model_home->all_testimonial();	// nhận xét của khách hàng
@@ -42,6 +42,7 @@ class JnP_products extends CI_Controller {
 
         $id_product = $this->uri->segment(3);
         $data['setting'] = $this->Model_common->all_setting();
+        $data['home_about']   = $this->Model_common->all_page_about(); // về chúng tôi
         $data['product_detail']   = $this->Model_portfolio->get_portfolio_detail($id_product); 
         $data['home__products_portfolio']   = $this->Model_portfolio->get_portfolio_data_limit($lang);
         // echo "<pre>"; print_r($data['home__products_portfolio']); exit;
