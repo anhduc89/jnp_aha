@@ -364,27 +364,31 @@ class Page extends CI_Controller
 		    redirect(base_url().'admin/page');
 		}
 
-		// phần giới thiệu About us
+		/* 
+			-- phần giới thiệu About us
+		*/
 		if(isset($_POST['form_about'])) {
 			$id = $_POST['id'];
 			
         	$form_data = array(
 				'about_heading' => $_POST['about_heading'],
 				'about_content' => $_POST['about_content'],
-				'mt_about'      => '' , // $_POST['mt_about'],
-				'mk_about'      => '' , // $_POST['mk_about'],
-				'md_about'      => '' , // $_POST['md_about']
+				'slogan'      	=> $_POST['slogan'], 
+				'mk_about'      => '' , 
+				'md_about'      => '' ,
             );
+
         	$this->Model_page->update_about($id, $form_data);
         	$success = 'About Page Setting is updated successfully!';
         	$this->session->set_flashdata('success',$success);
 		    redirect(base_url().'admin/page');
 		}
 
-		// cập nhật hình ảnh trong phần về chúng tôi / about us
+		/*
+			--  cập nhật hình ảnh trong phần về chúng tôi / about us
+		*/
 		if(isset($_POST['form_home_aboutus_photo'])) {
-			//$data['page_about'] 		= $this->Model_page->show_about();
-			
+						
 			/// ảnh giới thiệu về công ty
 			$valid = 1;
 			$path = $_FILES['home_about_photo']['name'];

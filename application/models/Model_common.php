@@ -13,9 +13,9 @@ class Model_common extends CI_Model
         $query = $this->db->query("SELECT * from tbl_page_home WHERE id=1");
         return $query->first_row('array');
     }
-    public function all_page_about()
+    public function all_page_about($lang)
     {
-        $query = $this->db->query("SELECT * from tbl_page_about WHERE id=1");
+        $query = $this->db->query('SELECT * from tbl_page_about WHERE lang=\''.$lang.'\'');
         return $query->first_row('array');
     }
     public function all_page_faq()

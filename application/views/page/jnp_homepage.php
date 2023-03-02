@@ -19,7 +19,7 @@
 <header class="header">
     <div class="overlay"> 
         <!-- <h1 class="subtitle"><?php echo $this->lang->line('slide_welcome');?></h1> -->
-        <h1 class="title"><?php echo $this->lang->line('slide_welcome');?></h1> 
+        <h1 class="title"><?php echo $home_about['slogan'];?></h1> 
     </div>  
     <div class="shape">
         <img src="<?php echo base_url().'public/uploads/'.$home_about['home_about_photo'];?>" alt="">

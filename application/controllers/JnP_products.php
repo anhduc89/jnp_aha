@@ -21,7 +21,7 @@ class JnP_products extends CI_Controller {
 
         $data['setting'] = $this->Model_common->all_setting();
         $data['home__products_portfolio']   = $this->Model_portfolio->get_portfolio_data($lang); // danh sách sản phẩm
-        $data['home_about']   = $this->Model_common->all_page_about(); // về chúng tôi
+        $data['home_about']   = $this->Model_common->all_page_about($lang); // về chúng tôi
 
         $this->load->view('page/jnp_header',$data);
 		$this->load->view('page/jnp_page_product_list',$data);

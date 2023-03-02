@@ -36,7 +36,7 @@ class Jnp_activity extends CI_Controller {
 		}
 		$data['setting'] = $this->Model_common->all_setting();
 		// $data['page_about'] = $this->Model_common->all_page_about();
-		$data['home_about']    = $this->Model_common->all_page_about(); // về chúng tôi
+		$data['home_about']    = $this->Model_common->all_page_about($lang); // về chúng tôi
 		
         $this->load->view('page/jnp_header',$data);
 		$this->load->view('page/jnp_hinhanh',$data);		

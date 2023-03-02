@@ -29,16 +29,16 @@ class JnpHome extends CI_Controller {
             $this->lang->load('home', $lang);
         }
 
-        $data['setting'] = $this->Model_common->all_setting();
-        $data['home_about']                 = $this->Model_common->all_page_about(); // về chúng tôi
+        $data['setting']                    = $this->Model_common->all_setting();
+        $data['home_about']                 = $this->Model_common->all_page_about($lang); // về chúng tôi
         $data['home_categories_portfolio']  = $this->Model_portfolio->get_portfolio_category($lang); // danh mục sản phẩm
         $data['home__products_portfolio']   = $this->Model_portfolio->get_portfolio_data($lang); // danh sách sản phẩm
         $data['clients'] 				    = $this->Model_home->all_client(); // khách hàng của chúng tôi
         $data['testimonials'] 			    = $this->Model_home->all_testimonial();	// nhận xét của khách hàng
         $data['photo_activities'] 			= $this->Model_photo_gallery->all_photo();	// ảnh hoạt động của cán bộ công nhân viên công ty
-        $data['page_contact'] = $this->Model_common->all_page_contact();
+        $data['page_contact']               = $this->Model_common->all_page_contact();
 
-        #echo "<pre>"; print_r($data['home__products_portfolio']); exit;
+        #echo "<pre>"; print_r($data['home_about']); exit;
         $this->load->view('page/jnp_header',$data);
 		$this->load->view('page/jnp_homepage',$data);
 		// $this->load->view('page/jnp_footer');

@@ -19,7 +19,7 @@ class Jnp_about extends CI_Controller {
 
 		$data['setting'] = $this->Model_common->all_setting();
 		// $data['page_about'] = $this->Model_common->all_page_about();
-		$data['home_about']    = $this->Model_common->all_page_about(); // về chúng tôi
+		$data['home_about']    = $this->Model_common->all_page_about($lang); // về chúng tôi
 		$data['page_about'] = $this->Model_page->show_about($lang);
 		// $data['comment'] = $this->Model_common->all_comment();
 		// $data['social'] = $this->Model_common->all_social();
