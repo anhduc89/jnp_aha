@@ -61,7 +61,7 @@
 <section  id="service" class="section pt-0">
     <div class="container"> 
         <h6 class="section-title text-center"><?php echo $this->lang->line('tab_img_company');?></h6>
-        <h6 class="section-subtitle text-center mb-5 pb-3"><?php echo $this->lang->line('tab_img_company_slogan');?></h6>
+        <h6 class="section-subtitle text-center mb-5 pb-3"><a href="<?php echo base_url().$lang.'/hinh-anh-cong-ty';?>"><?php echo $this->lang->line('tab_img_company_slogan');?> </a></h6>
 
         <div class="row">
             <?php

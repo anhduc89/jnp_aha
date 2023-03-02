@@ -783,3 +783,7 @@ ERROR - 2023-03-02 14:11:58 --> Query error: Unknown column 'lang' in 'where cla
 ERROR - 2023-03-02 14:14:22 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_page_product_detail.php 77
 ERROR - 2023-03-02 14:14:22 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_page_product_detail.php 82
 ERROR - 2023-03-02 14:14:45 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_page_product_detail.php 77
+ERROR - 2023-03-02 14:19:02 --> 404 Page Not Found: Hinh_anh_cong_ty/index
+ERROR - 2023-03-02 16:01:07 --> Severity: Warning --> mysqli::real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) D:\xamppMySql\htdocs\jnp\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2023-03-02 16:01:07 --> Unable to connect to the database
+ERROR - 2023-03-02 16:01:41 --> 404 Page Not Found: Public/uploads
