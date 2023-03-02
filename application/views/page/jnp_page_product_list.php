@@ -38,10 +38,10 @@
                                     </a>
                                     <div class="content" style="margin-top: 30px;">
                                         <a class="title" href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">
-                                            <h5 class="ellipsis-text">'.$item['name'].'</h5>
+                                            <h5 class="ellipsis-text">'.$item['name_'.$lang.''].'</h5>
                                         </a>
                                         <div class="short-description ellipsis-text">
-                                            '.$item['short_content'].'
+                                            '.$item['short_content_'.$lang.''].'
                                         </div>
                                     </div>
                                 </div>

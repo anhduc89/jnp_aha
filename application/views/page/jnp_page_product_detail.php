@@ -56,8 +56,8 @@
                     
 
                     <div class="col-md-6">
-                        <h1 class="display-5 fw-bolder"><?php echo $product_detail['name'];?></h1>
-                        <p class="lead"><?php echo $product_detail['content'];?></p>
+                        <h1 class="display-5 fw-bolder"><?php echo $product_detail['name_'.$lang.''];?></h1>
+                        <p class="lead"><?php echo $product_detail['content_'.$lang.''];?></p>
                     </div>
                 </div>
             </div>
@@ -74,12 +74,12 @@
                             echo '<div class="col-xs-12 col-sm-12 col-md-3" style="margin-bottom: 10px;">
                                     <div class="card h-100">
                                         <!-- Product image-->
-                                        <!-- <img class="card-img-top" src="'.base_url().'public/uploads/'.$i['photo'].'" alt="'.$i['name'].'">-->
+                                        <!-- <img class="card-img-top" src="'.base_url().'public/uploads/'.$i['photo'].'" alt="'.$i['name_'.$lang.''].'">-->
                                         <div class="img-activities" style="margin-right: 10px; width: 100%; height: 160px; background-size: cover;background-image:url('.base_url().'public/uploads/'.$i['photo'].')"> </div>
                                         <!-- Product details-->
                                         <div class="card-body p-4">
                                             <div class="text-center">
-                                                <h5 class="fw-bolder">'.$i['name'].'</h5>
+                                                <h5 class="fw-bolder">'.$i['name_'.$lang.''].'</h5>
                                             </div>
                                         </div>
                                         <!-- Product actions-->

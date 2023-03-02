@@ -16,7 +16,6 @@ class JnpHome extends CI_Controller {
 
     public function index()
     {
-        // echo 'Jnp Home'; exit;
         $this->session->set_userdata("lang", $this->uri->segment(1));
         $lang =  $this->session->userdata('lang');
         if($lang == '') 
@@ -27,12 +26,8 @@ class JnpHome extends CI_Controller {
         }
         else 
         {
-            // echo $lang;
             $this->lang->load('home', $lang);
         }
-        // $this->lang->load('home', $lang == '' ? 'en' :$lang);
-        
-        // echo $lang; exit;
 
         $data['setting'] = $this->Model_common->all_setting();
         $data['home_about']                 = $this->Model_common->all_page_about(); // về chúng tôi
@@ -43,7 +38,7 @@ class JnpHome extends CI_Controller {
         $data['photo_activities'] 			= $this->Model_photo_gallery->all_photo();	// ảnh hoạt động của cán bộ công nhân viên công ty
         $data['page_contact'] = $this->Model_common->all_page_contact();
 
-        #echo "<pre>"; print_r($data['home_about']); exit;
+        #echo "<pre>"; print_r($data['home__products_portfolio']); exit;
         $this->load->view('page/jnp_header',$data);
 		$this->load->view('page/jnp_homepage',$data);
 		// $this->load->view('page/jnp_footer');

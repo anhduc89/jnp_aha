@@ -441,3 +441,345 @@ ERROR - 2023-03-02 10:59:02 --> 404 Page Not Found: Public/admin
 ERROR - 2023-03-02 10:59:02 --> 404 Page Not Found: Public/admin
 ERROR - 2023-03-02 10:59:07 --> 404 Page Not Found: Public/admin
 ERROR - 2023-03-02 10:59:07 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 11:01:19 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 11:01:19 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 11:01:34 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 11:01:34 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 11:11:46 --> Query error: Unknown column 'lang' in 'where clause' - Invalid query: SELECT * FROM tbl_portfolio 
+                WHERE lang = "vn" 
+                ORDER BY RAND()
+                LIMIT 4
+ERROR - 2023-03-02 11:11:56 --> Query error: Unknown column 'lang' in 'where clause' - Invalid query: SELECT * FROM tbl_portfolio_category WHERE lang = 'vn' ORDER BY category_name ASC
+ERROR - 2023-03-02 11:15:04 --> Query error: Unknown column 'category_name_' in 'field list' - Invalid query: SELECT category_id, category_name_'.vn.' 
+                                    FROM tbl_portfolio_category
+                                    ORDER BY category_id ASC
+ERROR - 2023-03-02 11:16:00 --> Query error: Unknown column 'category_name_' in 'field list' - Invalid query: SELECT category_id, category_name_'vn' 
+                                    FROM tbl_portfolio_category
+                                    ORDER BY category_id ASC
+ERROR - 2023-03-02 11:16:07 --> Query error: Unknown column 'lang' in 'where clause' - Invalid query: SELECT * FROM tbl_portfolio 
+                WHERE lang = "vn" 
+                ORDER BY id DESC 
+ERROR - 2023-03-02 11:17:17 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM tbl_portfolio 
+                ORDER BY id DESC' at line 2 - Invalid query: SELECT id, name_vn, short_content_vn, content_vn, 
+                FROM tbl_portfolio 
+                ORDER BY id DESC 
+ERROR - 2023-03-02 11:17:26 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM tbl_portfolio 
+                ORDER BY id DESC' at line 2 - Invalid query: SELECT id, name_vn, short_content_vn, content_vn, 
+                FROM tbl_portfolio 
+                ORDER BY id DESC 
+ERROR - 2023-03-02 11:17:28 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM tbl_portfolio 
+                ORDER BY id DESC' at line 2 - Invalid query: SELECT id, name_vn, short_content_vn, content_vn, 
+                FROM tbl_portfolio 
+                ORDER BY id DESC 
+ERROR - 2023-03-02 11:17:36 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 96
+ERROR - 2023-03-02 11:17:36 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 96
+ERROR - 2023-03-02 11:17:36 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 96
+ERROR - 2023-03-02 11:17:36 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 108
+ERROR - 2023-03-02 11:17:36 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 113
+ERROR - 2023-03-02 11:17:36 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 114
+ERROR - 2023-03-02 11:17:36 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 127
+ERROR - 2023-03-02 11:17:36 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 132
+ERROR - 2023-03-02 11:17:36 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 133
+ERROR - 2023-03-02 11:17:36 --> Severity: Warning --> Undefined array key "category_id" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 145
+ERROR - 2023-03-02 11:17:36 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 147
+ERROR - 2023-03-02 11:17:36 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 152
+ERROR - 2023-03-02 11:17:36 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 153
+ERROR - 2023-03-02 11:17:36 --> 404 Page Not Found: Public/uploads
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 96
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 96
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 96
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 108
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 113
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 114
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 127
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 132
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 133
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "category_id" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 145
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 147
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 152
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 153
+ERROR - 2023-03-02 11:19:00 --> 404 Page Not Found: Public/uploads
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 96
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 96
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 96
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 108
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 113
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 114
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 127
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 132
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 133
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "category_id" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 145
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 147
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 152
+ERROR - 2023-03-02 11:19:00 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 153
+ERROR - 2023-03-02 11:19:00 --> 404 Page Not Found: Public/uploads
+ERROR - 2023-03-02 11:19:52 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 96
+ERROR - 2023-03-02 11:19:52 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 96
+ERROR - 2023-03-02 11:19:52 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 96
+ERROR - 2023-03-02 11:19:52 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 108
+ERROR - 2023-03-02 11:19:52 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 113
+ERROR - 2023-03-02 11:19:52 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 114
+ERROR - 2023-03-02 11:19:52 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 127
+ERROR - 2023-03-02 11:19:52 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 132
+ERROR - 2023-03-02 11:19:52 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 133
+ERROR - 2023-03-02 11:19:52 --> Severity: Warning --> Undefined array key "category_id" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 145
+ERROR - 2023-03-02 11:19:52 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 147
+ERROR - 2023-03-02 11:19:52 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 152
+ERROR - 2023-03-02 11:19:52 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 153
+ERROR - 2023-03-02 11:19:52 --> 404 Page Not Found: Public/uploads
+ERROR - 2023-03-02 11:21:46 --> Severity: error --> Exception: syntax error, unexpected single-quoted string "", expecting "]" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 96
+ERROR - 2023-03-02 11:22:16 --> Severity: error --> Exception: syntax error, unexpected token "/" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 132
+ERROR - 2023-03-02 11:22:33 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 108
+ERROR - 2023-03-02 11:22:33 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 127
+ERROR - 2023-03-02 11:22:33 --> Severity: Warning --> Undefined array key "category_id" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 145
+ERROR - 2023-03-02 11:22:33 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 147
+ERROR - 2023-03-02 11:22:33 --> 404 Page Not Found: Public/uploads
+ERROR - 2023-03-02 11:22:44 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 108
+ERROR - 2023-03-02 11:22:44 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 127
+ERROR - 2023-03-02 11:22:44 --> Severity: Warning --> Undefined array key "category_id" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 145
+ERROR - 2023-03-02 11:22:44 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 147
+ERROR - 2023-03-02 11:22:44 --> 404 Page Not Found: Public/uploads
+ERROR - 2023-03-02 11:22:50 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 108
+ERROR - 2023-03-02 11:22:50 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 127
+ERROR - 2023-03-02 11:22:50 --> Severity: Warning --> Undefined array key "category_id" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 145
+ERROR - 2023-03-02 11:22:50 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 147
+ERROR - 2023-03-02 11:22:50 --> 404 Page Not Found: Public/uploads
+ERROR - 2023-03-02 11:23:02 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_page_product_list.php 37
+ERROR - 2023-03-02 11:23:02 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_page_product_list.php 41
+ERROR - 2023-03-02 11:23:02 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_page_product_list.php 44
+ERROR - 2023-03-02 11:23:02 --> 404 Page Not Found: Public/uploads
+ERROR - 2023-03-02 11:23:04 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 108
+ERROR - 2023-03-02 11:23:04 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 127
+ERROR - 2023-03-02 11:23:04 --> Severity: Warning --> Undefined array key "category_id" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 145
+ERROR - 2023-03-02 11:23:04 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 147
+ERROR - 2023-03-02 11:23:04 --> 404 Page Not Found: Public/uploads
+ERROR - 2023-03-02 12:03:11 --> 404 Page Not Found: Public/uploads
+ERROR - 2023-03-02 12:03:17 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 108
+ERROR - 2023-03-02 12:03:17 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 127
+ERROR - 2023-03-02 12:03:17 --> Severity: Warning --> Undefined array key "category_id" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 145
+ERROR - 2023-03-02 12:03:17 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 147
+ERROR - 2023-03-02 12:03:17 --> 404 Page Not Found: Public/uploads
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined array key "lang" D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 793
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined array key "lang" D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 802
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined array key "mt_about" D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 812
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined array key "mk_about" D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 818
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined array key "md_about" D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 824
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_faq D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 863
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 863
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_faq D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 869
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 869
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_faq D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 875
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 875
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_faq D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 881
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 881
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_service D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 898
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 898
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_service D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 904
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 904
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_service D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 910
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 910
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_service D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 916
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 916
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_news D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 968
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 968
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_news D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 974
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 974
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_news D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 980
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 980
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_news D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 986
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 986
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_event D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1003
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1003
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_event D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1009
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1009
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_event D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1015
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1015
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_event D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1021
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1021
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_search D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1099
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1099
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_search D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1105
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1105
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_search D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1111
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1111
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_search D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1117
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1117
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_term D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1134
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1134
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_term D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1140
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1140
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_term D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1146
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1146
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_term D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1152
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1152
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_term D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1158
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1158
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_privacy D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1175
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1175
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_privacy D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1181
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1181
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_privacy D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1187
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1187
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_privacy D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1193
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1193
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_privacy D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1199
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1199
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_team D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1216
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1216
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_team D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1222
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1222
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_team D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1228
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1228
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_team D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1234
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1234
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_portfolio D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1251
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1251
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_portfolio D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1257
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1257
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_portfolio D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1263
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1263
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Undefined variable $page_portfolio D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1269
+ERROR - 2023-03-02 12:03:20 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1269
+ERROR - 2023-03-02 12:03:20 --> 404 Page Not Found: Public/uploads
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined array key "lang" D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 793
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined array key "lang" D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 802
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined array key "mt_about" D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 812
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined array key "mk_about" D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 818
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined array key "md_about" D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 824
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_faq D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 863
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 863
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_faq D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 869
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 869
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_faq D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 875
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 875
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_faq D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 881
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 881
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_service D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 898
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 898
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_service D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 904
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 904
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_service D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 910
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 910
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_service D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 916
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 916
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_news D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 968
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 968
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_news D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 974
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 974
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_news D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 980
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 980
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_news D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 986
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 986
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_event D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1003
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1003
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_event D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1009
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1009
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_event D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1015
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1015
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_event D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1021
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1021
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_search D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1099
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1099
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_search D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1105
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1105
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_search D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1111
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1111
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_search D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1117
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1117
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_term D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1134
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1134
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_term D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1140
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1140
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_term D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1146
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1146
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_term D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1152
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1152
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_term D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1158
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1158
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_privacy D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1175
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1175
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_privacy D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1181
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1181
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_privacy D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1187
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1187
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_privacy D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1193
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1193
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_privacy D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1199
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1199
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_team D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1216
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1216
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_team D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1222
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1222
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_team D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1228
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1228
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_team D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1234
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1234
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_portfolio D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1251
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1251
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_portfolio D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1257
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1257
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_portfolio D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1263
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1263
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Undefined variable $page_portfolio D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1269
+ERROR - 2023-03-02 12:03:56 --> Severity: Warning --> Trying to access array offset on value of type null D:\xamppMySql\htdocs\jnp\application\views\admin\view_page.php 1269
+ERROR - 2023-03-02 12:04:00 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 108
+ERROR - 2023-03-02 12:04:00 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 127
+ERROR - 2023-03-02 12:04:00 --> Severity: Warning --> Undefined array key "category_id" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 145
+ERROR - 2023-03-02 12:04:00 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 147
+ERROR - 2023-03-02 12:04:05 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_page_product_list.php 37
+ERROR - 2023-03-02 12:04:05 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_page_product_list.php 41
+ERROR - 2023-03-02 12:04:05 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_page_product_list.php 44
+ERROR - 2023-03-02 12:04:07 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 108
+ERROR - 2023-03-02 12:04:07 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 127
+ERROR - 2023-03-02 12:04:07 --> Severity: Warning --> Undefined array key "category_id" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 145
+ERROR - 2023-03-02 12:04:07 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 147
+ERROR - 2023-03-02 13:58:15 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 108
+ERROR - 2023-03-02 13:58:47 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 108
+ERROR - 2023-03-02 13:58:47 --> Severity: Warning --> Undefined array key "photo" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_homepage.php 127
+ERROR - 2023-03-02 14:02:15 --> Query error: Unknown column 'lang' in 'where clause' - Invalid query: SELECT * FROM tbl_portfolio 
+                WHERE lang = "en" 
+                ORDER BY RAND()
+                LIMIT 4
+ERROR - 2023-03-02 14:02:19 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_page_product_list.php 41
+ERROR - 2023-03-02 14:02:19 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_page_product_list.php 44
+ERROR - 2023-03-02 14:02:46 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_page_product_list.php 41
+ERROR - 2023-03-02 14:02:46 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_page_product_list.php 44
+ERROR - 2023-03-02 14:05:44 --> Query error: Unknown column 'lang' in 'where clause' - Invalid query: SELECT * FROM tbl_portfolio 
+                WHERE lang = "vn" 
+                ORDER BY RAND()
+                LIMIT 4
+ERROR - 2023-03-02 14:06:47 --> Query error: Unknown column 'lang' in 'where clause' - Invalid query: SELECT * FROM tbl_portfolio 
+                WHERE lang = "vn" 
+                ORDER BY RAND()
+                LIMIT 4
+ERROR - 2023-03-02 14:08:35 --> Query error: Unknown column 'lang' in 'where clause' - Invalid query: SELECT * FROM tbl_portfolio 
+                WHERE lang = "vn" 
+                ORDER BY RAND()
+                LIMIT 4
+ERROR - 2023-03-02 14:08:35 --> Query error: Unknown column 'lang' in 'where clause' - Invalid query: SELECT * FROM tbl_portfolio 
+                WHERE lang = "vn" 
+                ORDER BY RAND()
+                LIMIT 4
+ERROR - 2023-03-02 14:08:36 --> Query error: Unknown column 'lang' in 'where clause' - Invalid query: SELECT * FROM tbl_portfolio 
+                WHERE lang = "vn" 
+                ORDER BY RAND()
+                LIMIT 4
+ERROR - 2023-03-02 14:08:36 --> Query error: Unknown column 'lang' in 'where clause' - Invalid query: SELECT * FROM tbl_portfolio 
+                WHERE lang = "vn" 
+                ORDER BY RAND()
+                LIMIT 4
+ERROR - 2023-03-02 14:08:36 --> Query error: Unknown column 'lang' in 'where clause' - Invalid query: SELECT * FROM tbl_portfolio 
+                WHERE lang = "vn" 
+                ORDER BY RAND()
+                LIMIT 4
+ERROR - 2023-03-02 14:09:46 --> Query error: Unknown column 'lang' in 'where clause' - Invalid query: SELECT * FROM tbl_portfolio 
+                WHERE lang = "vn" 
+                ORDER BY RAND()
+                LIMIT 4
+ERROR - 2023-03-02 14:11:58 --> Query error: Unknown column 'lang' in 'where clause' - Invalid query: SELECT * FROM tbl_portfolio 
+                WHERE lang = "vn" 
+                ORDER BY RAND()
+                LIMIT 4
+ERROR - 2023-03-02 14:14:22 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_page_product_detail.php 77
+ERROR - 2023-03-02 14:14:22 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_page_product_detail.php 82
+ERROR - 2023-03-02 14:14:45 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\page\jnp_page_product_detail.php 77

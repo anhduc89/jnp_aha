@@ -16,7 +16,9 @@ class Model_portfolio extends CI_Model
     {
         // $query = $this->db->query("SELECT * FROM tbl_portfolio_category ORDER BY category_name ASC");
         $lang = $this->session->userdata('lang');
-        $query = $this->db->query("SELECT * FROM tbl_portfolio_category WHERE lang = '$lang' ORDER BY category_name ASC");
+        $query = $this->db->query("SELECT category_id, category_name_$lang
+                                    FROM tbl_portfolio_category
+                                    ORDER BY category_id ASC");
         
         return $query->result_array();
     }
@@ -24,8 +26,8 @@ class Model_portfolio extends CI_Model
     {
         // $query = $this->db->query("SELECT * from tbl_portfolio  ORDER BY id DESC");
         $lang = $this->session->userdata('lang');
-        $sql = 'SELECT * FROM tbl_portfolio 
-                WHERE lang = "'.$lang.'" 
+        $sql = 'SELECT id, name_'.$lang.', short_content_'.$lang.', content_'.$lang.',category_id,photo
+                FROM tbl_portfolio 
                 ORDER BY id DESC ';
         
         $query = $this->db->query($sql);
@@ -34,10 +36,10 @@ class Model_portfolio extends CI_Model
 
     public function get_portfolio_data_limit()
     {
-        // $query = $this->db->query("SELECT * from tbl_portfolio  ORDER BY id DESC");
+        // $query = $this->db->query("SELECT * from tbl_portfolio  ORDER BY id DESC");  -- WHERE lang = "'.$lang.'" 
         $lang = $this->session->userdata('lang');
-        $sql = 'SELECT * FROM tbl_portfolio 
-                WHERE lang = "'.$lang.'" 
+        $sql = 'SELECT id, name_'.$lang.', short_content_'.$lang.', content_'.$lang.',category_id,photo
+                FROM tbl_portfolio 
                 ORDER BY RAND()
                 LIMIT 4';
         $query = $this->db->query($sql);
@@ -51,9 +53,9 @@ class Model_portfolio extends CI_Model
         return $query->result_array();
     }
     public function get_portfolio_detail($id) {
-    	$sql = 'SELECT * FROM tbl_portfolio WHERE id=?';
-        
-        $query = $this->db->query($sql,array($id));
+    	$sql = 'SELECT * FROM tbl_portfolio WHERE id='.$id.'';
+        $query = $this->db->query($sql);
+        // $query = $this->db->query($sql,array($id));
         return $query->first_row('array');
     }
     public function get_portfolio_photo($id)

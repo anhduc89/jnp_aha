@@ -93,7 +93,7 @@
             <?php
                 foreach($home_categories_portfolio as $item )
                 {
-                    echo '<a href="#" data-filter=".'.$item['category_id'].'">'. $item['category_name'].'</a>';
+                    echo '<a href="#" data-filter=".'.$item['category_id'].'">'. $item['category_name_'.$lang.''].'</a>';
                 }
             ?>
         </div>
@@ -110,8 +110,8 @@
                                 <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
                                 <div class="text-holder">
 
-                                    <h6 class="title"><a href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">'. $item['name'].'</a></h6>
-                                    <p class="subtitle"><a href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">'. $item['short_content'].'</a></p>
+                                    <h6 class="title"><a href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">'. $item['name_'.$lang.''].'</a></h6>
+                                    <p class="subtitle"><a href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">'. $item['short_content_'.$lang.''].'</a></p>
                                 </div>
                             </div>   
                         </div>             
@@ -129,10 +129,10 @@
                                 <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
                                 <div class="text-holder">
 
-                                    <h6 class="title"><a href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">'. $item['name'].'</a></h6>
-                                    <p class="subtitle"><a href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">'. $item['short_content'].'</a></p>
+                                    <h6 class="title"><a href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">'. $item['name_'.$lang.''].'</a></h6>
+                                    <p class="subtitle"><a href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">'. $item['short_content_'.$lang.''].'</a></p>
                                 </div>
-                            </div>   
+                            </div>     
                         </div>             
                     </div>';
                 }
@@ -149,8 +149,8 @@
                                 <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
                                 <div class="text-holder">
 
-                                    <h6 class="title"><a href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">'. $item['name'].'</a></h6>
-                                    <p class="subtitle"><a href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">'. $item['short_content'].'</a></p>
+                                    <h6 class="title"><a href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">'. $item['name_'.$lang.''].'</a></h6>
+                                    <p class="subtitle"><a href="'.base_url().$lang.'/thong-tin-san-pham'.'/'.$item['id'].'">'. $item['short_content_'.$lang.''].'</a></p>
                                 </div>
                             </div>   
                         </div>             
