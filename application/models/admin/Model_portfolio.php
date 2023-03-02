@@ -42,7 +42,7 @@ class Model_portfolio extends CI_Model
     {
         $sql = "SELECT * 
 				FROM tbl_portfolio_category
-				ORDER BY category_name ASC";
+				ORDER BY category_id  ASC";
         $query = $this->db->query($sql);
         return $query->result_array();
     }

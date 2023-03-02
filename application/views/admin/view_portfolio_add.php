@@ -39,68 +39,7 @@ if(!$this->session->userdata('id')) {
 			<?php echo form_open_multipart(base_url().'admin/portfolio/add',array('class' => 'form-horizontal')); ?>
 				<div class="box box-info">
 					<div class="box-body">
-						
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Tên sản phẩm *</label>
-							<div class="col-sm-6">
-								<input type="text" autocomplete="off" class="form-control" name="name" value="<?php if(isset($_POST['name'])){echo $_POST['name'];} ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Giới thiệu ngắn*</label>
-							<div class="col-sm-8">
-								<textarea class="form-control" name="short_content" style="height:100px;"><?php if(isset($_POST['short_content'])){echo $_POST['short_content'];} ?></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Nội dung giới thiệu chi tiết *</label>
-							<div class="col-sm-8">
-								<textarea class="form-control" name="content" id="editor1"><?php if(isset($_POST['content'])){echo $_POST['content'];} ?></textarea>
-							</div>
-						</div>
-						
-						<!-- <div class="form-group">
-							<label for="" class="col-sm-2 control-label">Tên khách hàng </label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="client_name" value="<?php if(isset($_POST['client_name'])){echo $_POST['client_name'];} ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Công ty</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="client_company" value="<?php if(isset($_POST['client_company'])){echo $_POST['client_company'];} ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Ngày bắt đầu</label>
-							<div class="col-sm-4">
-								<input type="text" name="start_date" class="form-control" id="datepicker" value="<?php if(isset($_POST['start_date'])){echo $_POST['start_date'];} ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Ngày kết thúc</label>
-							<div class="col-sm-4">
-								<input type="text" name="end_date" class="form-control" id="datepicker1" value="<?php if(isset($_POST['end_date'])){echo $_POST['end_date'];} ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Website</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="website" value="<?php if(isset($_POST['website'])){echo $_POST['website'];} ?>">
-							</div>
-						</div> 
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Giá cả</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="cost" value="<?php if(isset($_POST['cost'])){echo $_POST['cost'];} ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Ghi chú</label>
-							<div class="col-sm-8">
-								<textarea class="form-control" name="client_comment" style="height:250px;"><?php if(isset($_POST['client_comment'])){echo $_POST['client_comment'];} ?></textarea>
-							</div>
-						</div>  -->
+
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Danh mục sản phẩm *</label>
 							<div class="col-sm-4">
@@ -108,25 +47,75 @@ if(!$this->session->userdata('id')) {
 									<?php
 									foreach ($all_photo_category as $row) {
 										?>
-										<option value="<?php echo $row['category_id']; ?>"><?php echo $row['category_name']; ?></option>
+										<option value="<?php echo $row['category_id']; ?>"><?php echo $row['category_name_vn'].' -- '.$row['category_name_en'].' -- '.$row['category_name_kr']; ?></option>
 										<?php
 									}
 									?>
 								</select>
 							</div>
 						</div>
-
+						
+						<!-- Tiếng Việt -->
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Ngôn ngữ *</label>
-							<div class="col-sm-4">
-								<select name="lang" class="form-control">
-									<option value='vn'> Vietnamese	</option>
-									<option value='kr'> Korean	</option>
-									<option value='en'> English	</option>
-								</select>
+							<label for="" class="col-sm-2 control-label">Tên sản phẩm (VN) *</label>
+							<div class="col-sm-6">
+								<input type="text" autocomplete="off" class="form-control" name="name_vn" value="<?php if(isset($_POST['name'])){echo $_POST['name_vn'];} ?>">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Giới thiệu ngắn (VN) *</label>
+							<div class="col-sm-8">
+								<textarea class="form-control" name="short_content_vn" style="height:100px;"><?php if(isset($_POST['short_content'])){echo $_POST['short_content_vn'];} ?></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Nội dung giới thiệu chi tiết (VN) *</label>
+							<div class="col-sm-8">
+								<textarea class="form-control" name="content_vn" id="editor1"><?php if(isset($_POST['content'])){echo $_POST['content_vn'];} ?></textarea>
 							</div>
 						</div>
 
+						<!-- Tiếng Anh -->
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Tên sản phẩm (EN) *</label>
+							<div class="col-sm-6">
+								<input type="text" autocomplete="off" class="form-control" name="name_en" value="<?php if(isset($_POST['name'])){echo $_POST['name_en'];} ?>">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Giới thiệu ngắn (EN) *</label>
+							<div class="col-sm-8">
+								<textarea class="form-control" name="short_content_en" style="height:100px;"><?php if(isset($_POST['short_content'])){echo $_POST['short_content_en'];} ?></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Nội dung giới thiệu chi tiết (EN) *</label>
+							<div class="col-sm-8">
+								<textarea class="form-control" name="content_en" id="editor2"><?php if(isset($_POST['content'])){echo $_POST['content_en'];} ?></textarea>
+							</div>
+						</div>
+
+						<!-- Tiếng Hàn -->
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Tên sản phẩm (KR) *</label>
+							<div class="col-sm-6">
+								<input type="text" autocomplete="off" class="form-control" name="name_kr" value="<?php if(isset($_POST['name'])){echo $_POST['name_kr'];} ?>">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Giới thiệu ngắn (KR) *</label>
+							<div class="col-sm-8">
+								<textarea class="form-control" name="short_content_kr" style="height:100px;"><?php if(isset($_POST['short_content'])){echo $_POST['short_content_kr'];} ?></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Nội dung giới thiệu chi tiết (KR) *</label>
+							<div class="col-sm-8">
+								<textarea class="form-control" name="content_kr" id="editor3"><?php if(isset($_POST['content'])){echo $_POST['content_kr'];} ?></textarea>
+							</div>
+						</div>
+						
+			
 						<h3 class="seo-info">Hình ảnh</h3>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Hình ảnh *</label>
@@ -155,25 +144,7 @@ if(!$this->session->userdata('id')) {
                                 <input type="button" id="btnAddNew" value="Thêm ảnh" style="margin-bottom:10px;border:0;color: #fff;font-size: 14px;border-radius:3px;" class="btn btn-warning btn-xs">
                             </div>
 						</div>
-						<!-- <h3 class="seo-info">Thông tin SEO</h3>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Mô tả tiêu đề</label>
-							<div class="col-sm-6">
-								<input type="text" autocomplete="off" class="form-control" name="meta_title" value="<?php if(isset($_POST['meta_title'])){echo $_POST['meta_title'];} ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Từ khóa</label>
-							<div class="col-sm-8">
-								<textarea class="form-control" name="meta_keyword" style="height:100px;"><?php if(isset($_POST['meta_keyword'])){echo $_POST['meta_keyword'];} ?></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Mô tả nội dung</label>
-							<div class="col-sm-8">
-								<textarea class="form-control" name="meta_description" style="height:100px;"><?php if(isset($_POST['meta_description'])){echo $_POST['meta_description'];} ?></textarea>
-							</div>
-						</div> -->
+					
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label"></label>
 							<div class="col-sm-6">

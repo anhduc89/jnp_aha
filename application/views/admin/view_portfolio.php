@@ -40,29 +40,34 @@ if(!$this->session->userdata('id')) {
 						<thead>
 							<tr>
 								<th>STT </th>
-								<th>Tên</th>
-								<th>Chuyên mục</th>
+								<th>Sản Phẩm (VN)</th>
+								<th>Sản Phẩm (EN)</th>
+								<th>Sản Phẩm (KR)</th>
+								<th>Danh mục</th>
 								<th>Hình ảnh</th>
 								<th width="140">Tùy chọn</th>
 							</tr>
 						</thead>
 						<tbody>
 							<?php
-							$i=0;						
-							foreach ($portfolio as $row) {
-								$i++;
-								?>
+								$i=0;						
+								foreach ($portfolio as $row) 
+								{ $i++;
+							?>
 								<tr>
 									<td style="width:100px;"><?php echo $i; ?></td>
-									<td><?php echo $row['name']; ?></td>
-									<td><?php echo $row['category_name']; ?></td>
-									<td style="width:250px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['name']; ?>" style="width:150px;"></td>
+									<td><?php echo $row['name_vn']; ?></td>
+									<td><?php echo $row['name_en']; ?></td>
+									<td><?php echo $row['name_kr']; ?></td>
+									<td><?php echo $row['category_name_vn'] .' -- '.$row['category_name_en'].' -- '.$row['category_name_kr']; ?></td>
+									<td style="width:250px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>"  style="width:150px;"></td>
 									<td>
 										<a class="btn btn-success btn-xs" data-toggle="modal" data-target="#myModal<?php echo $i; ?>">Details</a>						
 										<a href="<?php echo base_url(); ?>admin/portfolio/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Chỉnh sửa</a>
 										<a href="<?php echo base_url(); ?>admin/portfolio/delete/<?php echo $row['id']; ?>" class="btn btn-danger btn-xs" onClick="return confirm('Are you sure?');"><i class="fa fa-trash-o" aria-hidden="true"></i> Xóa</a>
 									</td>
 								</tr>
+
 								<div class="modal fade" id="myModal<?php echo $i; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			                        <div class="modal-dialog" role="document">
 			                            <div class="modal-content">
@@ -75,61 +80,34 @@ if(!$this->session->userdata('id')) {
 			                                        <div class="rTableRow">
 			                                            <div class="rTableHead"><strong>Name</strong></div>
 			                                            <div class="rTableCell">
-			                                                <?php echo $row['name']; ?>
+			                                                <?php echo $row['name_vn'].' -- '.$row['name_en'].' -- '. $row['name_kr'] ; ?>
 			                                            </div>
 			                                        </div>
 			                                        <div class="rTableRow">
-			                                            <div class="rTableHead"><strong>Content</strong></div>
+			                                            <div class="rTableHead"><strong>Content (VN)</strong></div>
 			                                            <div class="rTableCell">
-			                                                <?php echo $row['content']; ?>
+			                                                <?php echo $row['content_vn']; ?>
 			                                            </div>
 			                                        </div>
-			                                        <!-- <div class="rTableRow">
-			                                            <div class="rTableHead"><strong>Client Name</strong></div>
+
+													<div class="rTableRow">
+			                                            <div class="rTableHead"><strong>Content (EN)</strong></div>
 			                                            <div class="rTableCell">
-			                                                <?php echo $row['client_name']; ?>
+			                                                <?php echo $row['content_en']; ?>
 			                                            </div>
 			                                        </div>
-			                                        <div class="rTableRow">
-			                                            <div class="rTableHead"><strong>Client Company</strong></div>
+
+													<div class="rTableRow">
+			                                            <div class="rTableHead"><strong>Content (KR)</strong></div>
 			                                            <div class="rTableCell">
-			                                                <?php echo $row['client_company']; ?>
+			                                                <?php echo $row['content_kr']; ?>
 			                                            </div>
 			                                        </div>
-			                                        <div class="rTableRow">
-			                                            <div class="rTableHead"><strong>Project Start Date</strong></div>
-			                                            <div class="rTableCell">
-			                                                <?php echo $row['start_date']; ?>
-			                                            </div>
-			                                        </div>
-			                                        <div class="rTableRow">
-			                                            <div class="rTableHead"><strong>Project End Date</strong></div>
-			                                            <div class="rTableCell">
-			                                                <?php echo $row['end_date']; ?>
-			                                            </div>
-			                                        </div>
-			                                        <div class="rTableRow">
-			                                            <div class="rTableHead"><strong>Website</strong></div>
-			                                            <div class="rTableCell">
-			                                                <?php echo $row['website']; ?>
-			                                            </div>
-			                                        </div>
-			                                        <div class="rTableRow">
-			                                            <div class="rTableHead"><strong>Cost</strong></div>
-			                                            <div class="rTableCell">
-			                                                <?php echo $row['cost']; ?>
-			                                            </div>
-			                                        </div>
-			                                        <div class="rTableRow">
-			                                            <div class="rTableHead"><strong>Client Comment</strong></div>
-			                                            <div class="rTableCell">
-			                                                <?php echo $row['client_comment']; ?>
-			                                            </div>
-			                                        </div> -->
+			                                      
 			                                        <div class="rTableRow">
 			                                            <div class="rTableHead"><strong>Category</strong></div>
 			                                            <div class="rTableCell">
-			                                               	<?php echo $row['category_name']; ?>
+			                                               	<?php echo $row['category_name_vn'] .' -- '.$row['category_name_en'].' -- '.$row['category_name_kr']; ?>
 			                                            </div>
 			                                        </div>
 			                                        <div class="rTableRow">
@@ -159,8 +137,9 @@ if(!$this->session->userdata('id')) {
 			                            </div>
 			                        </div>
 			                    </div>
-								<?php
-							}
+
+							<?php
+								}
 							?>							
 						</tbody>
 					</table>

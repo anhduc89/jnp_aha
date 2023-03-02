@@ -38,67 +38,66 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info">
 					<div class="box-body">
 						
+						<!-- Tiếng Việt -->
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Tên *</label>
+							<label for="" class="col-sm-2 control-label">Tên (VN) *</label>
 							<div class="col-sm-6">
-								<input type="text" autocomplete="off" class="form-control" name="name" value="<?php echo $portfolio['name']; ?>">
+								<input type="text" autocomplete="off" class="form-control" name="name_vn" value="<?php echo $portfolio['name_vn']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Short Content *</label>
+							<label for="" class="col-sm-2 control-label">Short Content (VN) *</label>
 							<div class="col-sm-8">
-								<textarea class="form-control" name="short_content" style="height:100px;"><?php echo $portfolio['short_content']; ?></textarea>
+								<textarea class="form-control" name="short_content_vn" style="height:100px;"><?php echo $portfolio['short_content_vn']; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Content *</label>
+							<label for="" class="col-sm-2 control-label">Content (VN) *</label>
 							<div class="col-sm-8">
-								<textarea class="form-control" name="content" id="editor1"><?php echo $portfolio['content']; ?></textarea>
+								<textarea class="form-control" name="content_vn" id="editor1"><?php echo $portfolio['content_vn']; ?></textarea>
+							</div>
+						</div>
+
+						<!-- Tiếng Anh -->
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Tên (EN) *</label>
+							<div class="col-sm-6">
+								<input type="text" autocomplete="off" class="form-control" name="name_en" value="<?php echo $portfolio['name_en']; ?>">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Short Content (EN) *</label>
+							<div class="col-sm-8">
+								<textarea class="form-control" name="short_content_en" style="height:100px;"><?php echo $portfolio['short_content_en']; ?></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Content (EN) *</label>
+							<div class="col-sm-8">
+								<textarea class="form-control" name="content_en" id="editor2"><?php echo $portfolio['content_en']; ?></textarea>
+							</div>
+						</div>
+
+						<!-- Tiếng Hàn -->
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Tên (KR) *</label>
+							<div class="col-sm-6">
+								<input type="text" autocomplete="off" class="form-control" name="name_kr" value="<?php echo $portfolio['name_kr']; ?>">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Short Content (KR) *</label>
+							<div class="col-sm-8">
+								<textarea class="form-control" name="short_content_kr" style="height:100px;"><?php echo $portfolio['short_content_kr']; ?></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Content (KR) *</label>
+							<div class="col-sm-8">
+								<textarea class="form-control" name="content_kr" id="editor3"><?php echo $portfolio['content_kr']; ?></textarea>
 							</div>
 						</div>
 						
-						<!-- <div class="form-group">
-							<label for="" class="col-sm-2 control-label">Client Name</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="client_name" value="<?php echo $portfolio['client_name']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Client Company</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="client_company" value="<?php echo $portfolio['client_company']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Start Date</label>
-							<div class="col-sm-4">
-								<input type="text" name="start_date" class="form-control" id="datepicker" value="<?php echo $portfolio['start_date']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">End Date</label>
-							<div class="col-sm-4">
-								<input type="text" name="end_date" class="form-control" id="datepicker1" value="<?php echo $portfolio['end_date']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Website</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="website" value="<?php echo $portfolio['website']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Cost</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="cost" value="<?php echo $portfolio['cost']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Client Comment</label>
-							<div class="col-sm-8">
-								<textarea class="form-control" name="client_comment" style="height:250px;"><?php echo $portfolio['client_comment']; ?></textarea>
-							</div>
-						</div> -->
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Select Category *</label>
 							<div class="col-sm-4">
@@ -106,41 +105,14 @@ if(!$this->session->userdata('id')) {
 									<?php
 									foreach ($all_photo_category as $row) {
 										?>
-										<option value="<?php echo $row['category_id']; ?>" <?php if($row['category_id'] == $portfolio['category_id']) {echo 'selected';} ?>><?php echo $row['category_name']; ?></option>
+										<option value="<?php echo $row['category_id']; ?>" <?php if($row['category_id'] == $portfolio['category_id']) {echo 'selected';} ?>><?php echo $row['category_name_vn'].' -- '.$row['category_name_en'].' -- '.$row['category_name_kr'] ; ?></option>
 										<?php
 									}
 									?>	
 								</select>
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Select language *</label>
-							<div class="col-sm-4">
-								<!-- <select name="lang" class="form-control select2"> -->
-									<?php
-										if($portfolio['lang'] == 'vn')
-										{
-											$lang_edit = 'Vietnamese';
-										}
-										else if($portfolio['lang'] == 'en')
-										{
-											$lang_edit = 'English';
-										}
-										else
-										{
-											$lang_edit = 'Korean';
-										}
-										
-									?>
-									<select name="lang" class="form-control">
-										<option value="<?php echo $portfolio['lang']; ?>" selected ?><?php echo $lang_edit; ?></option>
-										<option value="vn"> Vietnamese</option>
-										<option value="kr"> Korean	</option>
-										<option value="en"> English	</option>
-									
-									</select>
-							</div>
-						</div>
+						
 						<h3 class="seo-info">Featured Photo</h3>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Existing Featuerd Photo</label>

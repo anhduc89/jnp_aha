@@ -32,9 +32,17 @@ class Portfolio extends CI_Controller
 
 			$valid = 1;
 
-			$this->form_validation->set_rules('name', 'Name', 'trim|required');
-			$this->form_validation->set_rules('short_content', 'Short Content', 'trim|required');
-			$this->form_validation->set_rules('content', 'Content', 'trim|required');
+			$this->form_validation->set_rules('name_vn', 'Name VN', 'trim|required');
+			$this->form_validation->set_rules('short_content_vn', 'Short Content VN', 'trim|required');
+			$this->form_validation->set_rules('content_vn', 'Content VN', 'trim|required');
+
+			$this->form_validation->set_rules('name_en', 'Name EN', 'trim|required');
+			$this->form_validation->set_rules('short_content_en', 'Short Content EN', 'trim|required');
+			$this->form_validation->set_rules('content_en', 'Content EN', 'trim|required');
+
+			$this->form_validation->set_rules('name_kr', 'Name KR', 'trim|required');
+			$this->form_validation->set_rules('short_content_kr', 'Short Content KR', 'trim|required');
+			$this->form_validation->set_rules('content_kr', 'Content KR', 'trim|required');
 
 			if($this->form_validation->run() == FALSE) {
 				$valid = 0;
@@ -69,22 +77,20 @@ class Portfolio extends CI_Controller
 		        move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
 		        $form_data = array(
-					'name'             => $_POST['name'],
-					'short_content'    => $_POST['short_content'],
-					'content'          => $_POST['content'],
-					// 'client_name'      => $_POST['client_name'],
-					// 'client_company'   => $_POST['client_company'],
-					// 'start_date'       => $_POST['start_date'],
-					// 'end_date'         => $_POST['end_date'],
-					// 'website'          => $_POST['website'],
-					// 'cost'             => $_POST['cost'],
-					// 'client_comment'   => $_POST['client_comment'],
+					'name_vn'             => $_POST['name_vn'],
+					'short_content_vn'    => $_POST['short_content_vn'],
+					'content_vn'          => $_POST['content_vn'],
+
+					'name_en'             => $_POST['name_en'],
+					'short_content_en'    => $_POST['short_content_en'],
+					'content_en'          => $_POST['content_en'],
+
+					'name_kr'             => $_POST['name_kr'],
+					'short_content_kr'    => $_POST['short_content_kr'],
+					'content_kr'          => $_POST['content_kr'],
+
 					'category_id'      => $_POST['category_id'],
-					'lang'			   => $_POST['lang'],	
 					'photo'            => $final_name,
-					// 'meta_title'       => $_POST['meta_title'],
-					// 'meta_keyword'     => $_POST['meta_keyword'],
-					// 'meta_description' => $_POST['meta_description']
 	            );
 	            $this->Model_portfolio->add($form_data);
 
@@ -155,9 +161,6 @@ class Portfolio extends CI_Controller
 
 	public function edit($id)
 	{
-		
-
-    	// If there is no service in this id, then redirect
     	$tot = $this->Model_portfolio->portfolio_check($id);
     	if(!$tot) {
     		redirect(base_url().'admin/portfolio');
@@ -174,9 +177,18 @@ class Portfolio extends CI_Controller
 
 			$valid = 1;
 
-			$this->form_validation->set_rules('name', 'Name', 'trim|required');
-			$this->form_validation->set_rules('short_content', 'Short Content', 'trim|required');
-			$this->form_validation->set_rules('content', 'Content', 'trim|required');
+			$this->form_validation->set_rules('name_vn', 'Name 	vn', 'trim|required');
+			$this->form_validation->set_rules('short_content_vn', 'Short Content VN', 'trim|required');
+			$this->form_validation->set_rules('content_vn', 'Content VN', 'trim|required');
+
+			$this->form_validation->set_rules('name_en', 'Name EN', 'trim|required');
+			$this->form_validation->set_rules('short_content_en', 'Short Content EN', 'trim|required');
+			$this->form_validation->set_rules('content_en', 'Content EN', 'trim|required');
+
+			$this->form_validation->set_rules('name_kr', 'Name KR', 'trim|required');
+			$this->form_validation->set_rules('short_content_kr', 'Short Content KR', 'trim|required');
+			$this->form_validation->set_rules('content_kr', 'Content KR', 'trim|required');
+
 
 			if($this->form_validation->run() == FALSE) {
 				$valid = 0;
@@ -203,21 +215,19 @@ class Portfolio extends CI_Controller
 
 		    	if($path == '') {
 		    		$form_data = array(
-						'name'             => $_POST['name'],
-						'short_content'    => $_POST['short_content'],
-						'content'          => $_POST['content'],
-						'lang'          	=> $_POST['lang'],
-						// 'client_name'      => $_POST['client_name'],
-						// 'client_company'   => $_POST['client_company'],
-						// 'start_date'       => $_POST['start_date'],
-						// 'end_date'         => $_POST['end_date'],
-						// 'website'          => $_POST['website'],
-						// 'cost'             => $_POST['cost'],
-						// 'client_comment'   => $_POST['client_comment'],
-						'category_id'      => $_POST['category_id'],
-						// 'meta_title'       => $_POST['meta_title'],
-						// 'meta_keyword'     => $_POST['meta_keyword'],
-						// 'meta_description' => $_POST['meta_description']
+						'name_vn'             => $_POST['name_vn'],
+						'short_content_vn'    => $_POST['short_content_vn'],
+						'content_vn'          => $_POST['content_vn'],
+
+						'name_en'             => $_POST['name_en'],
+						'short_content_en'    => $_POST['short_content_en'],
+						'content_en'          => $_POST['content_en'],
+
+						'name_kr'             => $_POST['name_kr'],
+						'short_content_kr'    => $_POST['short_content_kr'],
+						'content_kr'          => $_POST['content_kr'],
+
+						'category_id'      	  => $_POST['category_id'],
 		            );
 					#echo "<pre>"; print_r($form_data); exit;
 		            $this->Model_portfolio->update($id,$form_data);
@@ -229,24 +239,21 @@ class Portfolio extends CI_Controller
 		        	move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
 		        	$form_data = array(
-						'name'             => $_POST['name'],
-						'short_content'    => $_POST['short_content'],
-						'content'          => $_POST['content'],
-						'lang'             => $_POST['lang'],
-						// 'client_name'      => $_POST['client_name'],
-						// 'client_company'   => $_POST['client_company'],
-						// 'start_date'       => $_POST['start_date'],
-						// 'end_date'         => $_POST['end_date'],
-						// 'website'          => $_POST['website'],
-						// 'cost'             => $_POST['cost'],
-						// 'client_comment'   => $_POST['client_comment'],
-						'category_id'      => $_POST['category_id'],
-						'photo'            => $final_name,
-						// 'meta_title'       => $_POST['meta_title'],
-						// 'meta_keyword'     => $_POST['meta_keyword'],
-						// 'meta_description' => $_POST['meta_description']
+						'name_vn'             => $_POST['name_vn'],
+						'short_content_vn'    => $_POST['short_content_vn'],
+						'content_vn'          => $_POST['content_vn'],
+
+						'name_en'             => $_POST['name_en'],
+						'short_content_en'    => $_POST['short_content_en'],
+						'content_en'          => $_POST['content_en'],
+
+						'name_kr'             => $_POST['name_kr'],
+						'short_content_kr'    => $_POST['short_content_kr'],
+						'content_kr'          => $_POST['content_kr'],
+
+						'category_id'      	  => $_POST['category_id'],
+						'photo'               => $final_name,
 		            );
-					#echo "<pre>"; print_r($form_data); exit;
 		            $this->Model_portfolio->update($id,$form_data);
 				}
 

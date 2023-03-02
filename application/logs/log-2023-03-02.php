@@ -254,3 +254,190 @@ ERROR - 2023-03-02 09:48:30 --> 404 Page Not Found: Public/admin
 ERROR - 2023-03-02 09:48:30 --> 404 Page Not Found: Public/admin
 ERROR - 2023-03-02 09:49:01 --> 404 Page Not Found: Public/admin
 ERROR - 2023-03-02 09:49:01 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:14:17 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:14:17 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:14:25 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:14:25 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:14:27 --> Query error: Unknown column 'category_name' in 'order clause' - Invalid query: SELECT * 
+				FROM tbl_portfolio_category
+				ORDER BY category_name ASC
+ERROR - 2023-03-02 10:20:21 --> Query error: Unknown column 'category_name' in 'order clause' - Invalid query: SELECT * 
+				FROM tbl_portfolio_category
+				ORDER BY category_name ASC
+ERROR - 2023-03-02 10:20:22 --> Query error: Unknown column 'category_name' in 'order clause' - Invalid query: SELECT * 
+				FROM tbl_portfolio_category
+				ORDER BY category_name ASC
+ERROR - 2023-03-02 10:20:22 --> Query error: Unknown column 'category_name' in 'order clause' - Invalid query: SELECT * 
+				FROM tbl_portfolio_category
+				ORDER BY category_name ASC
+ERROR - 2023-03-02 10:20:23 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:20:23 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:20:32 --> Query error: Unknown column 'category_name' in 'order clause' - Invalid query: SELECT * 
+				FROM tbl_portfolio_category
+				ORDER BY category_name ASC
+ERROR - 2023-03-02 10:21:37 --> Query error: Unknown column 'category_name' in 'order clause' - Invalid query: SELECT * 
+				FROM tbl_portfolio_category
+				ORDER BY category_name ASC
+ERROR - 2023-03-02 10:21:38 --> Query error: Unknown column 'category_name' in 'order clause' - Invalid query: SELECT * 
+				FROM tbl_portfolio_category
+				ORDER BY category_name ASC
+ERROR - 2023-03-02 10:22:45 --> Query error: Unknown column 'id' in 'order clause' - Invalid query: SELECT * 
+				FROM tbl_portfolio_category
+				ORDER BY id ASC
+ERROR - 2023-03-02 10:23:31 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:23:32 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:23:46 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:23:46 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:25:09 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:25:09 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:32:10 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:32:10 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:35:30 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 57
+ERROR - 2023-03-02 10:35:30 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 58
+ERROR - 2023-03-02 10:35:30 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 59
+ERROR - 2023-03-02 10:35:30 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 78
+ERROR - 2023-03-02 10:35:30 --> Severity: Warning --> Undefined array key "content" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 84
+ERROR - 2023-03-02 10:35:30 --> Severity: Warning --> Undefined array key "client_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 90
+ERROR - 2023-03-02 10:35:30 --> Severity: Warning --> Undefined array key "client_company" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 96
+ERROR - 2023-03-02 10:35:30 --> Severity: Warning --> Undefined array key "start_date" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 102
+ERROR - 2023-03-02 10:35:30 --> Severity: Warning --> Undefined array key "end_date" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 108
+ERROR - 2023-03-02 10:35:30 --> Severity: Warning --> Undefined array key "website" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 114
+ERROR - 2023-03-02 10:35:30 --> Severity: Warning --> Undefined array key "cost" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 120
+ERROR - 2023-03-02 10:35:30 --> Severity: Warning --> Undefined array key "client_comment" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 126
+ERROR - 2023-03-02 10:35:30 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 132
+ERROR - 2023-03-02 10:35:30 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:35:30 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:38:43 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 62
+ERROR - 2023-03-02 10:38:43 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 82
+ERROR - 2023-03-02 10:38:43 --> Severity: Warning --> Undefined array key "content" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 88
+ERROR - 2023-03-02 10:38:43 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 95
+ERROR - 2023-03-02 10:38:43 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:38:43 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:38:59 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 62
+ERROR - 2023-03-02 10:38:59 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 82
+ERROR - 2023-03-02 10:38:59 --> Severity: Warning --> Undefined array key "content" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 88
+ERROR - 2023-03-02 10:38:59 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 95
+ERROR - 2023-03-02 10:38:59 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:38:59 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:39:20 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 63
+ERROR - 2023-03-02 10:39:20 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 83
+ERROR - 2023-03-02 10:39:20 --> Severity: Warning --> Undefined array key "content" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 89
+ERROR - 2023-03-02 10:39:20 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 96
+ERROR - 2023-03-02 10:39:20 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:39:20 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:39:49 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 63
+ERROR - 2023-03-02 10:39:49 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 83
+ERROR - 2023-03-02 10:39:49 --> Severity: Warning --> Undefined array key "content" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 89
+ERROR - 2023-03-02 10:39:49 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 96
+ERROR - 2023-03-02 10:39:49 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:39:49 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:40:18 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 83
+ERROR - 2023-03-02 10:40:18 --> Severity: Warning --> Undefined array key "content" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 89
+ERROR - 2023-03-02 10:40:18 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 96
+ERROR - 2023-03-02 10:40:18 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:40:18 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:40:47 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 83
+ERROR - 2023-03-02 10:40:47 --> Severity: Warning --> Undefined array key "content" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 89
+ERROR - 2023-03-02 10:40:47 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 96
+ERROR - 2023-03-02 10:40:47 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:40:47 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:41:38 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 83
+ERROR - 2023-03-02 10:41:38 --> Severity: Warning --> Undefined array key "content" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 89
+ERROR - 2023-03-02 10:41:38 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 96
+ERROR - 2023-03-02 10:41:38 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:41:38 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:43:02 --> Severity: Warning --> Undefined array key "content" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 89
+ERROR - 2023-03-02 10:43:02 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio.php 96
+ERROR - 2023-03-02 10:43:02 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:43:02 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:43:47 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:43:47 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 44
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 50
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "content" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 56
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "client_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 63
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "client_company" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 69
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "start_date" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 75
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "end_date" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 81
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "website" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 87
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "cost" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 93
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "client_comment" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 99
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 109
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 109
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 109
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "lang" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 121
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "lang" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 125
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "lang" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 136
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "meta_title" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 203
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "meta_keyword" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 209
+ERROR - 2023-03-02 10:49:02 --> Severity: Warning --> Undefined array key "meta_description" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 215
+ERROR - 2023-03-02 10:49:02 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:49:02 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 44
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 50
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "content" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 56
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "client_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 63
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "client_company" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 69
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "start_date" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 75
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "end_date" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 81
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "website" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 87
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "cost" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 93
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "client_comment" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 99
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 109
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 109
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 109
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "lang" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 121
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "lang" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 125
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "lang" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 136
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "meta_title" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 203
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "meta_keyword" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 209
+ERROR - 2023-03-02 10:53:20 --> Severity: Warning --> Undefined array key "meta_description" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 215
+ERROR - 2023-03-02 10:53:20 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:53:20 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 44
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "short_content" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 50
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "content" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 56
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "client_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 63
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "client_company" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 69
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "start_date" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 75
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "end_date" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 81
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "website" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 87
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "cost" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 93
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "client_comment" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 99
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 109
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 109
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "category_name" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 109
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "lang" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 121
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "lang" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 125
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "lang" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 136
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "meta_title" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 203
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "meta_keyword" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 209
+ERROR - 2023-03-02 10:53:21 --> Severity: Warning --> Undefined array key "meta_description" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 215
+ERROR - 2023-03-02 10:53:21 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:53:21 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:56:49 --> Severity: Warning --> Undefined array key "meta_title" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 175
+ERROR - 2023-03-02 10:56:49 --> Severity: Warning --> Undefined array key "meta_keyword" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 181
+ERROR - 2023-03-02 10:56:49 --> Severity: Warning --> Undefined array key "meta_description" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 187
+ERROR - 2023-03-02 10:56:49 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:56:49 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:57:03 --> Severity: Warning --> Undefined array key "meta_title" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 175
+ERROR - 2023-03-02 10:57:03 --> Severity: Warning --> Undefined array key "meta_keyword" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 181
+ERROR - 2023-03-02 10:57:03 --> Severity: Warning --> Undefined array key "meta_description" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 187
+ERROR - 2023-03-02 10:57:03 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:57:03 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:58:39 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:58:40 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:58:52 --> Severity: Warning --> Undefined array key "meta_title" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 175
+ERROR - 2023-03-02 10:58:52 --> Severity: Warning --> Undefined array key "meta_keyword" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 181
+ERROR - 2023-03-02 10:58:52 --> Severity: Warning --> Undefined array key "meta_description" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 187
+ERROR - 2023-03-02 10:58:52 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:58:52 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:58:58 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:58:59 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:59:02 --> Severity: Warning --> Undefined array key "meta_title" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 175
+ERROR - 2023-03-02 10:59:02 --> Severity: Warning --> Undefined array key "meta_keyword" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 181
+ERROR - 2023-03-02 10:59:02 --> Severity: Warning --> Undefined array key "meta_description" D:\xamppMySql\htdocs\jnp\application\views\admin\view_portfolio_edit.php 187
+ERROR - 2023-03-02 10:59:02 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:59:02 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:59:07 --> 404 Page Not Found: Public/admin
+ERROR - 2023-03-02 10:59:07 --> 404 Page Not Found: Public/admin
