@@ -71,9 +71,13 @@ class Model_portfolio_category extends CI_Model
         return $query->first_row('array');
     }
 
-    function duplicate_check($var1,$var2) {
-        $sql = 'SELECT * FROM tbl_portfolio_category WHERE category_name=? and category_name!=?';
-        $query = $this->db->query($sql,array($var1,$var2));
+    function duplicate_check($var1,$var2,$var3,$var4, $var5,$var6) {
+        $sql = 'SELECT * FROM tbl_portfolio_category 
+                WHERE category_name_vn=? and category_name_vn!=?
+                AND category_name_en=? and category_name_en!=?
+                AND category_name_kr=? and category_name_kr!=?
+                ';
+        $query = $this->db->query($sql,array($var1,$var2,$var3,$var4, $var5,$var6));
         return $query->num_rows();
     }
     

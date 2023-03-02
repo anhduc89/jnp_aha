@@ -1,6 +1,15 @@
 <?php
     $lang =  $this->session->userdata('lang');
 ?>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    #owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+</style>
 <div class="product-detail-page common-banner header">
    <!-- Hero Start -->
    <div class="container-fluid bg-secondary py-5 bg-hero">
@@ -29,13 +38,26 @@
        <section class="py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="<?php echo base_url().'public/uploads/'.$product_detail['photo']?>" alt="..."></div>
+                    <div class="col-md-6 ">
+                        <!-- slide -->
+                        <div class="row owl-carousel owl-theme"  id="owl-demo" >
+                          
+                            <div class="item"> <img class="card-img-top mb-5 mb-md-0" src="<?php echo base_url().'public/uploads/'.$product_detail['photo']?>"></div>
+                            <?php
+                                foreach($img_product as $i)
+                                {
+                                    echo '<div class="item"> 
+                                        <img src="'.base_url().'public/uploads/portfolio_photos/'.$i['photo'].'" alt="" class="card-img-top mb-5 mb-md-0">
+                                    </div>';
+                                }
+                            ?>
+                        </div>
+                    </div>
+                    
+
                     <div class="col-md-6">
-                        
                         <h1 class="display-5 fw-bolder"><?php echo $product_detail['name'];?></h1>
-                        
                         <p class="lead"><?php echo $product_detail['content'];?></p>
-                        
                     </div>
                 </div>
             </div>
@@ -68,11 +90,14 @@
                                 </div>';
                         }
                     ?>
-                    
-                    
                 </div>
             </div>
         </section>
     </div>
-
 </div>
+
+
+
+
+
+

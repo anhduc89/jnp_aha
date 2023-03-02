@@ -28,7 +28,7 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
 
 #$config['base_url'] = 'http://10.14.36.101:8080/jnp_aha/';
 
-// $config['base_url'] = 'http://jpvina.com.vn/jnp/';
+// $config['base_url'] = 'http://jpvina.com.vn';
 
 $config['base_url'] =  "http://".$_SERVER['HTTP_HOST'].'/jnp';
 

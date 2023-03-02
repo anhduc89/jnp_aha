@@ -52,6 +52,7 @@ class Model_portfolio extends CI_Model
     }
     public function get_portfolio_detail($id) {
     	$sql = 'SELECT * FROM tbl_portfolio WHERE id=?';
+        
         $query = $this->db->query($sql,array($id));
         return $query->first_row('array');
     }

@@ -42,7 +42,9 @@ if(!$this->session->userdata('id')) {
 			<thead>
 			    <tr>
 			        <th>STT </th>
-			        <th>Tên chuyên mục</th>
+			        <th>Tên danh mục sản phẩm (VN)</th>
+					<th>Tên danh mục sản phẩm (EN)</th>
+					<th>Tên danh mục sản phẩm (KR)</th>
 			        <th>Trạng thái</th>
 			        <th>Tùy chọn</th>
 			    </tr>
@@ -55,7 +57,9 @@ if(!$this->session->userdata('id')) {
             		?>
 					<tr>
 	                    <td><?php echo $i; ?></td>
-	                    <td><?php echo $row['category_name']; ?></td>
+	                    <td><?php echo $row['category_name_vn']; ?></td>
+						<td><?php echo $row['category_name_en']; ?></td>
+						<td><?php echo $row['category_name_kr']; ?></td>
 	                    <td><?php echo $row['status']; ?></td>
 	                    <td>
 	                        <a href="<?php echo base_url(); ?>admin/portfolio_category/edit/<?php echo $row['category_id']; ?>" class="btn btn-primary btn-xs"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Chỉnh sửa</a>

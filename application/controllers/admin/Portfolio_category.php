@@ -32,7 +32,9 @@ class Portfolio_category extends CI_Controller
 
 			$valid = 1;
 
-			$this->form_validation->set_rules('category_name', 'Category Name', 'trim|required');
+			$this->form_validation->set_rules('category_name_vn', 'Category Name VN', 'trim|required');
+			$this->form_validation->set_rules('category_name_en', 'Category Name EN', 'trim|required');
+			$this->form_validation->set_rules('category_name_kr', 'Category Name KR', 'trim|required');
 
 			if($this->form_validation->run() == FALSE) {
 				$valid = 0;
@@ -43,9 +45,10 @@ class Portfolio_category extends CI_Controller
 		    {
 				
 		        $form_data = array(
-					'category_name'	=> $_POST['category_name'],
-					'status'       	=> $_POST['status'],
-					'lang'       	=> $_POST['lang']
+					'category_name_vn'	=> $_POST['category_name_vn'],
+					'category_name_en'	=> $_POST['category_name_en'],
+					'category_name_kr'	=> $_POST['category_name_kr'],
+					'status'       		=> $_POST['status'],
 	            );
 	            $this->Model_portfolio_category->add($form_data);
 
@@ -72,6 +75,7 @@ class Portfolio_category extends CI_Controller
 	public function edit($id)
 	{
     	$tot = $this->Model_portfolio_category->portfolio_category_check($id);
+		
     	if(!$tot) {
     		redirect(base_url().'admin/portfolio_category');
         	exit;
@@ -84,10 +88,12 @@ class Portfolio_category extends CI_Controller
 
 		if(isset($_POST['form1'])) 
 		{
-
+			// echo "<pre>"; print_r($_POST['form1']); exit;
 			$valid = 1;
 
-			$this->form_validation->set_rules('category_name', 'Category Name', 'trim|required');
+			$this->form_validation->set_rules('category_name_vn', 'Category Name VN', 'trim|required');
+			$this->form_validation->set_rules('category_name_en', 'Category Name EN', 'trim|required');
+			$this->form_validation->set_rules('category_name_kr', 'Category Name KR', 'trim|required');
 
 			if($this->form_validation->run() == FALSE) {
 				$valid = 0;
@@ -96,7 +102,9 @@ class Portfolio_category extends CI_Controller
 
             	// Duplicate Category Checking
             	$data['portfolio_category'] = $this->Model_portfolio_category->getData($id);
-            	$total = $this->Model_portfolio_category->duplicate_check($_POST['category_name'],$data['portfolio_category']['category_name']);				
+            	$total = $this->Model_portfolio_category->duplicate_check($_POST['category_name_vn'],$data['portfolio_category']['category_name_vn'],
+																			$_POST['category_name_en'],$data['portfolio_category']['category_name_en'],
+																			$_POST['category_name_kr'],$data['portfolio_category']['category_name_kr']);				
 		    	if($total) {
 		    		$valid = 0;
 		        	$error = 'Category name already exists';
@@ -106,9 +114,10 @@ class Portfolio_category extends CI_Controller
 		    if($valid == 1) 
 		    {
 	    		$form_data = array(
-					'category_name'=> $_POST['category_name'],
-					'status'       => $_POST['status'],
-					'lang'         => $_POST['lang']
+					'category_name_vn'	=> $_POST['category_name_vn'],
+					'category_name_en'	=> $_POST['category_name_en'],
+					'category_name_kr'	=> $_POST['category_name_kr'],
+					'status'       		=> $_POST['status'],
 	            );
 	            $this->Model_portfolio_category->update($id,$form_data);
 				

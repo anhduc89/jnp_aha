@@ -41,11 +41,26 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Tên danh mục </th>*</span></label>
+							<label for="" class="col-sm-2 control-label">Tên danh mục (VN) </th>*</span></label>
 							<div class="col-sm-4">
-								<input type="text" class="form-control" name="category_name">
+								<input type="text" class="form-control" name="category_name_vn">
 							</div>
 						</div>
+
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Tên danh mục (EN) </th>*</span></label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" name="category_name_en">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Tên danh mục (KR) </th>*</span></label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" name="category_name_kr">
+							</div>
+						</div>
+
 						<div class="form-group">
 				            <label for="" class="col-sm-2 control-label">Trạng thái *</label>
 				            <div class="col-sm-4">
@@ -55,19 +70,6 @@ if(!$this->session->userdata('id')) {
 				            	</select>
 				            </div>
 				        </div>
-
-						<div class="form-group">
-				            <label for="" class="col-sm-2 control-label">Ngôn ngữ *</label>
-				            <div class="col-sm-4">
-				            	<select name="lang" class="form-control select2">
-				            		<option value="vn">Vietnamese</option>
-									<option value="kr">Korean</option>
-				            		<option value="en">English</option>
-									
-				            	</select>
-				            </div>
-				        </div>
-
 
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label"></label>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with LeadMark landing page.">
     <meta name="author" content="Devcrud">
-    <title>Vina J&P Company</title>
+    <title>J&P Vina Company</title>
      <!-- font icons -->
      <link rel="stylesheet" href="<?php echo base_url();?>public/jnp_assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + LeadMark main styles -->

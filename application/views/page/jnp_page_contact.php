@@ -55,7 +55,7 @@
                             <div><span class="ti-email icon"></span></div>
                         </div>
                         <h4 class="mt-5">
-                            <a href="mailto:gairun79@naver.com?subject=Email%20from%20website%20J&PVina"><?php echo $page_contact['contact_email'];?></a></h4>
+                            <a href="mailto:gairun79@naver.com?subject=Email%20from%20website%20JPVina"><?php echo $page_contact['contact_email'];?></a></h4>
                     </div>
                 </div>
             </div>

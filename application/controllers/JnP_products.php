@@ -44,9 +44,9 @@ class JnP_products extends CI_Controller {
         $data['setting'] = $this->Model_common->all_setting();
         $data['home_about']   = $this->Model_common->all_page_about(); // về chúng tôi
         $data['product_detail']   = $this->Model_portfolio->get_portfolio_detail($id_product); 
+        $data['img_product']   = $this->Model_portfolio->get_portfolio_photo($id_product);  // ảnh của sản phẩm. Vì trong db lưu riêng ra 1 bảng khác nên phải lấy theo cách này
         $data['home__products_portfolio']   = $this->Model_portfolio->get_portfolio_data_limit($lang);
-        // echo "<pre>"; print_r($data['home__products_portfolio']); exit;
-
+        // echo "<pre>"; print_r($data['img_product']); exit;
         $this->load->view('page/jnp_header',$data);
 		$this->load->view('page/jnp_page_product_detail',$data);
 		$this->load->view('page/jnp_footer');

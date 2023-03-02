@@ -41,9 +41,21 @@ if(!$this->session->userdata('id')) {
 
 	            <div class="box-body">
 	                <div class="form-group">
-	                    <label for="" class="col-sm-2 control-label">Tên danh mục *</label>
+	                    <label for="" class="col-sm-2 control-label">Tên danh mục (VN)*</label>
 	                    <div class="col-sm-4">
-	                        <input type="text" class="form-control" name="category_name" value="<?php echo $portfolio_category['category_name']; ?>">
+	                        <input type="text" class="form-control" name="category_name_vn" value="<?php echo $portfolio_category['category_name_vn']; ?>">
+	                    </div>
+	                </div>
+					<div class="form-group">
+	                    <label for="" class="col-sm-2 control-label">Tên danh mục (EN)*</label>
+	                    <div class="col-sm-4">
+	                        <input type="text" class="form-control" name="category_name_en" value="<?php echo $portfolio_category['category_name_en']; ?>">
+	                    </div>
+	                </div>
+					<div class="form-group">
+	                    <label for="" class="col-sm-2 control-label">Tên danh mục (KR)*</label>
+	                    <div class="col-sm-4">
+	                        <input type="text" class="form-control" name="category_name_kr" value="<?php echo $portfolio_category['category_name_kr']; ?>">
 	                    </div>
 	                </div>
 	                <div class="form-group">
@@ -55,16 +67,7 @@ if(!$this->session->userdata('id')) {
 			            	</select>
 			            </div>
 			        </div>
-					<div class="form-group">
-			            <label for="" class="col-sm-2 control-label">Ngôn ngữ *</label>
-			            <div class="col-sm-4">
-			            	<select name="lang" class="form-control select2">
-			            		<option value="vn" <?php if($portfolio_category['lang']=='vn') {echo 'selected';} ?>>Vietnamese</option>
-			            		<option value="en" <?php if($portfolio_category['lang']=='en') {echo 'selected';} ?>>English</option>
-								<option value="kr" <?php if($portfolio_category['lang']=='kr') {echo 'selected';} ?>>Korean</option>
-			            	</select>
-			            </div>
-			        </div>
+					
 	                <div class="form-group">
 	                	<label for="" class="col-sm-2 control-label"></label>
 	                    <div class="col-sm-6">
